@@ -16,11 +16,12 @@
 
  im_anomaly_legacyofthedead_starter: "Strange Rumbling"
  im_anomaly_desc: "Our science vessel has detected strange seismic rumbling across this planet, seeming linked to our first Searing Star."
- im_legacyofthedead: "The Dead, Revisited"
- im_legacydead_evt_desc: "After awakening a Searing Star, our sensors have detected the awakening of a §YRelic World§! beneath the surface of one of our planets. Across the world, there are structures mimicking §CDivine§! designs, which point to a very prominent and advanced Precursor ruin found nowhere else in the galaxy.\n\n§YAn archaeological dig-site has been established.§!"
 
 
 ### Legacy of the Dead -- LOTD
+ im_legacyofthedead: "The Dead, Revisited"
+ im_legacydead_evt_desc: "After awakening a Searing Star, our sensors have detected structures beneath the surface of one of our planets. Across the world, there are structures mimicking §CDivine§! designs, which point to a very prominent and advanced Precursor ruin found nowhere else in the galaxy. Knowing what we know now, we can only presume this is related to the §CSearing Stars§!.\n\n§YAn archaeological dig-site has been established.§!"
+
  site_legacyofthedead_adinf: "Legacy of the Dead"
  legacyofthedead_adinf_desc: "This relic world has more questions than answers, but more importantly, it houses very advanced structures on-site - some of which may hold answers to the occupants of this ruin."
  
@@ -50,6 +51,8 @@
  lotd_angelic_writings_3_desc_details: "\n§YA CONSTRUCT TO BEFIT ANGELS. THE MACHINATIONS OF MORTALS TO IMPRESS THE DIVINE. THE §CBRAIN OF DAEDALUS§!, MECHANIZED INTO A FORM OF BEAUTY, CONTAINING ALL THE THEORIES THAT CAN EXIST AND MANY THAT CANNOT.\nBY THE KING, WE WILL ASCEND.§!"
 
 ### Like Antennas To Heaven -- LATH
+ im_antennas_evt: ""
+ im_antennas_evt_desc: ""
  site_likeantennastoheaven_adinf: "Like Antennas To Heaven"
  likeantennastoheaven_adinf_desc: ""
  
@@ -79,6 +82,8 @@
  lath_angelic_writings_3_desc_details: "\n§YBROTHERS, OUR FALL HAS COME FAST. THE APIDIAN THREAT IS WIPED OUT, BUT THEY TAKE US DOWN WITH THEM. THE STARFIRE MECHANISM PROTECTED OUR THRONE, BUT WAS DAMAGED BEYOND REPAIR.\nTHIS IS THE ONLY WAY IT SHOULD HAVE ENDED. WRITHING IN THE BLOOD OF THE DEAD, LASHING A SWORD AGAINST OUR MURDERERS. MUTUALLY ASSURED DESTRUCTION.\n\nIRONIC. POETIC. PATHETIC.\nA FITTING END TO AN EXISTENCE DEFINED BY FUTILE STRUGGLE. DOOMED, FROM THE VERY START.§!"
 
 ### Grand, Impossibly Grand -- GIG
+ im_gig_evt: ""
+ im_gig_evt_desc: ""
  site_grandimpossiblygrand_adinf: "Grand, Impossibly Grand"
  grandimpossiblygrand_adinf_desc: ""
 
@@ -104,6 +109,8 @@
  gig_angelic_writings_3_desc_details: "\n§Y REPLACEME §!"
 
 ### Hazardous Environments -- HEV
+ im_hev_evt: "Parting Clouds"
+ im_hev_evt_desc: "As per routine scans, a probe was sent into some of our toxic worlds. However, one probe returned something strange, that seem to have been missed before; a host of ruined structures, ancient beyond comprehension. We believe this is related to our §CSearing Stars§!.\n\n§YAn Archaeological Site has been created.§!"
  site_hazardousenvironments_adinf: "Hazardous Environments"
  hazardousenvironments_adinf_desc: ""
 

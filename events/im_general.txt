@@ -10,8 +10,13 @@ system_event = {
 			IF = {
 				limit = { NOR = { is_star = yes clib_is_standard_star_planet = yes } }
 				IF = { 
-					limit = { OR = { clib_is_tiny_planet = yes is_planet_class = pc_gas_giant } }
+					limit = { clib_is_tiny_planet = yes }
 					remove_planet = yes 
+				}
+				ELSE_IF = {
+					limit = { is_planet_class = pc_gas_giant }
+					change_pc = pc_molten
+					change_planet_size = 5
 				}
 				ELSE = { change_pc = pc_im_bleeding_world }
 			}
@@ -33,6 +38,11 @@ country_event = {	# First Searing Star
 	}
 	immediate = {
 		set_country_flag = im_made_a_searing_star
+		country_event = {
+			id = im_general.2005
+			days = 300
+			random = 60
+		}
 	}
 }
 
@@ -50,11 +60,7 @@ country_event = {
 		random_planet_within_border = { 
 			limit = { 
 				clib_is_tiny_planet = no 
-				#is_star = no 
-				#is_artificial = no
-				#is_colonizable = no
-				is_barren = yes
-				#NOT = { is_planet_class = pc_gas_giant }
+				is_planet_class = pc_barren
 			} 
 			planet_event = { id = im_general.2007 } 
 		} 
@@ -68,23 +74,88 @@ planet_event = { # LOTD, barren
 	immediate = { create_archaeological_site = site_legacyofthedead_adinf }
 }
 
+country_event = {
+	id = im_general.2010
+	is_triggered_only = yes
+	trigger = { has_country_flag = im_made_a_searing_star }
+
+	title = im_gig_evt
+	desc = im_gig_evt_desc
+	picture = GFX_evt_relic_world
+
+	option = { name = INTERESTING }
+	immediate = { 
+		random_planet_within_border = { 
+			limit = { 
+				clib_is_tiny_planet = no 
+				is_planet_class = pc_barren_cold
+			} 
+			planet_event = { id = im_general.2012 } 
+		} 
+	}
+}
 
 planet_event = { # GIG, cold barren
-	id = im_general.2010
+	id = im_general.2012
 	is_triggered_only = yes
 	hide_window = yes
 #	immediate = { create_archaeological_site = site_grandimpossiblygrand_adinf }
 }
 
-planet_event = { # LATH, molten or barren
+country_event = {
 	id = im_general.2015
+	is_triggered_only = yes
+	trigger = { has_country_flag = im_made_a_searing_star }
+
+	title = im_antennas_evt
+	desc = im_antennas_evt_desc
+	picture = GFX_evt_relic_world
+
+	option = { name = INTERESTING }
+	immediate = { 
+		random_planet_within_border = { 
+			limit = { 
+				clib_is_tiny_planet = no
+				OR = {
+					is_planet_class = pc_molten
+					is_planet_class = pc_barren
+				}
+			} 
+			planet_event = { id = im_general.2017 } 
+		} 
+	}
+}
+
+planet_event = { # LATH, molten or barren
+	id = im_general.2017
 	is_triggered_only = yes
 	hide_window = yes
 #	immediate = { create_archaeological_site = site_likeantennastoheaven_adinf }
 }
 
-planet_event = { # HEV, toxic
+
+country_event = {
 	id = im_general.2020
+	is_triggered_only = yes
+	trigger = { has_country_flag = im_made_a_searing_star }
+
+	title = im_hev_evt
+	desc = im_hev_evt_desc
+	picture = GFX_evt_relic_world
+
+	option = { name = INTERESTING }
+	immediate = { 
+		random_planet_within_border = { 
+			limit = { 
+				clib_is_tiny_planet = no
+				is_planet_class = pc_toxic
+			} 
+			planet_event = { id = im_general.2022 } 
+		} 
+	}
+}
+planet_event = { # HEV, toxic
+	id = im_general.2022
 	is_triggered_only = yes
 	hide_window = yes
 #	immediate = { create_archaeological_site = site_hazardousenvironments_adinf }

@@ -1,21 +1,21 @@
 #Legacy of the Dead (random barren world)
 # -> Precursor arcsite
-# -> Spawns via anomaly after (First Searing Star)
+# -> Spawns via event 300r60d after (First Searing Star)
 # -> Gives Ship (Archon), Megastructure (Micro Daedalic Assembly), Megastructure (Brain of Daedalus), Megastructure (Thothian Archive Complex)
 
 #Grand, Impossibly Grand (random cold barren world)
 # -> Precursor arcsite
-# -> Spawns via event 170d after (First Searing Star)
+# -> Spawns via event 170r30d after (First Searing Star)
 # -> Gives Ship (Architect), Megastructure (Dionysian Suprahall), Megastructure (Hermetic Supercatapult)
 
 #...Like Antennas To Heaven (random molten world)
 # -> Precursor arcsite
-# -> Spawns via event 240d after (First Searing Star)
+# -> Spawns via event 240r60d after (First Searing Star)
 # -> Gives Megaship (Grand Arkweapon), Defense Citadel (Starfire Mechanism)
 
 #Hazardous Environments (random toxic world)
 # -> Precursor arcsite
-# -> Spawns via event 85d after (First Searing Star)
+# -> Spawns via event 90r30d after (First Searing Star)
 # -> Gives Megastructure (Eye of the Shroud), Megastructure (Demeter Macro-Harvester)
 
 site_legacyofthedead_adinf = {
