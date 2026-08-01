@@ -13,6 +13,6 @@ on_game_start_country = {
 
 on_yearly_pulse_country = {
 	events = {
-		im_general.2005
+		#im_general.2005
 	}
 }

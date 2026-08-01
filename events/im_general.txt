@@ -8,18 +8,41 @@ system_event = {
 		set_star_class = sc_im_searing_star
 		every_system_planet = {
 			IF = {
-				limit = { NOR = { is_star = yes clib_is_standard_star_planet = yes } }
-				IF = { 
-					limit = { clib_is_tiny_planet = yes }
-					remove_planet = yes 
+				limit = { 
+					NOR = { 
+						is_star = yes 
+						clib_is_standard_star_planet = yes 
+					} 
 				}
-				ELSE_IF = {
-					limit = { is_planet_class = pc_gas_giant }
-					change_pc = pc_molten
-					change_planet_size = 5
+				kill_all_pop = yes
+				destroy_colony = yes
+				IF = { limit = { is_moon = yes } change_pc = pc_shattered }
+				ELSE_IF = { limit = { is_asteroid = yes } remove_planet = yes }
+				ELSE = {
+					SWITCH = { # cheers to Exakan on the modding den discord for this optimization
+					trigger = is_planet_class
+						pc_ringworld_habitable = { change_pc = pc_ringworld_habitable_damaged spawn_ringworld_cracker_effect = yes }
+						pc_ringworld_shielded = { change_pc = pc_ringworld_habitable_damaged spawn_ringworld_cracker_effect = yes }
+						pc_ringworld_seam = { change_pc = pc_ringworld_seam_damaged spawn_ringworld_cracker_effect = yes }
+						pc_ringworld_tech = { change_pc = pc_ringworld_tech_damaged spawn_ringworld_cracker_effect = yes }
+						pc_gas_giant = { change_pc = pc_molten change_planet_size = 5 }
+						pc_habitat = { remove_planet = yes spawn_habitat_cracker_effect = yes }
+						default = { change_pc = pc_im_bleeding_world }
+					}
 				}
-				ELSE = { change_pc = pc_im_bleeding_world }
 			}
+		}
+		remove_star_flag = has_habitat
+		every_system_megastructure = {
+			SWITCH = {
+				trigger = is_megastructure_type
+				orbital_arc_furnace_destroyed = { remove_megastructure = this }
+				cosmogenesis_world = { remove_megastructure = this spawn_lathe_cracter_effect = yes } #?todo: figure out how to replace with a ruined lathe
+			}
+			set_ruined_megastructure = yes
+		}
+		every_system_planet = { # remember to add more flags as necessary
+			remove_planet_flag = has_arc_furnace
 		}
 	}
 }
@@ -27,7 +50,12 @@ system_event = {
 country_event = {	# First Searing Star
 	id = im_general.2000
 	is_triggered_only = yes
-	trigger = { NOT = { has_country_flag = im_made_a_searing_star } }
+	trigger = { 
+		NOR = { 
+			has_country_flag = im_made_a_searing_star
+			has_country_flag = im_debug_queue_events
+		} 
+	}
 
 	title = im_general.2000
 	desc = im_general.2000_b
