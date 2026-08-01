@@ -1,0 +1,329 @@
+
+im_hermes_gateway = {
+	entity = "im_hermes_gateway_entity"
+	construction_entity = "im_hermes_gateway_empty_entity" # swap out for im_hermes_gateway_empty_entity
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	build_type = outside_gravity_well
+	show_galactic_map_icon = yes
+	show_in_outliner = yes
+	potential = {
+		clib_is_infinite_empire = yes
+	}
+	possible = {
+		hidden_trigger = {
+			exists = starbase
+		}
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "only_one_per_system"
+			NOT = { has_megastructure = im_hermes_gateway }
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_existing_megastructure"
+			has_no_non_gate_megastructure = yes
+			NOT = {
+				any_system_planet = {
+					is_planet_class = pc_cosmogenesis_world
+				}
+			}
+		}
+	}
+	prerequisites = { tech_hermes_gateway }
+	show_prereqs = yes
+	build_time = 1800
+	resources = {
+		category = megastructures_gateways
+		cost = {
+			im_infinityenergy = 1500
+			im_infinitymatter = 285
+		}
+		upkeep = {
+			im_infinitypoints = 25
+			im_infinityenergy = 15
+		}
+	}
+	construction_blocks_and_blocked_by = self_type
+
+	placement_rules = { # scope?
+	 	NOR = {
+			star = {
+				has_planet_flag = im_has_hermes_gateway
+			}
+			has_star_flag = im_has_hermes_gateway
+	 	}
+	}
+
+	dismantle_cost = {
+		category = megastructures_hyper_relay
+		cost = {
+			energy = 250
+		}
+	}
+
+	dismantle_time = 360
+
+	dismantle_potential = {
+		always = yes
+	}
+
+	dismantle_possible = {
+		exists = owner
+		owner = { clib_is_infinite_empire = yes }
+	}
+
+	on_dismantle_complete = {
+		from = {
+			add_resource = {
+				im_infinityenergy = 1500
+				im_infinitymatter = 285
+				mult = modifier:megastructure_dismantle_refund_mult
+			}
+		}
+		remove_star_flag = im_has_hermes_gateway
+	}
+
+
+	bypass_type = angel_gateway
+	on_build_complete = { # this = system
+		activate_gateway = fromfrom
+		star = {
+			set_planet_flag = im_has_hermes_gateway
+		}
+		set_star_flag = im_has_hermes_gateway
+	}
+}
+
+im_athena_bow = {
+	entity = "im_bow_of_athena_entity"
+	construction_entity = "im_bow_of_athena_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	build_type = inside_gravity_well
+	show_galactic_map_icon = yes
+	show_in_outliner = yes
+	potential = {
+		clib_is_infinite_empire = yes
+	}
+	possible = {
+		hidden_trigger = {
+			exists = starbase
+		}
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "only_one_per_system"
+			NOT = { has_megastructure = im_athena_bow }
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_existing_megastructure"
+			has_no_non_gate_megastructure = yes
+			NOT = {
+				any_system_planet = {
+					is_planet_class = pc_cosmogenesis_world
+				}
+			}
+		}
+	}
+	prerequisites = { tech_hermes_gateway }
+	show_prereqs = yes
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = {
+			im_infinityenergy = 1500
+			im_infinitymatter = 285
+		}
+		upkeep = {
+			im_infinitypoints = 10
+			im_infinityenergy = 15
+		}
+	}
+	construction_blocks_and_blocked_by = self_type
+
+	placement_rules = { # scope?
+	 	NOR = {
+			star = {
+				has_planet_flag = im_has_bow_of_athena
+			}
+			has_star_flag = im_has_bow_of_athena
+	 	}
+	}
+
+	dismantle_cost = {
+		category = megastructures
+		cost = {
+			im_infinitymatter = 125
+		}
+	}
+
+	dismantle_time = 360
+
+	dismantle_potential = {
+		always = yes
+	}
+
+	dismantle_possible = {
+		exists = owner
+		owner = { clib_is_infinite_empire = yes }
+	}
+
+	on_dismantle_complete = {
+		from = {
+			add_resource = {
+				im_infinityenergy = 1500
+				im_infinitymatter = 285
+				mult = modifier:megastructure_dismantle_refund_mult
+			}
+		}
+	}
+
+	country_modifier = {
+		ships_trade_upkeep_mult = -0.5
+		ships_logistics_mult = -0.5
+		country_naval_cap_mult = 4.0
+		command_limit_mult = 4.0
+	}
+
+	on_build_complete = {
+		star = {
+			set_planet_flag = im_has_bow_of_athena
+		}
+		set_star_flag = im_has_bow_of_athena
+	}
+}
+
+im_pylon_of_hearth = {
+	entity = "im_pylon_of_hearth_entity"
+	construction_entity = "im_pylon_of_hearth_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	build_type = outside_gravity_well
+	show_galactic_map_icon = yes
+	show_in_outliner = yes
+	potential = {
+		clib_is_infinite_empire = yes
+	}
+	possible = {
+		hidden_trigger = {
+			exists = starbase
+		}
+		custom_tooltip = {
+			fail_text = "only_one_per_system"
+			NOT = { has_megastructure = im_pylon_of_hearth }
+		}
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_existing_megastructure"
+			has_no_non_gate_megastructure = yes
+			NOT = {
+				any_system_planet = {
+					is_planet_class = pc_cosmogenesis_world
+				}
+			}
+		}
+	}
+	prerequisites = { tech_hermes_gateway }
+	show_prereqs = yes
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = {
+			im_infinityenergy = 1500
+			im_infinitymatter = 285
+		}
+		upkeep = {
+			im_infinitymatter = 35
+			im_infinityenergy = 25
+		}
+		produces = {
+			im_infinitypoints = 80
+		}
+	}
+	construction_blocks_and_blocked_by = self_type
+
+	placement_rules = { # scope? -- don't think this works capt'n
+	 	NOR = {
+			star = {
+				has_planet_flag = im_has_pylon_of_hearth
+			}
+			has_star_flag = im_has_pylon_of_hearth
+	 	}
+	}
+
+	dismantle_cost = {
+		category = megastructures
+		cost = {
+			im_infinitymatter = 125
+		}
+	}
+
+	dismantle_time = 360
+
+	dismantle_potential = {
+		always = yes
+	}
+
+	dismantle_possible = {
+		exists = owner
+		owner = { clib_is_infinite_empire = yes }
+	}
+
+	on_dismantle_complete = {
+		from = {
+			add_resource = {
+				im_infinityenergy = 1500
+				im_infinitymatter = 285
+				mult = modifier:megastructure_dismantle_refund_mult
+			}
+		}
+	}
+
+	on_build_complete = {
+		star = {
+			set_planet_flag = im_has_pylon_of_hearth
+		}
+		set_star_flag = im_has_pylon_of_hearth
+	}
+}

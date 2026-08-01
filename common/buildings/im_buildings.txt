@@ -1,0 +1,400 @@
+
+
+building_im_infinityengine = {
+	can_build = yes
+	base_buildtime = 180
+	category = manufacturing
+	building_sets = { industrial foundry }
+	potential = {
+		exists = owner
+		owner = { has_ascension_perk = ap_im_infinityempire }
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = 125
+			minerals = 575
+			energy = 225
+		}
+		upkeep = {
+			alloys = 75
+			sr_dark_matter = 25
+		}
+		produces = {
+			im_infinitymatter = 100
+		}
+	}
+	inline_script = {
+		script = jobs/foundry_add
+		AMOUNT = 900
+	}
+	upgrades = { building_im_manipulator }
+}
+
+building_im_infinitysingularity = {
+	can_build = yes
+	base_buildtime = 180
+	category = manufacturing
+	building_sets = { industrial foundry }
+	potential = {
+		exists = owner
+		owner = { has_ascension_perk = ap_im_infinityempire }
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = 125
+			minerals = 575
+			energy = 225
+		}
+		upkeep = {
+			energy = 75
+			sr_dark_matter = 25
+		}
+		produces = {
+			im_infinityenergy = 125
+		}
+	}
+	inline_script = {
+		script = jobs/foundry_add
+		AMOUNT = 850
+	}
+	upgrades = { building_im_manipulator }
+}
+
+building_im_infinitypoints = {
+	can_build = yes
+	base_buildtime = 180
+	category = manufacturing
+	building_sets = { industrial foundry }
+	potential = {
+		exists = owner
+		owner = { has_ascension_perk = ap_im_infinityempire }
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = 125
+			minerals = 575
+			energy = 225
+		}
+		upkeep = {
+			im_infinitymatter = 6
+			im_infinityenergy = 4
+		}
+		produces = {
+			im_infinitypoints = 10
+		}
+	}
+	inline_script = {
+		script = jobs/foundry_add
+		AMOUNT = 850
+	}
+	upgrades = { building_im_points2 }
+}
+
+building_im_capitol = {
+	base_buildtime = 900
+	capital = yes
+	can_demolish = no
+	can_be_ruined = no
+	can_be_disabled = no
+	can_build = no
+	position_priority = 0
+	capital_tier = 5
+
+	category = government
+	
+	building_sets = { government }
+	prerequisites = { tech_angel_bldg_capitol }
+
+	resources = {
+		category = planet_buildings
+		upkeep = { im_infinitypoints = 1.4 }
+	}
+	inline_script = {
+		script = buildings/on_all_capital_buildings
+	}
+
+	planet_modifier = {
+		planet_housing_add = 4800
+		planet_amenities_add = 9600
+
+		planet_max_districts_add = 3
+		planet_max_branch_office_buildings_add = 4
+
+		planet_orbital_bombardment_damage = -0.10
+		pop_environment_tolerance = 0.45
+
+		planet_defense_armies_add = 10
+		planet_traders_trade_produces_add = 2.5
+
+		job_enforcer_add = 400
+		job_politician_add = 700
+	}
+}
+
+building_im_labs = {
+	can_build = yes
+	base_buildtime = 180
+	category = research
+	building_sets = { industrial urban research }
+	potential = {
+		exists = owner
+		owner = { has_ascension_perk = ap_im_infinityempire }
+	}
+	allow = { clib_has_enigmatic_capital = yes }
+	prerequisites = { tech_angel_bldg_labs }
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = 125
+			minerals = 575
+			energy = 225
+		}
+		upkeep = {
+			im_infinitypoints = 5
+		}
+		produces = {
+			physics_research = 135
+			society_research = 125
+			engineering_research = 145
+		}
+	}
+	inline_script = {
+		script = jobs/researchers_add
+		AMOUNT = 900
+	}
+}
+
+building_im_fabricator = {
+	can_build = yes
+	base_buildtime = 180
+	category = manufacturing
+	building_sets = { industrial urban factory farming mining }
+	potential = {
+		exists = owner
+		owner = { has_ascension_perk = ap_im_infinityempire }
+	}
+	allow = { clib_has_enigmatic_capital = yes }
+	prerequisites = { tech_angel_bldg_fabricator }
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = 125
+			minerals = 575
+			energy = 225
+		}
+		upkeep = {
+			im_infinitypoints = 7
+			im_infinitymatter = 15
+			im_infinityenergy = 15
+		}
+		produces = {
+			food = 250
+			minerals = 250
+			alloys = 500
+			consumer_goods = 500
+			exotic_gases = 175
+			volatile_motes = 175
+			rare_crystals = 175
+			nanites = 25
+			sr_living_metal = 25
+			sr_zro = 25
+			sr_dark_matter = 25
+		}
+	}
+}
+
+building_im_manipulator = {
+	can_build = yes
+	base_buildtime = 180
+	category = manufacturing
+	building_sets = { industrial urban factory }
+	potential = {
+		exists = owner
+		owner = { has_ascension_perk = ap_im_infinityempire }
+	}
+	allow = { clib_has_enigmatic_capital = yes }
+	prerequisites = { tech_angel_bldg_manipulator }
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = 125
+			minerals = 575
+			energy = 225
+		}
+		upkeep = {
+			im_infinitypoints = 15
+		}
+		produces = {
+			im_infinityenergy = 25
+			im_infinitymatter = 25
+		}
+	}
+}
+
+building_im_shield = {
+	planet_limit = 1
+	can_build = yes
+	base_buildtime = 180
+	category = army
+	building_sets = { urban }
+	potential = {
+		exists = owner
+		owner = { has_ascension_perk = ap_im_infinityempire }
+	}
+	allow = { clib_has_enigmatic_capital = yes }
+	prerequisites = { tech_angel_bldg_shield }
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = 125
+			minerals = 575
+			energy = 225
+		}
+		upkeep = {
+			im_infinitypoints = 15
+		}
+	}
+
+	planet_modifier = {
+		planet_orbital_bombardment_damage = -0.75
+		job_soldier_add = 1500
+		planet_defense_armies_add = 10
+	}
+}
+
+building_im_tetraforge = {
+	can_build = yes
+	base_buildtime = 180
+	category = manufacturing
+	building_sets = { industrial urban factory automation }
+	potential = {
+		exists = owner
+		owner = { has_ascension_perk = ap_im_infinityempire }
+	}
+	allow = { clib_has_enigmatic_capital = yes }
+	prerequisites = { tech_angel_bldg_tetraforge }
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = 125
+			minerals = 575
+			energy = 225
+		}
+		upkeep = {
+			im_infinitypoints = 15
+			im_infinitymatter = 75
+		}
+		produces = {
+			alloys = 150
+		}
+	}
+	inline_script = {
+		script = jobs/foundry_add
+		AMOUNT = 1800
+	}
+}
+
+building_im_energyplant = {
+	can_build = yes
+	base_buildtime = 180
+	category = resource
+	building_sets = { industrial urban factory automation generator generator_automation }
+	potential = {
+		exists = owner
+		owner = { has_ascension_perk = ap_im_infinityempire }
+	}
+	allow = { clib_has_enigmatic_capital = yes }
+	prerequisites = { tech_angel_bldg_energyplant }
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = 125
+			minerals = 575
+			energy = 225
+		}
+		upkeep = {
+			im_infinitypoints = 15
+			im_infinityenergy = 75
+		}
+		produces = {
+			energy = 450
+		}
+	}
+	inline_script = {
+		script = jobs/technicians_add
+		AMOUNT = 1800
+	}
+}
+
+building_im_supercity = {
+	can_build = yes
+	base_buildtime = 180
+	category = amenities
+	building_sets = { urban entertainment society }
+	potential = {
+		exists = owner
+		owner = { has_ascension_perk = ap_im_infinityempire }
+	}
+	allow = { clib_has_enigmatic_capital = yes }
+	prerequisites = { tech_angel_bldg_supercity }
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = 125
+			minerals = 575
+			energy = 225
+		}
+		upkeep = {
+			im_infinitypoints = 15
+			im_infinityenergy = 25
+			im_infinitymatter = 25
+		}
+	}
+	inline_script = {
+		script = jobs/entertainers_add
+		AMOUNT = 750
+	}
+	planet_modifier = {
+		planet_housing_add = 1500
+		planet_amenities_add = 1750
+	}
+}
+
+building_im_points2 = {
+	can_build = no
+	base_buildtime = 180
+	category = manufacturing
+	building_sets = { industrial foundry }
+	potential = {
+		exists = owner
+		owner = { has_ascension_perk = ap_im_infinityempire }
+	}
+	allow = { clib_has_enigmatic_capital = yes }
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = 75
+			energy = 125
+		}
+		upkeep = {
+			im_infinitymatter = 30
+			im_infinityenergy = 20
+		}
+		produces = {
+			im_infinitypoints = 50
+		}
+	}
+	planet_modifier = {
+		planet_amenities_add = -50
+	}
+	inline_script = {
+		script = jobs/foundry_add
+		AMOUNT = 850
+	}
+	prerequisites = { tech_angel_bldg_capitol }
+}
+
+# ?todo2: clinic, entertainment hub, security, trade hall, assembly

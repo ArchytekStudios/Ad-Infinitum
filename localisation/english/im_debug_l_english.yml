@@ -1,0 +1,21 @@
+﻿l_english:
+
+ ### Redundant
+ # im_infinitymatter: "Universal Matter"
+ # im_infinitymatter_desc: "Brilliant, impervious, and heavy. Useful for ships, buildings, and megastructures."
+ # im_infinityenergy: "Celestial Energy"
+ # im_infinityenergy_desc: "Blinding, searing, and tensile. Useful for weapons, components, and energy-based equipment."
+ # im_angel_weapon: "§CAngelic Weapon§!"
+ # im_infinity_weapon: "§YInfinity Weapon§!"
+ im_angelic_debug_ophanim: "Debug Ophan Preview"
+ im_angelic_debug: "Debug Angel Ship"
+ im_angelic_debug_plural: "Debug Angel Ships"
+ im_angelic_debug_archangel: "Debug Cherub Preview"
+ im_angelic_debug_seraphim: "Debug Seraph Preview"
+ mod_ships_trade_upkeep_mult: "Trade Upkeep"
+ no_desc: " "
+ only_one_per_system: "£trigger_no£ Only one per system."
+ only_one_per_country: "£trigger_no£ Only one per country."
+ requires_searing_star: "£trigger_no£ Requires a §CSearing Star§!."
+ IM_GATEWAY_ANGELIC: "§CAngelic§! Gateway"
+ IM_GATEWAY_ANGELIC_DESC: "Transport between multiple Hermes Gates will cut down on response time, but is extremely vulnerable to intrusion."

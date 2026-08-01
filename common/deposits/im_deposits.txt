@@ -1,0 +1,41 @@
+d_infinitypoints_5 = {
+	icon = d_mining_station
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			im_infinitypoints = 5
+		}
+	}
+	station = shipclass_mining_station
+	is_for_colonizable = no
+
+	potential = { always = no }
+}
+
+d_infinitypoints_25 = {
+	icon = d_mining_station
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			im_infinitypoints = 25
+		}
+	}
+	station = shipclass_mining_station
+	is_for_colonizable = no
+
+	potential = { always = no }
+}
+
+d_infinitypoints_50 = {
+	icon = d_mining_station
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			im_infinitypoints = 50
+		}
+	}
+	station = shipclass_mining_station
+	is_for_colonizable = no
+
+	potential = { always = no }
+}

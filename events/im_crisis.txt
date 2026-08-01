@@ -1,0 +1,133 @@
+namespace = im_angel_crisis
+
+country_event = {
+	id = im_angel_crisis.1000
+	is_triggered_only = yes
+	
+	title = im_angel_crisis_begin
+	desc = {
+		trigger = { 
+			owner = { 
+				NOR = { 
+					has_authority = auth_machine_intelligence 
+					has_authority = auth_hive_mind 
+					has_ethic = ethic_fanatic_spiritualist 
+				} 
+			} 
+		}
+
+		text = im_angel_crisis_begin_desc
+	}
+	desc = {
+		trigger = { owner = { has_ethic = ethic_fanatic_spiritualist } }
+		text = im_angel_crisis_begin_desc_relig
+	}
+	desc = {
+		trigger = { owner = { has_authority = auth_machine_intelligence } }
+		text = im_angel_crisis_begin_desc_mach
+	}
+	desc = {
+		trigger = { owner = { has_authority = auth_hive_mind } }
+		text = im_angel_crisis_begin_desc_hive
+	}
+	picture = GFX_evt_psionics
+	show_sound = event_mind_over_matter
+
+	option = {
+		name = IM_CRISIS_START_NORM
+		trigger = { owner = { NOT = { is_spiritualist = yes } } }
+		default_hide_option = yes
+	}
+	option = {
+		name = IM_CRISIS_START_PSI
+		trigger = { owner = { is_spiritualist = yes } }
+		#hidden_effect = { set_country_flag = im_start_with_psionics_focus }	# don't think this'll go anywhere
+		default_hide_option = yes
+	}
+	immediate = {
+		#	IF = {
+		#		limit = { NOT = { has_global_flag = im_angel_crisis_1 } }
+		#		set_global_flag = im_angel_crisis_1
+		#	}
+		#	ELSE = {
+		#		set_global_flag = im_angel_crisis_2
+		#	}
+		set_country_flag = im_angelic_empire
+	}
+}
+
+#	country_event = { # oh hey! another angelic empire		# no. maybe later.
+#		id = im_angel_crisis.1500
+#		picture = GFX_evt_assembly_fight
+#		show_sound = event_assembly_fight
+#	
+#		is_triggered_only = yes
+#	
+#		title = im_angel_crisis_duplicates
+#		desc = im_angel_crisis_uh_oh_raggy
+#	
+#		option = {
+#			name = IM_CRISIS_ONLY_ONE
+#			add_casus_belli = {
+#				type = cb_im_only_one_crisis
+#				who = THIS
+#				days = 5
+#			}
+#		}
+#	}
+
+country_event = {
+	id = im_angel_crisis.2025
+	picture = GFX_evt_alien_nature_zoom_1
+	show_sound = event_alien_nature
+
+	is_triggered_only = yes
+
+	title = im_angel_bio_mastery
+	desc = im_angel_bio_mastery_desc
+
+	option = { name = EXCELLENT }
+	immediate = { set_country_flag = im_bio_master }
+}
+
+country_event = {
+	id = im_angel_crisis.2050
+	picture = GFX_evt_megastructure_construction
+	show_sound = event_mega_structure_other_empire_build_complete
+
+	is_triggered_only = yes
+
+	title = im_angel_struct_mastery
+	desc = im_angel_struct_mastery_desc
+
+	option = { name = EXCELLENT }
+	immediate = { set_country_flag = im_struct_master }
+}
+
+country_event = {
+	id = im_angel_crisis.2075
+	picture = GFX_evt_shroud_generic
+	show_sound = event_mind_over_matter
+
+	is_triggered_only = yes
+
+	title = im_angel_psi_mastery
+	desc = im_angel_psi_mastery_desc
+
+	option = { name = EXCELLENT }
+	immediate = { set_country_flag = im_psi_master }
+}
+
+country_event = {
+	id = im_angel_crisis.2100
+	picture = GFX_evt_psionics
+	show_sound = event_default #?replaceme
+
+	is_triggered_only = yes
+
+	title = im_angel_predivine
+	desc = im_angel_predivine_desc
+
+	option = { name = EXCELLENT }
+	immediate = { set_country_flag = im_prediv_complete }
+}

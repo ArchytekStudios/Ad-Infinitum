@@ -1,0 +1,176 @@
+﻿l_english:
+
+ im_angel_weapon: "§CAngelic Weapon§!"
+ im_infinity_weapon: "§YInfinity Weapon§!"
+ 
+ #?TODO: Replace all "$nodesc$" with descriptions
+
+ IM_ANGEL_DEFENSES: "§CWill of Andrasta§!"
+ IM_ANGEL_SK: "§CRagnarok§!" #Starkiller - turns to Searing Star and turns every planet in the system Bleeding, while wiping out gas giants, moons, and asteroids - erases all deposits, anoms, arcsites, colonies
+ IM_ANGEL_LANCE: "§CFenrir Beam§!"
+ IM_ANGEL_LASER_XL: "§CLance of Tyr§!"
+ IM_ANGEL_LASER_L: "§CSword of Ares§!"
+ IM_ANGEL_LASER_M: "§CBow of Artemis§!"
+ IM_ANGEL_BOMBARDMENT: "§CMixcoatl's Hunt§!"
+ IM_ANGEL_LASER_S: "§CSpear of Gabriel§!"
+ IM_ANGEL_LASER_PD: "§CWill of the Ship§!"
+ 
+ IM_INF_ARMOR: "Palladin Armor"
+ IM_INF_SHIELD: "Palladin Shield"
+ IM_INF_RECONBEAM: "Reconstitution Beam" #Planetkiller - turns to Bleeding World without bombardment
+ IM_INF_STARBEAM: "Stellar Overture Beam"
+ IM_INF_NOVALANCE: "Supernova Lance"
+ IM_INF_PLATFORM: "Sunburn Platform"
+ IM_INF_HANGAR_H: "Assassin Deployer"
+ IM_INF_HANGAR_L: "Heir Deployer"
+ IM_INF_LASER: "Searing Laser"
+ IM_INF_DISINTEGRATOR: "Atomic Disintegrator"
+ 
+ IM_INF_LASER_L: "Large $IM_INF_LASER$"
+ IM_INF_LASER_M: "Medium $IM_INF_LASER$"
+ IM_INF_LASER_G: "Augmented $IM_INF_LASER$"
+ IM_INF_LASER_S: "Small $IM_INF_LASER$"
+ 
+ IM_ANGEL_CORE: "§CSoul Core§!"
+ IM_ANGEL_FTL: "§CHermes Jumpdrive§!"
+ IM_ANGEL_THRUSTER: "§CRa's Chariot§!"
+ IM_ANGEL_INTEL: "§CApollo Intellect Chip§!"
+ 
+ OPHAN_SOUL_CORE: "Minor $IM_ANGEL_CORE$"
+ CHERUB_SOUL_CORE: "Major $IM_ANGEL_CORE$"
+ SERAPH_SOUL_CORE: "Divine $IM_ANGEL_CORE$"
+ 
+ ANGEL_INTEL_OPHAN: "Minor $IM_ANGEL_INTEL$"
+ ANGEL_INTEL_CHERUB: "Major $IM_ANGEL_INTEL$"
+ ANGEL_INTEL_SERAPH: "Divine $IM_ANGEL_INTEL$"
+ 
+ S_ANGEL_DEFENSES: "Minor $IM_ANGEL_DEFENSES$"
+ M_ANGEL_DEFENSES: "Major $IM_ANGEL_DEFENSES$"
+ L_ANGEL_DEFENSES: "Divine $IM_ANGEL_DEFENSES$"
+ 
+ IM_INF_CORE: "Singularity Core"
+ IM_INF_FTL: "Singularity Jumpdrive"
+ IM_INF_THRUSTER: "Singularity Thruster"
+ IM_INF_INTEL: "Singularity Intelligence"
+ IM_INF_SENSOR: "Singularity Radar"
+ 
+ IM_INF_ARMOR_S: "Small Palladin Armor"
+ IM_INF_SHIELD_S: "Small Palladin Shield"
+ IM_INF_ARMOR_M: "Medium Palladin Armor"
+ IM_INF_SHIELD_M: "Medium Palladin Shield"
+ IM_INF_ARMOR_L: "Large Palladin Armor"
+ IM_INF_SHIELD_L: "Large Palladin Shield"
+ 
+ IM_INF_CORE_S: "Small Singularity Core"
+ IM_INF_FTL_S: "Small Singularity Jumpdrive"
+ IM_INF_THRUSTER_S: "Small Singularity Thruster"
+ IM_INF_INTEL_S: "Small Singularity Intelligence"
+ 
+ IM_INF_CORE_M: "Medium Singularity Core"
+ IM_INF_FTL_M: "Medium Singularity Jumpdrive"
+ IM_INF_THRUSTER_M: "Medium Singularity Thruster"
+ IM_INF_INTEL_M: "Medium Singularity Intelligence"
+ 
+ IM_INF_CORE_L: "Large Singularity Core"
+ IM_INF_FTL_L: "Large Singularity Jumpdrive"
+ IM_INF_THRUSTER_L: "Large Singularity Thruster"
+ IM_INF_INTEL_L: "Large Singularity Intelligence"
+ 
+ IM_INF_CORE_XL: "Extra-Large Singularity Core"
+ IM_INF_FTL_XL: "Extra-Large Singularity Jumpdrive"
+ IM_INF_THRUSTER_XL: "Extra-Large Singularity Thruster"
+ IM_INF_INTEL_XL: "Extra-Large Singularity Intelligence"
+ 
+ IM_INF_CORE_PT: "Platform Singularity Core"
+ IM_INF_INTEL_PT: "Platform Singularity Intelligence"
+ 
+ IM_ARMOR_HARDENER: "Singular Armor Hardener"
+ IM_SHIELD_HARDENER: "Singular Shield Hardener"
+ IM_ENGINE_AMPLIFIER: "Singular Engine Amplifier"
+ IM_WEAPON_ENHANCER: "Singular Energy Multiplex"
+ IM_SEAR_DEFLECTOR: "Searing Damage Reflector"
+ IM_ARMOR_HARDENER_DESC: "$no_desc$"
+ IM_SHIELD_HARDENER_DESC: "$no_desc$"
+ IM_ENGINE_AMPLIFIER_DESC: "$no_desc$"
+ IM_WEAPON_ENHANCER_DESC: "$no_desc$"
+ IM_SEAR_DEFLECTOR_DESC: "This piece of equipment helps protect our vessels against damage from §CSearing Stars§!."
+ 
+ 
+ IM_ANGEL_DEFENSES_DESC: "$no_desc$"
+ IM_ANGEL_PK_DESC: "$no_desc$"
+ IM_ANGEL_LANCE_DESC: "$no_desc$"
+ IM_ANGEL_LASER_XL_DESC: "$no_desc$"
+ IM_ANGEL_LASER_L_DESC: "$no_desc$"
+ IM_ANGEL_LASER_M_DESC: "$no_desc$"
+ IM_ANGEL_BOMBARDMENT_DESC: "$no_desc$"
+ IM_ANGEL_LASER_S_DESC: "$no_desc$"
+ IM_ANGEL_LASER_PD_DESC: "$no_desc$"
+ 
+ IM_INF_ARMOR_DESC: "$no_desc$"
+ IM_INF_SHIELD_DESC: "$no_desc$"
+ IM_INF_RECONBEAM_DESC: "$no_desc$"
+ IM_INF_STARBEAM_DESC: "$no_desc$"
+ IM_INF_NOVALANCE_DESC: "$no_desc$"
+ IM_INF_PLATFORM_DESC: "$no_desc$"
+ IM_INF_HANGAR_H_DESC: "$no_desc$"
+ IM_INF_HANGAR_L_DESC: "$no_desc$"
+ IM_INF_LASER_DESC: "$no_desc$"
+ IM_INF_DISINTEGRATOR_DESC: "$no_desc$"
+ 
+ IM_INF_LASER_L_DESC: "$no_desc$"
+ IM_INF_LASER_M_DESC: "$no_desc$"
+ IM_INF_LASER_G_DESC: "$no_desc$"
+ IM_INF_LASER_S_DESC: "$no_desc$"
+ 
+ IM_ANGEL_CORE_DESC: "$no_desc$"
+ IM_ANGEL_FTL_DESC: "$no_desc$"
+ IM_ANGEL_THRUSTER_DESC: "$no_desc$"
+ IM_ANGEL_INTEL_DESC: "$no_desc$"
+ 
+ OPHAN_SOUL_CORE_DESC: "$no_desc$"
+ CHERUB_SOUL_CORE_DESC: "$no_desc$"
+ SERAPH_SOUL_CORE_DESC: "$no_desc$"
+ 
+ ANGEL_INTEL_OPHAN_DESC: "$no_desc$"
+ ANGEL_INTEL_CHERUB_DESC: "$no_desc$"
+ ANGEL_INTEL_SERAPH_DESC: "$no_desc$"
+ 
+ S_ANGEL_DEFENSES_DESC: "$no_desc$"
+ M_ANGEL_DEFENSES_DESC: "$no_desc$"
+ L_ANGEL_DEFENSES_DESC: "$no_desc$"
+ 
+ IM_INF_CORE_DESC: "$no_desc$"
+ IM_INF_FTL_DESC: "$no_desc$"
+ IM_INF_THRUSTER_DESC: "$no_desc$"
+ IM_INF_INTEL_DESC: "$no_desc$"
+ IM_INF_SENSOR_DESC: "$no_desc$"
+ 
+ IM_INF_ARMOR_S_DESC: "$no_desc$"
+ IM_INF_SHIELD_S_DESC: "$no_desc$"
+ IM_INF_ARMOR_M_DESC: "$no_desc$"
+ IM_INF_SHIELD_M_DESC: "$no_desc$"
+ IM_INF_ARMOR_L_DESC: "$no_desc$"
+ IM_INF_SHIELD_L_DESC: "$no_desc$"
+ 
+ IM_INF_CORE_S_DESC: "$no_desc$"
+ IM_INF_FTL_S_DESC: "$no_desc$"
+ IM_INF_THRUSTER_S_DESC: "$no_desc$"
+ IM_INF_INTEL_S_DESC: "$no_desc$"
+ 
+ IM_INF_CORE_M_DESC: "$no_desc$"
+ IM_INF_FTL_M_DESC: "$no_desc$"
+ IM_INF_THRUSTER_M_DESC: "$no_desc$"
+ IM_INF_INTEL_M_DESC: "$no_desc$"
+ 
+ IM_INF_CORE_L_DESC: "$no_desc$"
+ IM_INF_FTL_L_DESC: "$no_desc$"
+ IM_INF_THRUSTER_L_DESC: "$no_desc$"
+ IM_INF_INTEL_L_DESC: "$no_desc$"
+ 
+ IM_INF_CORE_XL_DESC: "$no_desc$"
+ IM_INF_FTL_XL_DESC: "$no_desc$"
+ IM_INF_THRUSTER_XL_DESC: "$no_desc$"
+ IM_INF_INTEL_XL_DESC: "$no_desc$"
+ 
+ IM_INF_CORE_PT_DESC: "$no_desc$"
+ IM_INF_INTEL_PT_DESC:  "$no_desc$"

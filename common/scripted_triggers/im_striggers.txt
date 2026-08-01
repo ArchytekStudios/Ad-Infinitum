@@ -1,0 +1,29 @@
+
+im_has_forgehephaestos_any = {
+	OR = {
+		has_megastructure = im_forgehephaestos_base
+		has_megastructure = im_forgehephaestos_iris
+		has_megastructure = im_forgehephaestos_armature
+		has_megastructure = im_forgehephaestos_half1
+		has_megastructure = im_forgehephaestos_half2
+		has_megastructure = im_forgehephaestos_nearcomplete
+		has_megastructure = im_forgehephaestos_full
+	}
+}
+
+im_has_forgeares_any = {
+	OR = {
+		has_megastructure = im_aresforge_base
+		has_megastructure = im_aresforge_ring
+		has_megastructure = im_aresforge_shieldplus
+		has_megastructure = im_aresforge_complete
+	}
+}
+
+im_has_daedalusbrain_any = {
+	OR = {
+		has_megastructure = im_daedalusbrain_base
+		has_megastructure = im_daedalusbrain_hull
+		has_megastructure = im_daedalusbrain_complete
+	}
+}

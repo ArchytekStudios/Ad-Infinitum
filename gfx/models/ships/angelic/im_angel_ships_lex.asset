@@ -1,0 +1,111 @@
+entity = {
+	name = "im_angelic_seraphim_entity"
+	pdxmesh = "im_seraphim_mesh"
+	scale = 2
+	
+	locator = { name = "part_01" position = { 0 0 0 } }
+	locator = { name = "part1" position = { 0 0 0 } }
+	
+	default_state = "idle"
+	
+	state = { name = "idle"
+        start_event = { trigger_once = yes sound = { soundeffect = "amb_fallen_empire_warship_01" } }	
+	}
+	
+	game_data = {
+		emissive_recolor_crunch = 0.0
+	}
+}
+
+entity = {
+	name = "im_angelic_cherubim_entity"
+	pdxmesh = "im_archangel_mesh"
+	scale = 2
+	
+	locator = { name = "part_01" position = { 0 0 0 } }
+	locator = { name = "part1" position = { 0 0 0 } }
+	
+	default_state = "idle"
+	
+	state = { name = "idle"
+        start_event = { trigger_once = yes sound = { soundeffect = "amb_fallen_empire_warship_01" } }	
+	}
+
+	game_data = {
+		emissive_recolor_crunch = 0.0
+	}
+}
+
+entity = {
+	name = "im_angelic_ophanim_entity"
+	pdxmesh = "im_ophanim_mesh"
+	scale = 4
+	
+	locator = { name = "part_01" position = { 0 0 0 } }
+	locator = { name = "part1" position = { 0 0 0 } }
+	
+	default_state = "idle"
+	
+	state = { name = "idle"
+        start_event = { trigger_once = yes sound = { soundeffect = "amb_fallen_empire_warship_01" } }	
+	}
+
+	game_data = {
+		emissive_recolor_crunch = 0.0
+	}
+}
+
+entity = {
+	name = "im_angelic_ophanim_megas_entity"
+	pdxmesh = "im_ophanim_mesh"
+	scale = 7.5
+	
+	locator = { name = "part_01" position = { 0 0 0 } }
+	locator = { name = "part1" position = { 0 0 0 } }
+	
+	default_state = "idle"
+	
+	state = { name = "idle"
+        start_event = { trigger_once = yes sound = { soundeffect = "amb_fallen_empire_warship_01" } }	
+	}
+
+	game_data = {
+		emissive_recolor_crunch = 0.0
+	}
+}
+
+entity = {
+	name = "im_angelic_starfire_entity"
+	pdxmesh = "im_angelic_starfire_mesh"
+	scale = 2.25
+	
+	default_state = "idle"
+	
+	state = { name = "idle"
+        start_event = { trigger_once = yes sound = { soundeffect = "amb_fallen_empire_station_01" }}		
+	}
+}
+
+entity = {
+	name = "im_ophan_frame_entity"
+	pdxmesh = "im_angelic_ophan_frame_mesh"
+	scale = 1
+}
+
+entity = {
+	name = "im_cherub_frame_entity"
+	pdxmesh = "im_angelic_cherub_frame_mesh"
+	scale = 1
+}
+
+entity = {
+	name = "im_seraph_frame_entity"
+	pdxmesh = "im_angelic_seraph_frame_mesh"
+	scale = 1
+}
+
+entity = {
+	name = "im_starfire_frame_entity"
+	pdxmesh = "im_angelic_starfire_frame_mesh"
+	scale = 1
+}

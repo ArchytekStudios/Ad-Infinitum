@@ -1,0 +1,13 @@
+sc_im_searing_star = {
+	class = im_searing_star
+	planet = { key = pc_im_searing_star }
+	arkship_picture = "arkship_class_a" #?placeholder
+	spawn_odds = 0
+
+	is_environmental_hazard = yes
+	modifier = { # Evhaz modifier
+		ship_armor_reduction = 0.25
+		ship_shield_reduction = 0.25
+		ship_speed_reduction = 0.5
+	}
+}

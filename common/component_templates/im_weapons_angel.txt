@@ -1,0 +1,293 @@
+
+weapon_component_template = {
+	key = "IM_ANGEL_LASER_PD"
+	component_set = "IM_ANGEL_LASER_PD"
+	icon = "GFX_infinity_angel_laser_pd"
+	size = point_defence
+	type = instant
+	power = -25
+	potential = { is_angel_ship = yes }
+
+	tags = { im_angel_weapon weapon_type_energy weapon_type_point_defense }
+	ai_tags = { weapon_type_point_defense weapon_type_energy }
+	projectile_gfx = "im_angel_laser_s"
+
+	damage = {
+		min = 12
+		max = 24
+	}
+	windup = {
+		min = 1
+		max = 5
+	}
+	total_fire_time = 2
+	accuracy = 0.9
+	range = 35
+	tracking = 0.9
+
+	target_focus = single
+	target_type = target_enemies
+
+	point_defence_targets = { missile strike_craft }
+
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 7
+			im_infinitymatter = 2
+		}
+		upkeep = {
+			im_infinityenergy = 0.1
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "IM_ANGEL_LASER_S"
+	component_set = "IM_ANGEL_LASER_S"
+	icon = "GFX_infinity_angel_laser_s"
+	size = small
+	type = instant
+	power = -35
+	potential = { is_angel_ship = yes }
+
+	tags = { im_angel_weapon weapon_type_energy s_slot }
+	ai_tags = { s_slot weapon_type_energy }
+	projectile_gfx = "im_angel_laser_s"
+
+	damage = {
+		min = 24
+		max = 48
+	}
+	windup = {
+		min = 1
+		max = 5
+	}
+	total_fire_time = 5
+	accuracy = 0.85
+	range = 50
+	tracking = 0.85
+
+	target_focus = single
+	target_type = target_enemies
+
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 10
+			im_infinitymatter = 4
+		}
+		upkeep = {
+			im_infinityenergy = 0.1
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "IM_ANGEL_LASER_M"
+	component_set = "IM_ANGEL_LASER_M"
+	icon = "GFX_infinity_angel_laser_m"
+	size = medium
+	type = instant
+	power = -45
+	potential = { is_angel_ship = yes }
+
+	tags = { im_angel_weapon weapon_type_energy m_slot }
+	ai_tags = { m_slot weapon_type_energy }
+	projectile_gfx = "im_angel_laser_m"
+
+	damage = {
+		min = 94
+		max = 187
+	}
+	windup = {
+		min = 2
+		max = 10
+	}
+	total_fire_time = 7
+	accuracy = 0.82
+	range = 75
+	tracking = 0.82
+
+	target_focus = single
+	target_type = target_enemies
+
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 12
+			im_infinitymatter = 6
+		}
+		upkeep = {
+			im_infinityenergy = 0.2
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "IM_ANGEL_BOMBARDMENT"
+	component_set = "IM_ANGEL_BOMBARDMENT"
+	icon = "GFX_infinity_angel_bombardment_g"
+	size = torpedo
+	type = instant
+	power = -45
+	potential = { is_angel_ship = yes }
+	prerequisites = { tech_honorguard_l3_3 }
+
+	tags = { im_angel_weapon weapon_type_energy g_slot }
+	ai_tags = { g_slot weapon_type_energy }
+	projectile_gfx = "plasma_thrower_m"
+
+	damage = {
+		min = 60
+		max = 247
+	}
+	windup = {
+		min = 2
+		max = 10
+	}
+	total_fire_time = 6
+	accuracy = 0.82
+	range = 75
+	tracking = 0.82
+
+	target_focus = single
+	target_type = target_enemies
+
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 18
+			im_infinitymatter = 10
+		}
+		upkeep = {
+			im_infinityenergy = 0.3
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "IM_ANGEL_LASER_L"
+	component_set = "IM_ANGEL_LASER_L"
+	icon = "GFX_infinity_angel_laser_l"
+	size = large
+	type = instant
+	power = -90
+	potential = { is_angel_ship = yes }
+	prerequisites = { tech_honorguard_l3 }
+
+	tags = { im_angel_weapon weapon_type_energy l_slot }
+	ai_tags = { l_slot weapon_type_energy }
+	projectile_gfx = "im_angel_laser_l"
+
+	damage = {
+		min = 375
+		max = 750
+	}
+	windup = {
+		min = 2
+		max = 10
+	}
+	total_fire_time = 5
+	accuracy = 0.82
+	range = 100
+	tracking = 0.82
+
+	target_focus = single
+	target_type = target_enemies
+
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 24
+			im_infinitymatter = 12
+		}
+		upkeep = {
+			im_infinityenergy = 0.4
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "IM_ANGEL_LASER_XL"
+	component_set = "IM_ANGEL_LASER_XL"
+	icon = "GFX_infinity_angel_laser_xl"
+	size = extra_large
+	type = instant
+	power = -180
+	potential = { is_angel_ship = yes }
+	prerequisites = { tech_seraphim_ship }
+
+	tags = { im_angel_weapon weapon_type_energy x_slot }
+	ai_tags = { x_slot weapon_type_energy }
+	projectile_gfx = "im_angel_laser_l"
+
+	damage = {
+		min = 1250
+		max = 2500
+	}
+	windup = {
+		min = 2
+		max = 10
+	}
+	total_fire_time = 5
+	accuracy = 0.82
+	range = 125
+	tracking = 0.82
+
+	target_focus = single
+	target_type = target_enemies
+
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 32
+			im_infinitymatter = 16
+		}
+		upkeep = {
+			im_infinityenergy = 0.6
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "IM_ANGEL_LANCE"
+	component_set = "IM_ANGEL_LANCE"
+	icon = "GFX_infinity_angel_lance"
+	size = titanic
+	type = instant
+	power = -200
+	potential = { is_angel_ship = yes }
+	prerequisites = { tech_seraphim_ship }
+
+	tags = { im_angel_weapon weapon_type_energy t_slot }
+	ai_tags = { t_slot weapon_type_energy }
+	projectile_gfx = "im_angel_laser_xl"
+
+	damage = {
+		min = 5000
+		max = 10000
+	}
+	windup = {
+		min = 2
+		max = 12
+	}
+	total_fire_time = 5
+	accuracy = 0.82
+	range = 250
+	tracking = 0.82
+
+	target_focus = single
+	target_type = target_enemies
+
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 50
+			im_infinitymatter = 25
+		}
+		upkeep = {
+			im_infinityenergy = 1
+		}
+	}
+}

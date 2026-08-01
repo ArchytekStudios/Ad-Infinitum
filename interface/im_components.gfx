@@ -1,0 +1,171 @@
+spriteTypes = {
+    
+    spriteType = {
+        name = "GFX_infinity_angel_core" # Heart of the Shroud
+        textureFile = "gfx/interface/icons/ship_parts/infinity_angel_core.dds"
+    }
+
+    spriteType = {
+        name = "GFX_infinity_angel_defense" # Will of Andrasta
+        textureFile = "gfx/interface/icons/ship_parts/infinity_angel_defense.dds"
+    }
+
+    spriteType = {
+        name = "GFX_infinity_angel_ftl" # Hermes Jumpdrive
+        textureFile = "gfx/interface/icons/ship_parts/infinity_angel_ftl.dds"
+    }
+
+    spriteType = {
+        name = "GFX_infinity_angel_intel" # Thoth Intellect Chip
+        textureFile = "gfx/interface/icons/ship_parts/infinity_angel_intel.dds"
+    }
+
+    spriteType = {
+        name = "GFX_infinity_angel_thruster" # Ra's Chariot
+        textureFile = "gfx/interface/icons/ship_parts/infinity_angel_thruster.dds"
+    }
+
+    spriteType = {
+        name = "GFX_infinity_angel_sk" # Ragnarok starkiller
+        textureFile = "gfx/interface/icons/ship_parts/infinity_angel_sk.dds"
+    }
+
+    spriteType = {
+        name = "GFX_infinity_angel_lance" # Fenrir Lance
+        textureFile = "gfx/interface/icons/ship_parts/infinity_angel_lance.dds"
+    }
+
+    spriteType = {
+        name = "GFX_infinity_angel_laser_xl" # Lance of Tyr
+        textureFile = "gfx/interface/icons/ship_parts/infinity_angel_laser_xl.dds"
+    }
+
+    spriteType = {
+        name = "GFX_infinity_angel_laser_l" # Sword of Ares
+        textureFile = "gfx/interface/icons/ship_parts/infinity_angel_laser_l.dds"
+    }
+
+    spriteType = {
+        name = "GFX_infinity_angel_laser_m" # Bow of Artemis
+        textureFile = "gfx/interface/icons/ship_parts/infinity_angel_laser_m.dds"
+    }
+
+    spriteType = {
+        name = "GFX_infinity_angel_bombardment_g" # Mixcoatl's Hunt
+        textureFile = "gfx/interface/icons/ship_parts/infinity_angel_bombardment_g.dds"
+    }
+
+    spriteType = {
+        name = "GFX_infinity_angel_laser_s" # Spear of Gabriel
+        textureFile = "gfx/interface/icons/ship_parts/infinity_angel_laser_s.dds"
+    }
+
+    spriteType = {
+        name = "GFX_infinity_angel_laser_pd" # Will of the Ship
+        textureFile = "gfx/interface/icons/ship_parts/infinity_angel_laser_pd.dds"
+    }
+
+    ##     ANGEL ^  ##
+    ## ------------ ##
+    ## NON-ANGEL v  ##
+
+    spriteType = {
+        name = "GFX_infinity_armor" # Palladin Armor
+        textureFile = "gfx/interface/icons/ship_parts/ship_part_infinity_armor.dds"
+    }
+    
+    spriteType = {
+        name = "GFX_infinity_core" # Singularity Core
+        textureFile = "gfx/interface/icons/ship_parts/ship_part_infinity_core.dds"
+    }
+
+    spriteType = {
+        name = "GFX_infinity_disintegrator" # Atomic Disintegrator (PD)
+        textureFile = "gfx/interface/icons/ship_parts/ship_part_infinity_disintegrator_pd.dds"
+    }
+
+    spriteType = {
+        name = "GFX_infinity_energy_lance" # Supernova Lance (XL)
+        textureFile = "gfx/interface/icons/ship_parts/ship_part_infinity_energy_lance.dds"
+    }
+
+    spriteType = {
+        name = "GFX_infinity_ftl" # Singularity Jumpdrive
+        textureFile = "gfx/interface/icons/ship_parts/ship_part_infinity_ftl.dds"
+    }
+
+    spriteType = {
+        name = "GFX_infinity_hangar_heavy" # Assassin Deployer
+        textureFile = "gfx/interface/icons/ship_parts/ship_part_infinity_hangar_heavy.dds"
+    }
+
+    spriteType = {
+        name = "GFX_infinity_hangar_light" # Heir Deployer
+        textureFile = "gfx/interface/icons/ship_parts/ship_part_infinity_hangar_light.dds"
+    }
+
+    spriteType = {
+        name = "GFX_infinity_intel" # Singularity Intelligence
+        textureFile = "gfx/interface/icons/ship_parts/ship_part_infinity_intel.dds"
+    }
+
+    spriteType = {
+        name = "GFX_infinity_laser_platform" # Sunburn Platform (L)
+        textureFile = "gfx/interface/icons/ship_parts/ship_part_infinity_laser_platform.dds"
+    }
+
+    spriteType = {
+        name = "GFX_infinity_reconstitution_beam" # Reconstitution Beam (PK)
+        textureFile = "gfx/interface/icons/ship_parts/ship_part_infinity_reconstitution_beam.dds"
+    }
+
+    spriteType = {
+        name = "GFX_infinity_searing_laser" # Searing Laser (S, M, L)
+        textureFile = "gfx/interface/icons/ship_parts/ship_part_infinity_searing_laser.dds"
+    }
+
+    spriteType = {
+        name = "GFX_infinity_sensor" # Singularity Radar
+        textureFile = "gfx/interface/icons/ship_parts/ship_part_infinity_sensor.dds"
+    }
+
+    spriteType = {
+        name = "GFX_infinity_shield" # Palladin Shield
+        textureFile = "gfx/interface/icons/ship_parts/ship_part_infinity_shield.dds"
+    }
+
+    spriteType = {
+        name = "GFX_infinity_starbeam" # Stellar Overture Beam (T)
+        textureFile = "gfx/interface/icons/ship_parts/ship_part_infinity_starbeam.dds"
+    }
+
+    spriteType = {
+        name = "GFX_infinity_thruster" # Singularity Point-Thrust System
+        textureFile = "gfx/interface/icons/ship_parts/ship_part_infinity_thruster.dds"
+    }
+
+    spriteType = {
+        name = "GFX_infinity_armor_hardener"
+        textureFile = "gfx/interface/icons/ship_parts/infinity_armor_hardener.dds"
+    }
+
+    spriteType = {
+        name = "GFX_infinity_shield_hardener"
+        textureFile = "gfx/interface/icons/ship_parts/infinity_shield_hardener.dds"
+    }
+
+    spriteType = {
+        name = "GFX_infinity_engine_amplifier"
+        textureFile = "gfx/interface/icons/ship_parts/infinity_engine_amplifier.dds"
+    }
+
+    spriteType = {
+        name = "GFX_infinity_weapon_enhancer"
+        textureFile = "gfx/interface/icons/ship_parts/infinity_weapon_enhancer.dds"
+    }
+
+    spriteType = {
+        name = "GFX_infinity_sear_deflector"
+        textureFile = "gfx/interface/icons/ship_parts/ship_part_im_sear_deflector.dds"
+    }
+}

@@ -1,0 +1,102 @@
+
+entity = {
+	name = "im_forgehephaestos_constructionbase_entity"
+
+	locator = { name = "part1" position = { 0 0 0 } rotation = { 0 0 0 } scale = 0.75 }
+	attach = { "part1" = "im_angelic_ring_small_entity" }
+}
+
+entity = {
+	name = "im_forgehephaestos_iris_entity"
+
+	locator = { name = "part0" }#			L U F				 Y P R
+	locator = { name = "iris1" position = { 0 20 0 } rotation = { 0 0 0 } scale = 0.25 }
+	locator = { name = "iris2" position = { 0 -20 0 } rotation = { 0 180 0 } scale = 0.25 }
+	locator = { name = "shield" scale = 2.75 }
+
+	attach = { 
+		"part0" = "im_forgehephaestos_constructionbase_entity"
+		"shield" = "planet_shield_effect_entity"
+	}
+
+	attach = { "iris1" = "im_angelic_station_small_entity" }
+	attach = { "iris2" = "im_angelic_station_small_entity" }
+}
+
+entity = {
+	name = "im_forgehephaestos_armature_entity"
+
+	locator = { name = "part0" }
+	locator = { name = "armature" position = { 0 0 0 } rotation = { 0 0 0 } scale = 1.15 }
+	locator = { name = "link1" position = { 0 -0.75 -27 } rotation = { 0 90 0 } scale = 0.25 }
+	locator = { name = "link2" position = { 0 -0.75 28 } rotation = { 0 90 0 } scale = 0.25 }
+
+	attach = { "part0" = "im_forgehephaestos_iris_entity" }
+	attach = { "armature" = "im_angelic_ring_large_entity" }
+	attach = {
+		"link1" = "im_angelic_station_large_entity"
+		"link2" = "im_angelic_station_large_entity"
+	}
+}
+
+entity = {
+	name = "im_forgehephaestos_half1_entity"
+
+	locator = { name = "part0" }#				 L U F				  Y P R
+	locator = { name = "forge1_top" position = { 0 17.5 43.5 } rotation = { 0 90 0 } scale = 0.5 } # bottom should be the Cherub models
+	locator = { name = "forge2_top" position = { 44.5 17.5 0 } rotation = { 0 90 0 } scale = 0.5 } # with rings in center.
+	locator = { name = "forge3_top" position = { 0 17.5 -43.5 } rotation = { 0 90 0 } scale = 0.5 }
+	locator = { name = "forge4_top" position = { -43.5 17.5 0 } rotation = { 0 90 0 } scale = 0.5 }
+
+	attach = { "part0" = "im_forgehephaestos_armature_entity" }
+
+	attach = {
+		"forge1_top" = "im_angelic_titan_entity"
+		"forge2_top" = "im_angelic_titan_entity"
+		"forge3_top" = "im_angelic_titan_entity"
+		"forge4_top" = "im_angelic_titan_entity"
+	}
+}
+
+entity = {
+	name = "im_forgehephaestos_half2_entity"
+
+	locator = { name = "part0" }#				 L U F				  Y P R
+	locator = { name = "forge1_bot" position = { 0 -21.5 45.5 } rotation = { 0 -90 0 } scale = 0.75 }
+	locator = { name = "forge2_bot" position = { 44.5 -21.5 2 } rotation = { 0 -90 0 } scale = 0.75 }
+	locator = { name = "forge3_bot" position = { 0 -21.5 -41.5 } rotation = { 0 -90 0 } scale = 0.75 }
+	locator = { name = "forge4_bot" position = { -43.5 -21.5 2 } rotation = { 0 -90 0 } scale = 0.75 }
+	locator = { name = "forge1_ring" position = { 0 -21.5 43.5 } rotation = { 0 0 0 } scale = 0.5 }
+	locator = { name = "forge2_ring" position = { 44.5 -21.5 0 } rotation = { 0 0 0 } scale = 0.5 }
+	locator = { name = "forge3_ring" position = { 0 -21.5 -43.5 } rotation = { 0 0 0 } scale = 0.5 }
+	locator = { name = "forge4_ring" position = { -43.5 -21.5 0 } rotation = { 0 0 0 } scale = 0.5 }
+
+	attach = { "part0" = "im_forgehephaestos_half1_entity" }
+
+	attach = {
+		"forge1_bot" = "im_angelic_cherubim_entity"
+		"forge2_bot" = "im_angelic_cherubim_entity"
+		"forge3_bot" = "im_angelic_cherubim_entity"
+		"forge4_bot" = "im_angelic_cherubim_entity"
+	}
+	attach = {
+		"forge1_ring" = "im_angelic_ring_small_entity"
+		"forge2_ring" = "im_angelic_ring_small_entity"
+		"forge3_ring" = "im_angelic_ring_small_entity"
+		"forge4_ring" = "im_angelic_ring_small_entity"
+	}
+}
+
+entity = {
+	name = "im_forgehephaestos_nearcomplete_entity"
+
+	locator = { name = "part0" }
+	locator = { name = "armature2" position = { 0 -2 0 } rotation = { 90 0 90 } scale = 0.75 }
+	locator = { name = "shield" scale = 5.25 }
+	attach = { "part0" = "im_forgehephaestos_half2_entity" }
+
+	attach = {
+		"armature2" = "im_angelic_ring_large_entity"
+		"shield" = "planet_shield_effect_entity"
+	}
+}

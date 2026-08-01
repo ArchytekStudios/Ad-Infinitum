@@ -1,0 +1,68 @@
+
+special_project = {
+	key = "IM_INFINITYCRISIS_STRUCTMAST"
+	location = no
+	event_scope = country_event
+	cost = 4500
+	tech_department = engineering_technology
+	picture = GFX_evt_city_planet
+
+	requirements = {}
+	on_success = {
+		country_event = { id = im_angel_crisis.2050 }
+		add_research_option = tech_mega_engineering
+		add_research_option = tech_robomodding
+		add_research_option = tech_robot_assembly_complex
+		add_research_option = tech_robotic_workers
+	}
+}
+
+special_project = {
+	key = "IM_INFINITYCRISIS_BIOMAST"
+	location = no
+	event_scope = country_event
+	cost = 9000
+	tech_department = society_technology
+	picture = GFX_evt_alien_nature
+
+	requirements = {}
+	on_success = {
+		country_event = { id = im_angel_crisis.2025 }
+		add_research_option = tech_epigenetic_triggers
+		add_research_option = tech_cloning
+		add_research_option = tech_gene_expressions
+		add_research_option = tech_gene_seed_purification
+		add_research_option = tech_gene_tailoring
+	}
+}
+
+special_project = {
+	key = "IM_INFINITYCRISIS_PSIMAST"
+	location = no
+	event_scope = country_event
+	cost = 18000
+	tech_department = society_technology
+	picture = GFX_evt_psionics
+	
+	requirements = {}
+	on_success = {
+		country_event = { id = im_angel_crisis.2075 }
+		add_research_option = tech_psionic_theory
+		add_research_option = tech_psi_jump_drive_1
+		add_research_option = tech_mine_zro
+	}
+}
+
+special_project = {
+	key = "IM_INFINITYCRISIS_PREDIV"
+	location = no
+	event_scope = country_event
+	cost = 36000
+	tech_department = physics_technology
+	picture = GFX_evt_fallen_empire_awakes
+	
+	requirements = {}
+	on_success = {
+		country_event = { id = im_angel_crisis.2100 }
+	}
+}

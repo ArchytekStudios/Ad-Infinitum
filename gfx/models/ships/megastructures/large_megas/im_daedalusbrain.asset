@@ -1,0 +1,29 @@
+
+entity = {
+	name = "im_daedalusbrain_base_entity"
+
+	locator = { name = "ring1" scale = 1.25 }
+	locator = { name = "ring2" rotation = {0 90 0} scale = 1.25 }
+	attach = {
+		"ring1" = "im_angelic_ring_large_entity"
+		"ring2" = "im_angelic_ring_small_entity"
+	}
+}
+
+entity = {
+	name = "im_daedalusbrain_hull_entity"
+	locator = { name = "origin" }
+	attach = { "origin" = "im_daedalusbrain_base_entity" }
+
+	locator = { name = "hull" rotation = {0 90 0} scale = 0.75 }
+	attach = { "hull" = "im_angelic_colossus_ship_entity" }
+}
+
+entity = {
+	name = "im_daedalusbrain_complete_entity"
+	locator = { name = "origin" }
+	attach = { "origin" = "im_daedalusbrain_hull_entity" }
+
+	#locator = { name = "shield" scale = 9.0 }
+	#attach = { "shield" = "planet_shield_effect_entity" }
+}

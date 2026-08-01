@@ -1,0 +1,423 @@
+### thank you LEX but HOLY SHIT 25 PHASES?!? ###
+
+entity = {
+	name = "im_angelic_megastructure_weapon_core_entity"
+	pdxmesh = "im_angelic_megastructure_weapon_core_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { trigger_once = yes sound = { soundeffect = "fallen_empire_colossus_idle" } }
+	}
+}
+
+entity = {
+	name = "im_angelic_megastructure_weapon_structure_entity"
+	pdxmesh = "im_angelic_megastructure_weapon_structure_mesh"
+}
+
+entity = {
+	name = "im_angelic_megastructure_weapon_mount_entity"
+	pdxmesh = "im_angelic_megastructure_weapon_mount_mesh"
+}
+
+entity = {
+	name = "im_angelic_megastructure_weapon_s_fin_entity"
+	pdxmesh = "im_angelic_megastructure_weapon_s_fin_mesh"
+}
+
+entity = {
+	name = "im_angelic_megastructure_weapon_l_fin_entity"
+	pdxmesh = "im_angelic_megastructure_weapon_l_fin_mesh"
+}
+
+entity = {
+	name = "im_angelic_megastructure_weapon_reactor_entity"
+	pdxmesh = "im_angelic_megastructure_weapon_reactor_mesh"
+}
+
+#Phase1
+entity = {
+	name = "im_arkweapon_core_phase_entity"
+
+		locator = { name = "core" 			    position = { 0 0 0 } rotation = { 0 0 0 } }
+
+		attach = { "core"	= "im_angelic_megastructure_weapon_core_entity" }
+	
+	scale = 1.0
+	cull_radius = 1000
+}
+
+entity = {
+	name = "im_arkweapon_core_phase_construction_entity"
+
+		locator = { name = "core" 			    position = { 0 0 0 } rotation = { 0 0 0 } }
+		
+		default_state = "idle"
+		state = { name = "idle"
+			start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
+		}
+
+		attach = { "core"	= "im_angelic_megastructure_weapon_core_entity" }
+	
+	scale = 1.0
+	cull_radius = 1000
+}
+
+#Phase2
+entity = {
+	name = "im_arkweapon_hyperstructure_phase_entity"
+
+		locator = { name = "core" 			    position = { 0 0 0 } rotation = { 0 0 0 } }
+		
+		locator = { name = "structure_1" 		position = { 0 0 0 } rotation = { 0 0 0 } }
+		locator = { name = "structure_2" 		position = { 0 0 0 } rotation = { 0 0 60 } }
+		locator = { name = "structure_3" 		position = { 0 0 0 } rotation = { 0 0 120 } }
+		locator = { name = "structure_4" 		position = { 0 0 0 } rotation = { 0 0 180 } }
+		locator = { name = "structure_5" 		position = { 0 0 0 } rotation = { 0 0 240 } }
+		locator = { name = "structure_6" 		position = { 0 0 0 } rotation = { 0 0 300 } }
+
+		attach = { core	= "im_angelic_megastructure_weapon_core_entity" }
+		
+		attach = { structure_1 = "im_angelic_megastructure_weapon_structure_entity" }
+		attach = { structure_2 = "im_angelic_megastructure_weapon_structure_entity" }
+		attach = { structure_3 = "im_angelic_megastructure_weapon_structure_entity" }
+		attach = { structure_4 = "im_angelic_megastructure_weapon_structure_entity" }
+		attach = { structure_5 = "im_angelic_megastructure_weapon_structure_entity" }
+		attach = { structure_6 = "im_angelic_megastructure_weapon_structure_entity" }
+	
+	scale = 1.0
+	cull_radius = 1000
+}
+
+entity = {
+	name = "im_arkweapon_hyperstructure_phase_construction_entity"
+
+		locator = { name = "structure_1" 		position = { 0 0 0 } rotation = { 0 0 0 } }
+		locator = { name = "structure_2" 		position = { 0 0 0 } rotation = { 0 0 60 } }
+		locator = { name = "structure_3" 		position = { 0 0 0 } rotation = { 0 0 120 } }
+		locator = { name = "structure_4" 		position = { 0 0 0 } rotation = { 0 0 180 } }
+		locator = { name = "structure_5" 		position = { 0 0 0 } rotation = { 0 0 240 } }
+		locator = { name = "structure_6" 		position = { 0 0 0 } rotation = { 0 0 300 } }
+
+		default_state = "idle"
+		state = { name = "idle"
+			start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
+		}
+		
+		attach = { structure_1 = "im_angelic_megastructure_weapon_structure_entity" }
+		attach = { structure_2 = "im_angelic_megastructure_weapon_structure_entity" }
+		attach = { structure_3 = "im_angelic_megastructure_weapon_structure_entity" }
+		attach = { structure_4 = "im_angelic_megastructure_weapon_structure_entity" }
+		attach = { structure_5 = "im_angelic_megastructure_weapon_structure_entity" }
+		attach = { structure_6 = "im_angelic_megastructure_weapon_structure_entity" }
+	
+	scale = 1.0
+	cull_radius = 1000
+}
+
+#Phase3
+entity = {
+	name = "im_arkweapon_wepmount_phase_entity"
+
+		locator = { name = "core" 			    position = { 0 0 0 } rotation = { 0 0 0 } }
+		
+		locator = { name = "structure_1" 		position = { 0 0 0 } rotation = { 0 0 0 } }
+		locator = { name = "structure_2" 		position = { 0 0 0 } rotation = { 0 0 60 } }
+		locator = { name = "structure_3" 		position = { 0 0 0 } rotation = { 0 0 120 } }
+		locator = { name = "structure_4" 		position = { 0 0 0 } rotation = { 0 0 180 } }
+		locator = { name = "structure_5" 		position = { 0 0 0 } rotation = { 0 0 240 } }
+		locator = { name = "structure_6" 		position = { 0 0 0 } rotation = { 0 0 300 } }
+		
+		locator = { name = "mount_1" 			position = { 0 0 0 } rotation = { 0 0 0 } }
+		locator = { name = "mount_2" 			position = { 0 0 0 } rotation = { 0 0 60 } }
+		locator = { name = "mount_3" 			position = { 0 0 0 } rotation = { 0 0 120 } }
+		locator = { name = "mount_4" 			position = { 0 0 0 } rotation = { 0 0 180 } }
+		locator = { name = "mount_5" 			position = { 0 0 0 } rotation = { 0 0 240 } }
+		locator = { name = "mount_6" 			position = { 0 0 0 } rotation = { 0 0 300 } }
+
+		attach = { core	= "im_angelic_megastructure_weapon_core_entity" }
+		
+		attach = { structure_1 = "im_angelic_megastructure_weapon_structure_entity" }
+		attach = { structure_2 = "im_angelic_megastructure_weapon_structure_entity" }
+		attach = { structure_3 = "im_angelic_megastructure_weapon_structure_entity" }
+		attach = { structure_4 = "im_angelic_megastructure_weapon_structure_entity" }
+		attach = { structure_5 = "im_angelic_megastructure_weapon_structure_entity" }
+		attach = { structure_6 = "im_angelic_megastructure_weapon_structure_entity" }
+		
+		attach = { mount_1 = "im_angelic_megastructure_weapon_mount_entity" }
+		attach = { mount_2 = "im_angelic_megastructure_weapon_mount_entity" }
+		attach = { mount_3 = "im_angelic_megastructure_weapon_mount_entity" }
+		attach = { mount_4 = "im_angelic_megastructure_weapon_mount_entity" }
+		attach = { mount_5 = "im_angelic_megastructure_weapon_mount_entity" }
+		attach = { mount_6 = "im_angelic_megastructure_weapon_mount_entity" }
+	
+	scale = 1.0
+	cull_radius = 1000
+}
+
+entity = {
+	name = "im_arkweapon_wepmount_phase_construction_entity"
+
+		default_state = "idle"
+		state = { name = "idle"
+			start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
+		}
+		
+		locator = { name = "mount_1" 			position = { 0 0 0 } rotation = { 0 0 0 } }
+		locator = { name = "mount_2" 			position = { 0 0 0 } rotation = { 0 0 60 } }
+		locator = { name = "mount_3" 			position = { 0 0 0 } rotation = { 0 0 120 } }
+		locator = { name = "mount_4" 			position = { 0 0 0 } rotation = { 0 0 180 } }
+		locator = { name = "mount_5" 			position = { 0 0 0 } rotation = { 0 0 240 } }
+		locator = { name = "mount_6" 			position = { 0 0 0 } rotation = { 0 0 300 } }
+
+		attach = { mount_1 = "im_angelic_megastructure_weapon_mount_entity" }
+		attach = { mount_2 = "im_angelic_megastructure_weapon_mount_entity" }
+		attach = { mount_3 = "im_angelic_megastructure_weapon_mount_entity" }
+		attach = { mount_4 = "im_angelic_megastructure_weapon_mount_entity" }
+		attach = { mount_5 = "im_angelic_megastructure_weapon_mount_entity" }
+		attach = { mount_6 = "im_angelic_megastructure_weapon_mount_entity" }
+	
+	scale = 1.0
+	cull_radius = 1000
+}
+
+#Phase4
+entity = {
+	name = "im_arkweapon_supramount_fins_phase_entity"
+
+		locator = { name = "core" 			    position = { 0 0 0 } rotation = { 0 0 0 } }
+		
+		locator = { name = "structure_1" 		position = { 0 0 0 } rotation = { 0 0 0 } }
+		locator = { name = "structure_2" 		position = { 0 0 0 } rotation = { 0 0 60 } }
+		locator = { name = "structure_3" 		position = { 0 0 0 } rotation = { 0 0 120 } }
+		locator = { name = "structure_4" 		position = { 0 0 0 } rotation = { 0 0 180 } }
+		locator = { name = "structure_5" 		position = { 0 0 0 } rotation = { 0 0 240 } }
+		locator = { name = "structure_6" 		position = { 0 0 0 } rotation = { 0 0 300 } }
+		
+		locator = { name = "mount_1" 			position = { 0 0 0 } rotation = { 0 0 0 } }
+		locator = { name = "mount_2" 			position = { 0 0 0 } rotation = { 0 0 60 } }
+		locator = { name = "mount_3" 			position = { 0 0 0 } rotation = { 0 0 120 } }
+		locator = { name = "mount_4" 			position = { 0 0 0 } rotation = { 0 0 180 } }
+		locator = { name = "mount_5" 			position = { 0 0 0 } rotation = { 0 0 240 } }
+		locator = { name = "mount_6" 			position = { 0 0 0 } rotation = { 0 0 300 } }
+		
+		locator = { name = "s_fin_1" 			position = { 0 0 0 } rotation = { 0 0 0 } }
+		locator = { name = "s_fin_2" 			position = { 0 0 0 } rotation = { 0 0 120 } }
+		locator = { name = "s_fin_3" 			position = { 0 0 0 } rotation = { 0 0 240 } }
+
+		attach = { core	= "im_angelic_megastructure_weapon_core_entity" }
+		
+		attach = { structure_1 = "im_angelic_megastructure_weapon_structure_entity" }
+		attach = { structure_2 = "im_angelic_megastructure_weapon_structure_entity" }
+		attach = { structure_3 = "im_angelic_megastructure_weapon_structure_entity" }
+		attach = { structure_4 = "im_angelic_megastructure_weapon_structure_entity" }
+		attach = { structure_5 = "im_angelic_megastructure_weapon_structure_entity" }
+		attach = { structure_6 = "im_angelic_megastructure_weapon_structure_entity" }
+		
+		attach = { mount_1 = "im_angelic_megastructure_weapon_mount_entity" }
+		attach = { mount_2 = "im_angelic_megastructure_weapon_mount_entity" }
+		attach = { mount_3 = "im_angelic_megastructure_weapon_mount_entity" }
+		attach = { mount_4 = "im_angelic_megastructure_weapon_mount_entity" }
+		attach = { mount_5 = "im_angelic_megastructure_weapon_mount_entity" }
+		attach = { mount_6 = "im_angelic_megastructure_weapon_mount_entity" }
+		
+		attach = { s_fin_1 = "im_angelic_megastructure_weapon_s_fin_entity" }
+		attach = { s_fin_2 = "im_angelic_megastructure_weapon_s_fin_entity" }
+		attach = { s_fin_3 = "im_angelic_megastructure_weapon_s_fin_entity" }
+	
+	scale = 1.0
+	cull_radius = 1000
+}
+
+entity = {
+	name = "im_arkweapon_supramount_fins_phase_construction_entity"
+
+
+		default_state = "idle"
+		state = { name = "idle"
+			start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
+		}
+		
+		locator = { name = "s_fin_1" 			position = { 0 0 0 } rotation = { 0 0 0 } }
+		locator = { name = "s_fin_2" 			position = { 0 0 0 } rotation = { 0 0 120 } }
+		locator = { name = "s_fin_3" 			position = { 0 0 0 } rotation = { 0 0 240 } }
+
+		attach = { s_fin_1 = "im_angelic_megastructure_weapon_s_fin_entity" }
+		attach = { s_fin_2 = "im_angelic_megastructure_weapon_s_fin_entity" }
+		attach = { s_fin_3 = "im_angelic_megastructure_weapon_s_fin_entity" }
+	
+	scale = 1.0
+	cull_radius = 1000
+}
+
+#Phase5
+entity = {
+	name = "im_arkweapon_hypermount_fins_phase_entity"
+
+		locator = { name = "core" 			    position = { 0 0 0 } rotation = { 0 0 0 } }
+		
+		locator = { name = "structure_1" 		position = { 0 0 0 } rotation = { 0 0 0 } }
+		locator = { name = "structure_2" 		position = { 0 0 0 } rotation = { 0 0 60 } }
+		locator = { name = "structure_3" 		position = { 0 0 0 } rotation = { 0 0 120 } }
+		locator = { name = "structure_4" 		position = { 0 0 0 } rotation = { 0 0 180 } }
+		locator = { name = "structure_5" 		position = { 0 0 0 } rotation = { 0 0 240 } }
+		locator = { name = "structure_6" 		position = { 0 0 0 } rotation = { 0 0 300 } }
+		
+		locator = { name = "mount_1" 			position = { 0 0 0 } rotation = { 0 0 0 } }
+		locator = { name = "mount_2" 			position = { 0 0 0 } rotation = { 0 0 60 } }
+		locator = { name = "mount_3" 			position = { 0 0 0 } rotation = { 0 0 120 } }
+		locator = { name = "mount_4" 			position = { 0 0 0 } rotation = { 0 0 180 } }
+		locator = { name = "mount_5" 			position = { 0 0 0 } rotation = { 0 0 240 } }
+		locator = { name = "mount_6" 			position = { 0 0 0 } rotation = { 0 0 300 } }
+		
+		locator = { name = "s_fin_1" 			position = { 0 0 0 } rotation = { 0 0 0 } }
+		locator = { name = "s_fin_2" 			position = { 0 0 0 } rotation = { 0 0 120 } }
+		locator = { name = "s_fin_3" 			position = { 0 0 0 } rotation = { 0 0 240 } }
+		
+		locator = { name = "l_fin_1" 			position = { 0 0 0 } rotation = { 0 0 0 } }
+		locator = { name = "l_fin_2" 			position = { 0 0 0 } rotation = { 0 0 120 } }
+		locator = { name = "l_fin_3" 			position = { 0 0 0 } rotation = { 0 0 240 } }
+
+		attach = { core	= "im_angelic_megastructure_weapon_core_entity" }
+		
+		attach = { structure_1 = "im_angelic_megastructure_weapon_structure_entity" }
+		attach = { structure_2 = "im_angelic_megastructure_weapon_structure_entity" }
+		attach = { structure_3 = "im_angelic_megastructure_weapon_structure_entity" }
+		attach = { structure_4 = "im_angelic_megastructure_weapon_structure_entity" }
+		attach = { structure_5 = "im_angelic_megastructure_weapon_structure_entity" }
+		attach = { structure_6 = "im_angelic_megastructure_weapon_structure_entity" }
+		
+		attach = { mount_1 = "im_angelic_megastructure_weapon_mount_entity" }
+		attach = { mount_2 = "im_angelic_megastructure_weapon_mount_entity" }
+		attach = { mount_3 = "im_angelic_megastructure_weapon_mount_entity" }
+		attach = { mount_4 = "im_angelic_megastructure_weapon_mount_entity" }
+		attach = { mount_5 = "im_angelic_megastructure_weapon_mount_entity" }
+		attach = { mount_6 = "im_angelic_megastructure_weapon_mount_entity" }
+		
+		attach = { s_fin_1 = "im_angelic_megastructure_weapon_s_fin_entity" }
+		attach = { s_fin_2 = "im_angelic_megastructure_weapon_s_fin_entity" }
+		attach = { s_fin_3 = "im_angelic_megastructure_weapon_s_fin_entity" }
+		
+		attach = { l_fin_1 = "im_angelic_megastructure_weapon_l_fin_entity" }
+		attach = { l_fin_2 = "im_angelic_megastructure_weapon_l_fin_entity" }
+		attach = { l_fin_3 = "im_angelic_megastructure_weapon_l_fin_entity" }
+	
+	scale = 1.0
+	cull_radius = 1000
+}
+
+entity = {
+	name = "im_arkweapon_hypermount_fins_phase_construction_entity"
+
+		locator = { name = "l_fin_1" 			position = { 0 0 0 } rotation = { 0 0 0 } }
+		locator = { name = "l_fin_2" 			position = { 0 0 0 } rotation = { 0 0 120 } }
+		locator = { name = "l_fin_3" 			position = { 0 0 0 } rotation = { 0 0 240 } }
+		
+		default_state = "idle"
+		state = { name = "idle"
+			start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
+		}
+
+		attach = { l_fin_1 = "im_angelic_megastructure_weapon_l_fin_entity" }
+		attach = { l_fin_2 = "im_angelic_megastructure_weapon_l_fin_entity" }
+		attach = { l_fin_3 = "im_angelic_megastructure_weapon_l_fin_entity" }
+	
+	scale = 1.0
+	cull_radius = 1000
+}
+
+#Phase6
+entity = {
+	name = "im_arkweapon_gigareactors_phase_entity"
+
+		locator = { name = "core" 			    position = { 0 0 0 } rotation = { 0 0 0 } }
+		
+		locator = { name = "structure_1" 		position = { 0 0 0 } rotation = { 0 0 0 } }
+		locator = { name = "structure_2" 		position = { 0 0 0 } rotation = { 0 0 60 } }
+		locator = { name = "structure_3" 		position = { 0 0 0 } rotation = { 0 0 120 } }
+		locator = { name = "structure_4" 		position = { 0 0 0 } rotation = { 0 0 180 } }
+		locator = { name = "structure_5" 		position = { 0 0 0 } rotation = { 0 0 240 } }
+		locator = { name = "structure_6" 		position = { 0 0 0 } rotation = { 0 0 300 } }
+		
+		locator = { name = "mount_1" 			position = { 0 0 0 } rotation = { 0 0 0 } }
+		locator = { name = "mount_2" 			position = { 0 0 0 } rotation = { 0 0 60 } }
+		locator = { name = "mount_3" 			position = { 0 0 0 } rotation = { 0 0 120 } }
+		locator = { name = "mount_4" 			position = { 0 0 0 } rotation = { 0 0 180 } }
+		locator = { name = "mount_5" 			position = { 0 0 0 } rotation = { 0 0 240 } }
+		locator = { name = "mount_6" 			position = { 0 0 0 } rotation = { 0 0 300 } }
+		
+		locator = { name = "s_fin_1" 			position = { 0 0 0 } rotation = { 0 0 0 } }
+		locator = { name = "s_fin_2" 			position = { 0 0 0 } rotation = { 0 0 120 } }
+		locator = { name = "s_fin_3" 			position = { 0 0 0 } rotation = { 0 0 240 } }
+		
+		locator = { name = "l_fin_1" 			position = { 0 0 0 } rotation = { 0 0 0 } }
+		locator = { name = "l_fin_2" 			position = { 0 0 0 } rotation = { 0 0 120 } }
+		locator = { name = "l_fin_3" 			position = { 0 0 0 } rotation = { 0 0 240 } }
+		
+		locator = { name = "reactor_1" 			position = { 0 0 0 } rotation = { 0 0 0 } }
+		locator = { name = "reactor_2" 			position = { 0 0 0 } rotation = { 0 0 60 } }
+		locator = { name = "reactor_3" 			position = { 0 0 0 } rotation = { 0 0 120 } }
+		locator = { name = "reactor_4" 			position = { 0 0 0 } rotation = { 0 0 180 } }
+		locator = { name = "reactor_5" 			position = { 0 0 0 } rotation = { 0 0 240 } }
+		locator = { name = "reactor_6" 			position = { 0 0 0 } rotation = { 0 0 300 } }
+
+		attach = { core	= "im_angelic_megastructure_weapon_core_entity" }
+		
+		attach = { structure_1 = "im_angelic_megastructure_weapon_structure_entity" }
+		attach = { structure_2 = "im_angelic_megastructure_weapon_structure_entity" }
+		attach = { structure_3 = "im_angelic_megastructure_weapon_structure_entity" }
+		attach = { structure_4 = "im_angelic_megastructure_weapon_structure_entity" }
+		attach = { structure_5 = "im_angelic_megastructure_weapon_structure_entity" }
+		attach = { structure_6 = "im_angelic_megastructure_weapon_structure_entity" }
+		
+		attach = { mount_1 = "im_angelic_megastructure_weapon_mount_entity" }
+		attach = { mount_2 = "im_angelic_megastructure_weapon_mount_entity" }
+		attach = { mount_3 = "im_angelic_megastructure_weapon_mount_entity" }
+		attach = { mount_4 = "im_angelic_megastructure_weapon_mount_entity" }
+		attach = { mount_5 = "im_angelic_megastructure_weapon_mount_entity" }
+		attach = { mount_6 = "im_angelic_megastructure_weapon_mount_entity" }
+		
+		attach = { s_fin_1 = "im_angelic_megastructure_weapon_s_fin_entity" }
+		attach = { s_fin_2 = "im_angelic_megastructure_weapon_s_fin_entity" }
+		attach = { s_fin_3 = "im_angelic_megastructure_weapon_s_fin_entity" }
+		
+		attach = { l_fin_1 = "im_angelic_megastructure_weapon_l_fin_entity" }
+		attach = { l_fin_2 = "im_angelic_megastructure_weapon_l_fin_entity" }
+		attach = { l_fin_3 = "im_angelic_megastructure_weapon_l_fin_entity" }
+		
+		attach = { reactor_1 = "im_angelic_megastructure_weapon_reactor_entity" }
+		attach = { reactor_2 = "im_angelic_megastructure_weapon_reactor_entity" }
+		attach = { reactor_3 = "im_angelic_megastructure_weapon_reactor_entity" }
+		attach = { reactor_4 = "im_angelic_megastructure_weapon_reactor_entity" }
+		attach = { reactor_5 = "im_angelic_megastructure_weapon_reactor_entity" }
+		attach = { reactor_6 = "im_angelic_megastructure_weapon_reactor_entity" }
+	
+	scale = 1.0
+	cull_radius = 1000
+}
+
+entity = {
+	name = "im_arkweapon_gigareactors_phase_construction_entity"
+
+		locator = { name = "reactor_1" 			position = { 0 0 0 } rotation = { 0 0 0 } }
+		locator = { name = "reactor_2" 			position = { 0 0 0 } rotation = { 0 0 60 } }
+		locator = { name = "reactor_3" 			position = { 0 0 0 } rotation = { 0 0 120 } }
+		locator = { name = "reactor_4" 			position = { 0 0 0 } rotation = { 0 0 180 } }
+		locator = { name = "reactor_5" 			position = { 0 0 0 } rotation = { 0 0 240 } }
+		locator = { name = "reactor_6" 			position = { 0 0 0 } rotation = { 0 0 300 } }
+		
+		default_state = "idle"
+		state = { name = "idle"
+			start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
+		}
+
+		attach = { reactor_1 = "im_angelic_megastructure_weapon_reactor_entity" }
+		attach = { reactor_2 = "im_angelic_megastructure_weapon_reactor_entity" }
+		attach = { reactor_3 = "im_angelic_megastructure_weapon_reactor_entity" }
+		attach = { reactor_4 = "im_angelic_megastructure_weapon_reactor_entity" }
+		attach = { reactor_5 = "im_angelic_megastructure_weapon_reactor_entity" }
+		attach = { reactor_6 = "im_angelic_megastructure_weapon_reactor_entity" }
+	
+	scale = 1.0
+	cull_radius = 1000
+}

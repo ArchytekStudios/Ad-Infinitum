@@ -1,0 +1,29 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_crisis_infemp_tier1_btn"
+		texturefile = "gfx/interface/icons/crisis/InfiniteEmpire_Lvl1_btn.dds"
+		noOfFrames = 2			
+	}
+	spriteType = {
+		name = "GFX_crisis_infemp_tier2_btn"
+		texturefile = "gfx/interface/icons/crisis/InfiniteEmpire_Lvl2_btn.dds"
+		noOfFrames = 2			
+	}
+
+	spriteType = {
+		name = "GFX_crisis_infemp_tier3_btn"
+		texturefile = "gfx/interface/icons/crisis/InfiniteEmpire_Lvl3_btn.dds"
+		noOfFrames = 2			
+	}
+
+	spriteType = {
+		name = "GFX_crisis_infemp_tier4_btn"
+		texturefile = "gfx/interface/icons/crisis/InfiniteEmpire_Lvl4_btn.dds"
+		noOfFrames = 2			
+	}
+	spriteType = {
+		name = "GFX_crisis_infemp_tier5_btn"
+		texturefile = "gfx/interface/icons/crisis/InfiniteEmpire_Lvl5_btn.dds"
+		noOfFrames = 2			
+	}
+}

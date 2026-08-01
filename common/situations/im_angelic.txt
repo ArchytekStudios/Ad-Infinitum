@@ -1,0 +1,141 @@
+#	
+#	im_becoming_divine = {
+#		picture = GFX_evt_shroud_generic
+#		complete_icon = GFX_situation_outcome_ascension
+#		complete_icon_frame = GFX_situation_outcome_frame_blue
+#		on_start = { set_situation_locked = yes }
+#	
+#		on_progress_complete = {
+#			custom_tooltip = PRE_DIVINITY_UNLOCK
+#			hidden_effect = {
+#				set_country_flag = im_angelic_empire
+#			}
+#		}
+#		monthly_progress = {
+#			modifier = {
+#				desc = im_must_have_project_complete
+#				mult = -9999
+#				OR = {
+#					AND = {
+#						current_stage = stage_1
+#						NOT = { has_country_flag = im_structmast_complete }
+#					}
+#					AND = {
+#						current_stage = stage_2
+#						NOT = { has_country_flag = im_biomast_complete }
+#					}
+#					AND = {
+#						current_stage = stage_3
+#						NOT = { has_country_flag = im_psimast_complete }
+#					}
+#					AND = {
+#						current_stage = stage_4
+#						NOT = { has_country_flag = im_prediv_complete }
+#					}
+#				}
+#			}
+#			modifier = {
+#				desc = im_difficulty_hard
+#				mult = 0.75
+#				current_stage = stage_3
+#			}
+#			modifier = {
+#				desc = im_difficulty_veryhard
+#				mult = 0.5
+#				current_stage = stage_4
+#			}
+#			modifier = {
+#				desc = im_difficulty_exceptionallyhard
+#				mult = 0.25
+#				current_stage = stage_5
+#			}
+#			modifier = {
+#				desc = BASE_GAIN
+#				add = 1.0
+#			}
+#			modifier = {
+#				desc = im_has_strategic_megas
+#				mult = 2.0
+#				OR = {
+#					im_has_daedalusbrain_any = yes
+#					im_has_forgeares_any = yes
+#					im_has_forgehephaestos_any = yes
+#				}
+#			}
+#		}
+#	
+#		stages = {
+#			stage_1 = {
+#				icon = GFX_situation_stage_1
+#				icon_background = GFX_situation_stage_frame_gray
+#				end = 15
+#				custom_tooltip = im_angel_crisis_begin_desc
+#				on_first_enter = {
+#					set_country_flag = IM_INFINITE_EMPIRE_PROPHET
+#					add_research_option = tech_ophanim_ship
+#					add_research_option = tech_honorguard_l1
+#					add_research_option = tech_angel_buildings
+#					enable_special_project = { name = IM_INFINITYCRISIS_STRUCTMAST }
+#				}
+#				modifier = {
+#					megastructure_build_speed_mult = 2
+#					shipclass_military_build_speed_mult = 0.5
+#				}
+#			}
+#			stage_2 = {
+#				icon = GFX_situation_stage_2
+#				icon_background = GFX_situation_stage_frame_green
+#				end = 25
+#				on_first_enter = {
+#					set_country_flag = IM_INFINITE_EMPIRE_SAGE
+#					add_research_option = tech_hermes_gateway
+#					add_research_option = tech_angel_buildings_2
+#					add_research_option = tech_honorguard_l2
+#					give_technology = { tech = tech_gateway_activation }
+#					give_technology = { tech = tech_gateway_construction }
+#					enable_special_project = { name = IM_INFINITYCRISIS_BIOMAST } 
+#				}
+#				modifier = {
+#					damage_vs_country_type_fallen_empire_mult = 1.5
+#					damage_vs_country_type_awakened_fallen_empire_mult = 1.5
+#					damage_vs_player_crisis_mult = 1.5
+#					damage_vs_country_type_synth_queen_mult = 1.5
+#					damage_vs_country_type_swarm_mult = 1.5
+#					damage_vs_country_type_gray_goo_mult = 1.5
+#					damage_vs_country_type_ai_empire_mult = 1.5 # assuming this is contingency
+#					damage_vs_country_type_extradimensional_mult = 1.5
+#					damage_vs_country_type_extradimensional_2_mult = 1.5
+#					damage_vs_country_type_extradimensional_3_mult = 1.5
+#				}
+#			}
+#			stage_3 = {
+#				icon = GFX_situation_stage_3
+#				icon_background = GFX_situation_stage_frame_blue
+#				end = 50
+#				on_first_enter = {
+#					set_country_flag = IM_INFINITE_EMPIRE_ACOLYTE
+#					add_research_option = tech_cherubim_ship
+#					add_research_option = tech_honorguard_l3
+#					add_research_option = tech_aresforge
+#					enable_special_project = { name = IM_INFINITYCRISIS_PSIMAST }
+#				}
+#			}
+#			stage_4 = {
+#				icon = GFX_situation_stage_4
+#				icon_background = GFX_situation_stage_frame_magenta
+#				end = 75
+#				on_first_enter = {
+#					set_country_flag = IM_INFINITE_EMPIRE_DISCIPLE
+#					add_research_option = tech_honorguard_l4
+#				}
+#			}
+#			stage_5 = {
+#				icon = GFX_situation_stage_5
+#				icon_background = GFX_situation_stage_frame_red
+#				end = 100
+#				on_first_enter = {
+#					set_country_flag = IM_INFINITE_EMPIRE_DIVINE
+#				}
+#			}
+#		}
+#	}

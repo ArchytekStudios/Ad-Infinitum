@@ -1,0 +1,21 @@
+
+im_crisobj_addpts = {
+	reward = {
+		base = 15
+	}
+}
+
+im_crisobj_holdstructs = { # Maintain hold on structures -- Strategic Grip
+	reward = {
+		base = 0
+		modifier = {
+			add = 150
+			OR = {
+				im_has_forgeares_any = yes
+				im_has_forgehephaestos_any = yes
+				im_has_daedalusbrain_any = yes
+			}
+		}
+	}
+	recurring = yes
+}

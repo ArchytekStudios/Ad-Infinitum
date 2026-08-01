@@ -1,0 +1,35 @@
+namespace = im_startup
+
+event = {
+	id = im_startup.001
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		set_global_flag = has_infinitymatter_mod
+	}
+}
+
+country_event = {
+	id = im_startup.002
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		set_country_flag = c_has_infinitymatter_mod
+	}
+}
+
+namespace = im_origins
+
+country_event = { # Start as Divine
+	id = im_origins.1
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		# country flags
+		set_country_flag = IM_INFINITE_EMPIRE_PROPHET
+		set_country_flag = IM_INFINITE_EMPIRE_SAGE
+		set_country_flag = IM_INFINITE_EMPIRE_ACOLYTE
+		set_country_flag = IM_INFINITE_EMPIRE_DISCIPLE
+		set_country_flag = IM_INFINITE_EMPIRE_DIVINE
+	}
+}

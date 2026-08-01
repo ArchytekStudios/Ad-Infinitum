@@ -1,0 +1,131 @@
+﻿l_english:
+
+ dlcrequired: "§R< DLC Required >§!"
+
+ cachelocated: "§YA Cache was located in the rubble.§!"
+ notelocated: "§YA Page was found in the rubble.§!"
+
+ im_angel_bio_mastery: "Mastery of Biology"
+ im_angel_bio_mastery_desc: "We have mastered everything related to Biology on our path to becoming divine. Our reach in the organic realm means we can modify our species at will."
+ im_angel_struct_mastery: "Mastery of Materiality"
+ im_angel_struct_mastery_desc: "We have mastered everything related to Materiality and Structures on our path to becoming divine. We can build megastructures capable of withstanding Planck temperatures."
+ im_angel_psi_mastery: "Mastery of Psionics"
+ im_angel_psi_mastery_desc: "We have mastered everything related to Psionics and the Shroud on our path to becoming divine. Although we can't call audience with the Shroud, we will make our own."
+ im_angel_predivine: "Mastery of Divinity"
+ im_angel_predivine_desc: "After a grueling wait, we've finally breached the last barrier to Divinity.\n\n§CGodhood is upon us.§!"
+
+ im_anomaly_legacyofthedead_starter: "Strange Rumbling"
+ im_anomaly_desc: "Our science vessel has detected strange seismic rumbling across this planet, seeming linked to our first Searing Star."
+ im_legacyofthedead: "The Dead, Revisited"
+ im_legacydead_evt_desc: "After awakening a Searing Star, our sensors have detected the awakening of a §YRelic World§! beneath the surface of one of our planets. Across the world, there are structures mimicking §CDivine§! designs, which point to a very prominent and advanced Precursor ruin found nowhere else in the galaxy.\n\n§YAn archaeological dig-site has been established.§!"
+
+
+### Legacy of the Dead -- LOTD
+ site_legacyofthedead_adinf: "Legacy of the Dead"
+ legacyofthedead_adinf_desc: "This relic world has more questions than answers, but more importantly, it houses very advanced structures on-site - some of which may hold answers to the occupants of this ruin."
+ 
+ lotd_1_title: "Echoes of the Damned"
+ lotd_1_desc: "Upon touchdown, our scientists made quick work of establishing an outpost. Before anything could happen, though, the planet itself seemed to react to our presence; doors opening and closing, the wind picking up with whispers of forgotten languages beyond words and common comprehension. Our lead scientist urges on, though makes note of an interesting structure in the distance. $notelocated$"
+ lotd_2_title: "Palace of the Divine"
+ lotd_2_desc: "On final approach to the structure, it seemed to resonate with a force exceeding standard warhead output; however, nothing around the exploration team fell. Unfazed, our lead scientist presses on, focused and undeterred. $cachelocated$"
+ lotd_3_title: "Shroud Handiwork?"
+ lotd_3_desc: "Entering the structure, our scientist is greeted with designs beyond recognition. Ancient beyond comprehension. §CAlien to this galaxy. Alien to the precursors.§!\n\nAt this discovery, the lead scientist held position and began to research the rooms the group found themselves in."
+ lotd_4_title: "Odd Ship Designs"
+ lotd_4_desc: "On one side of the room was a console containing various strange ship designs, one seeming related to §Ya ship.§! Our researchers scrambled at the opportunity and, upon decrypting the cache, have §Ggranted us a piece of technology§! - the §CArchon§! science vessel. $notelocated$"
+ lotd_5_title: "Into the Core"
+ lotd_5_desc: "With the final stretches of the Palace ahead, our research team continues into the main atrium - a massive, sprawling hallway dedicated to the works of plenty of xenos unrecognizable by our teams. Time has taken its' toll, with part of the atrium fully collapsed and another part blown out for one reason or another. $cachelocated$"
+ lotd_6_title: "Daedalus Brain Theory"
+ lotd_6_desc: "Entering the Citadel of the Palace, our team came face-to-face with actionable plans regarding a fabled §CBrain of Daedalus§!, alongside a smaller version. Using a §CStellar Cage§!, a Daedalus Brain could be constructed from such a baseplate; however, it will wipe all planets in the system. $notelocated$"
+
+ lotd_angelic_writings_1: "Writings of the Dead, Pg.1" #Thothian Archive Complex
+ lotd_angelic_writings_1_desc_short: "A scrap paper recovered from the §CLegacy of the Dead§! digsite. Date, unknown."
+ lotd_angelic_writings_1_desc_details: "\n§YEYES, EYES WITHIN EYES. SPHERES COLLAPSING AND BOILING. HYPERSPATIAL QUASITEMPORAL INSTABILITY. IS DIVINITY JUST FOUR-DIMENSIONAL MASTERY? RINGS UPON RINGS, BEARING THE LIGHT OF ALL GODS, SIGILS OF PANTHEONS UNBOUNDED FROM AEONS PAST. TOPOGRAPHICAL DIVINITY FOUND IN THE MATHEMATICS OF A DEAD STAR WITH TEMPERATURES EXCEEDING COSMOGENESIS. BRIGHT, CYAN SO BRIGHT, BLINDING WITH THE LIGHT OF A CLUSTER.\nKSURHYA, MY LOVE,\nTHE KNOWLEDGE OF THE UNIVERSE IN THE PALM OF THE §CTHOTHIAN ARCHIVE COMPLEX§!. MACHINES COMPUTING INFINITY AGAINST INFINITY TO COMPUTE AGAINST THE INFINITE GROWTH OF KNOWLEDGE UNENDING.§!"
+
+ lotd_angelic_writings_2: "Writings of the Dead, Pg.2" #Archon ship
+ lotd_angelic_writings_2_desc_short: "$lotd_angelic_writings_1_desc_short$"
+ lotd_angelic_writings_2_desc_details: "\n§YBROTHER ON BROTHER, VIOLENCE UNENDING. SHOULD INTELLECT BE SLAVE TO EMOTION? SHOULD REASON BE SLAVE TO POLITIK? SHOULD RIGHTS BE SLAVE TO THE WILL OF AN IDIOT KING? NO, AS THE PAPER IS NOT SLAVE TO THE WRITER. AS THE WATER IS NOT SLAVE TO THE WIND. AS THE ROCK IS NOT SLAVE TO THE PLANET. WE WILL FORGE OUR OWN PATH. THE ARCHON; A BEAUTIFUL VESSEL, THE PEN OF OUR KINGDOM, THE MIND OF OUR SCHOLARS IN A VESSEL OUTPACING LIGHT ITSELF.§!"
+
+ lotd_angelic_writings_3: "Writings of the Dead, Pg.3" # Micro-Daedalic Assembly & Brain of Daedalus
+ lotd_angelic_writings_3_desc_short: "$lotd_angelic_writings_1_desc_short$"
+ lotd_angelic_writings_3_desc_details: "\n§YA CONSTRUCT TO BEFIT ANGELS. THE MACHINATIONS OF MORTALS TO IMPRESS THE DIVINE. THE §CBRAIN OF DAEDALUS§!, MECHANIZED INTO A FORM OF BEAUTY, CONTAINING ALL THE THEORIES THAT CAN EXIST AND MANY THAT CANNOT.\nBY THE KING, WE WILL ASCEND.§!"
+
+### Like Antennas To Heaven -- LATH
+ site_likeantennastoheaven_adinf: "Like Antennas To Heaven"
+ likeantennastoheaven_adinf_desc: ""
+ 
+ lath_1_title: ""
+ lath_1_desc: ""
+ lath_2_title: ""
+ lath_2_desc: ""
+ lath_3_title: ""
+ lath_3_desc: ""
+ lath_4_title: ""
+ lath_4_desc: ""
+ lath_5_title: ""
+ lath_5_desc: ""
+ lath_6_title: ""
+ lath_6_desc: ""
+
+ lath_angelic_writings_1: "Writings of War, Pg.1" #Grand Arkweapon
+ lath_angelic_writings_1_desc_short: "A scrap paper recovered from the §C...Like Antennas To Heaven§! digsite. Date, unknown."
+ lath_angelic_writings_1_desc_details: "\n§YYOU WERE BEAUTIFUL, AS WIDE AS A STAR AND TWICE AS LONG YET WIPED OUT BY AN ARK-COMMANDER'S IMPOTENCY. AN INSULT TO STRATEGY. ALL THAT REMAINS IS WAR WITHOUT REASON. A CONSTRUCT BUILT TO END WAR IS A CONSTRUCT BUILT TO MAINTAIN WAR. WEAPONS CAN NEVER BE USED FOR PEACE, THEY WILL ALWAYS REQUIRE A SACRIFICE ONE DAY. TAME THE BLADE, OR IT TAMES YOU.\nYOU WERE BEAUTIFUL, ARKWEAPON SILENT NIGHT. LIKE ANTENNAE TO HEAVEN. NO SURVIVORS TO MOURN YOUR EULOGY. PERFECT CLOSURE.\n\nTHIS IS THE ONLY WAY IT COULD HAVE ENDED.§!"
+
+ lath_angelic_writings_2: "Writings of War, Pg.2"
+ lath_angelic_writings_2_desc_short: "$lath_angelic_writings_1_desc_short$"
+ lath_angelic_writings_2_desc_details: "\n§YBROTHERS, THE APIDAS APPROACH THE THRONE, AND THEY MUST NOT WIN. THEY HUNGER AND FEAST ON OUR DEAD YET THE SEARING LIGHT OF OUR ANGELIC WEAPONRY; BLINDING CYAN ENERGY, STREAKING ACROSS THE STELLAR GRAIN WITH ATOMIC PRECISION; CLEANSES THEIR ROT FROM OUR KINGDOM.\nA REQUIEM ETCHED IN THE CORPSE OF OUR KING. THE STARS AT OUR BECK AND CALL. WE ANSWER.\n\nOBLITERATE THE APIDIAN THREAT. FOR THEY SEEK GENOCIDE.§!"
+
+ lath_angelic_writings_3: "Writings of War, Pg.3" #Starfire Mechanism
+ lath_angelic_writings_3_desc_short: "$lath_angelic_writings_1_desc_short$"
+ lath_angelic_writings_3_desc_details: "\n§YBROTHERS, OUR FALL HAS COME FAST. THE APIDIAN THREAT IS WIPED OUT, BUT THEY TAKE US DOWN WITH THEM. THE STARFIRE MECHANISM PROTECTED OUR THRONE, BUT WAS DAMAGED BEYOND REPAIR.\nTHIS IS THE ONLY WAY IT SHOULD HAVE ENDED. WRITHING IN THE BLOOD OF THE DEAD, LASHING A SWORD AGAINST OUR MURDERERS. MUTUALLY ASSURED DESTRUCTION.\n\nIRONIC. POETIC. PATHETIC.\nA FITTING END TO AN EXISTENCE DEFINED BY FUTILE STRUGGLE. DOOMED, FROM THE VERY START.§!"
+
+### Grand, Impossibly Grand -- GIG
+ site_grandimpossiblygrand_adinf: "Grand, Impossibly Grand"
+ grandimpossiblygrand_adinf_desc: ""
+
+ gig_1_title: ""
+ gig_1_desc: ""
+ gig_2_title: ""
+ gig_2_desc: ""
+ gig_3_title: ""
+ gig_3_desc: ""
+ gig_4_title: ""
+ gig_4_desc: ""
+
+ gig_angelic_writings_1: "Writings of Grandeur, Pg.1" #Architect conship
+ gig_angelic_writings_1_desc_short: "A scrap paper recovered from the §CGrand, Impossibly Grand§! digsite. Date, unknown."
+ gig_angelic_writings_1_desc_details: "\n§Y REPLACEME §!"
+
+ gig_angelic_writings_2: "Writings of Grandeur, Pg.2" #Dionysian Suprahall
+ gig_angelic_writings_2_desc_short: "$gig_angelic_writings_1_desc_short$"
+ gig_angelic_writings_2_desc_details: "\n§Y REPLACEME §!"
+
+ gig_angelic_writings_3: "Writings of Grandeur, Pg.3" #Hermetic Supercatapult
+ gig_angelic_writings_3_desc_short: "$gig_angelic_writings_1_desc_short$"
+ gig_angelic_writings_3_desc_details: "\n§Y REPLACEME §!"
+
+### Hazardous Environments -- HEV
+ site_hazardousenvironments_adinf: "Hazardous Environments"
+ hazardousenvironments_adinf_desc: ""
+
+ hev_1_title: ""
+ hev_1_desc: ""
+ hev_2_title: ""
+ hev_2_desc: ""
+ hev_3_title: ""
+ hev_3_desc: ""
+ hev_4_title: ""
+ hev_4_desc: ""
+ hev_5_title: ""
+ hev_5_desc: ""
+
+ hev_angelic_writings_1: "Writings of Hazard, Pg.1"
+ hev_angelic_writings_1_desc_short: "A scrap paper recovered from the §CHazardous Environment§! digsite. Date, unknown."
+ hev_angelic_writings_1_desc_details: "\n§Y REPLACEME §!"
+
+ hev_angelic_writings_2: "Writings of Hazard, Pg.2" #Eye of the Shroud
+ hev_angelic_writings_2_desc_short: "$hev_angelic_writings_1_desc_short$"
+ hev_angelic_writings_2_desc_details: "\n§Y REPLACEME §!"
+
+ hev_angelic_writings_3: "Writings of Hazard, Pg.3" #Demeter Macro-Harvester
+ hev_angelic_writings_3_desc_short: "$hev_angelic_writings_1_desc_short$"
+ hev_angelic_writings_3_desc_details: "\n§Y REPLACEME §!"

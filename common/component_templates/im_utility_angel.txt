@@ -1,0 +1,264 @@
+
+utility_component_template = {
+	key = "OPHAN_SOUL_CORE"
+	size = small
+	icon = "GFX_infinity_angel_core"
+	icon_frame = 1
+	power = 10000
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 150
+			im_infinitymatter = 25
+		}
+		upkeep = {
+			im_infinityenergy = 0.5
+		}
+	}
+
+	potential = { is_ship_size = im_angelic_ophanim }
+	component_set = "power_core"
+}
+
+utility_component_template = {
+	key = "ANGEL_INTEL_OPHAN"
+	size = small
+	icon = "GFX_infinity_angel_intel"
+	power = -750
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 150
+			im_infinitymatter = 25
+		}
+		upkeep = {
+			im_infinityenergy = 0.5
+		}
+	}
+
+	ship_behavior = picket
+	potential = { is_ship_size = im_angelic_ophanim }
+	component_set = "combat_computers"
+}
+
+utility_component_template = {
+	key = "CHERUB_SOUL_CORE"
+	size = small
+	icon = "GFX_infinity_angel_core"
+	icon_frame = 1
+	power = 40000
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 300
+			im_infinitymatter = 37
+		}
+		upkeep = {
+			im_infinityenergy = 0.75
+		}
+	}
+
+	potential = { is_ship_size = im_angelic_cherubim }
+	component_set = "power_core"
+}
+
+utility_component_template = {
+	key = "ANGEL_INTEL_CHERUB"
+	size = small
+	icon = "GFX_infinity_angel_intel"
+	power = -1250
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 300
+			im_infinitymatter = 37
+		}
+		upkeep = {
+			im_infinityenergy = 0.75
+		}
+	}
+
+	ship_behavior = line
+	potential = { is_ship_size = im_angelic_cherubim }
+	component_set = "combat_computers"
+}
+
+utility_component_template = {
+	key = "SERAPH_SOUL_CORE"
+	size = small
+	icon = "GFX_infinity_angel_core"
+	icon_frame = 1
+	power = 80000
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 600
+			im_infinitymatter = 50
+		}
+		upkeep = {
+			im_infinityenergy = 1
+		}
+	}
+
+	potential = { is_ship_size = im_angelic_seraphim }
+	component_set = "power_core"
+}
+
+utility_component_template = {
+	key = "ANGEL_INTEL_SERAPH"
+	size = small
+	icon = "GFX_infinity_angel_intel"
+	power = -2500
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 600
+			im_infinitymatter = 50
+		}
+		upkeep = {
+			im_infinityenergy = 1
+		}
+	}
+
+	ship_behavior = artillery
+	potential = { is_ship_size = im_angelic_seraphim }
+	component_set = "combat_computers"
+}
+
+utility_component_template = {
+	key = "IM_ANGEL_THRUSTER"
+	size = small
+	icon = "GFX_infinity_angel_thruster"
+	power = -750
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 150
+			im_infinitymatter = 25
+		}
+		upkeep = {
+			im_infinityenergy = 0.5
+		}
+	}
+
+	ftl = yes
+
+	modifier = {
+		ship_speed_mult = 3.25 # base is 2.75
+		ship_evasion_add = 16 # base is 8
+	}
+	potential = { is_angel_ship = yes }
+	component_set = "thruster_components"
+}
+
+utility_component_template = {
+	key = "IM_ANGEL_FTL"
+	size = small
+	icon = "GFX_infinity_angel_ftl"
+	power = -750
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 150
+			im_infinitymatter = 25
+		}
+		upkeep = {
+			im_infinityenergy = 0.5
+		}
+	}
+
+	jumpdrive = yes
+
+	potential = { is_angel_ship = yes }
+	component_set = "ftl_components"
+}
+
+utility_component_template = {
+	key = "S_ANGEL_DEFENSES"
+	size = small
+	icon = "GFX_infinity_angel_defense"
+	power = -750
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 150
+			im_infinitymatter = 25
+		}
+		upkeep = {
+			im_infinityenergy = 0.5
+		}
+	}
+	component_set = "IM_ANGEL_DEFENSES"
+	potential = { is_angel_ship = yes }
+
+	modifier = {
+		ship_armor_add = 1000
+		ship_hull_add = 1000
+		ship_shield_add = 1000
+
+		ship_armor_regen_add_perc = 0.15
+		ship_hull_regen_add_perc = 0.05
+		ship_shield_regen_add_perc = 0.15
+		ship_damage_reduction_mult = 0.2
+	}
+}
+
+utility_component_template = {
+	key = "M_ANGEL_DEFENSES"
+	size = medium
+	icon = "GFX_infinity_angel_defense"
+	power = -1250
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 200
+			im_infinitymatter = 30
+		}
+		upkeep = {
+			im_infinityenergy = 0.6
+		}
+	}
+	component_set = "IM_ANGEL_DEFENSES"
+	potential = { is_angel_ship = yes }
+
+	modifier = {
+		ship_armor_add = 2000
+		ship_hull_add = 2000
+		ship_shield_add = 2000
+
+		ship_armor_regen_add_perc = 0.15
+		ship_hull_regen_add_perc = 0.05
+		ship_shield_regen_add_perc = 0.15
+		ship_damage_reduction_mult = 0.4
+	}
+}
+
+utility_component_template = {
+	key = "L_ANGEL_DEFENSES"
+	size = large
+	icon = "GFX_infinity_angel_defense"
+	power = -2500
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 400
+			im_infinitymatter = 60
+		}
+		upkeep = {
+			im_infinityenergy = 0.8
+		}
+	}
+	component_set = "IM_ANGEL_DEFENSES"
+	potential = { is_angel_ship = yes }
+	
+	modifier = {
+		ship_armor_add = 4000
+		ship_hull_add = 4000
+		ship_shield_add = 4000
+
+		ship_armor_regen_add_perc = 0.15
+		ship_hull_regen_add_perc = 0.05
+		ship_shield_regen_add_perc = 0.15
+		ship_damage_reduction_mult = 0.6
+	}
+}

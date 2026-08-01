@@ -1,0 +1,18 @@
+
+entity = {
+	name = "im_angelic_ring_small_entity"
+	pdxmesh = "im_angelic_ring_small_mesh"
+	#cull_radius = 10000
+	game_data = {
+		emissive_recolor_crunch = 0.0
+	}
+}
+
+entity = {
+	name = "im_angelic_ring_large_entity"
+	pdxmesh = "im_angelic_ring_large_mesh"
+	#cull_radius = 10000
+	game_data = {
+		emissive_recolor_crunch = 0.0
+	}
+}

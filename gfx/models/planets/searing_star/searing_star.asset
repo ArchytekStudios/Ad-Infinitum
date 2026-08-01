@@ -1,0 +1,18 @@
+entity = {
+	name = "searing_star_entity"
+	pdxmesh = "star_mesh"
+	
+	scale = 1
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		event = { time = 0 particle = "im_searing_star_particle" trigger_once = yes keep_particle = no }
+		event = { trigger_once = yes sound = { soundeffect = "blackhole_hum_idle" } }
+	}
+	locator = { name = "planet" }
+	
+	game_data = {
+		size = 1.0
+		bloom_factor = 5
+	}
+	cull_radius = 999999
+}

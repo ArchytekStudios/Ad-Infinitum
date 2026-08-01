@@ -1,0 +1,49 @@
+
+#	# There Can Be Only One
+#	opinion_im_crisis_only_one = {
+#		opinion = {
+#			base = -750
+#		}
+#	}
+
+opinion_im_crisis_t3 = {
+	opinion = {
+		base = -50
+	}
+}
+
+opinion_im_crisis_t4 = {
+	opinion = {
+		base = -75
+	}
+}
+
+opinion_im_crisis_t5_spiritualist = { # FEs
+	opinion = {
+		base = -350
+	}
+}
+
+opinion_im_crisis_t5_xenophobe = { # FEs
+	opinion = {
+		base = -200
+	}
+}
+
+opinion_im_crisis_t5_xenophile = { # FEs
+	opinion = {
+		base = -75
+	}
+}
+
+opinion_im_crisis_t5_materialist = { # FEs
+	opinion = {
+		base = -225
+	}
+}
+
+opinion_im_crisis_t5_other = {
+	opinion = {
+		base = -150
+	}
+}

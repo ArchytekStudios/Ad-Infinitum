@@ -1,0 +1,92 @@
+
+entity = {
+	name = "im_hermes_gateway_entity"
+
+	locator = { name = "part1" position = { 0 0 0 } rotation = { 0 90 0 } scale = 2 }
+	locator = { name = "part2" position = { 0 0 -2 } rotation = { 0 0 0 } scale = 0.65 }
+
+	attach = {
+		"part1" = "im_angelic_ring_small_entity"
+		"part2" = "gateway_portal_entity"
+	}
+}
+
+entity = {
+	name = "im_hermes_gateway_empty_entity"
+
+	locator = { name = "part1" position = { 0 0 0 } rotation = { 0 90 0 } scale = 2 }
+
+	attach = { "part1" = "im_angelic_ring_small_entity" }
+}
+
+entity = {
+	name = "im_bow_of_athena_entity"
+	#										L  U  F
+	locator = { name = "part1" position = { 50 0 175 } rotation = { 0 0 0 } scale = 1.5 }
+	locator = { name = "part2" position = { -50 0 175 } rotation = { 0 0 0 } scale = 1.5 }
+	locator = { name = "part3" position = { -50 0 100 } rotation = { 0 0 0 } scale = 1.5 }
+	locator = { name = "part4" position = { 50 0 100 } rotation = { 0 0 0 } scale = 1.5 }
+	locator = { name = "core1" position = { 0 -10 0 } rotation = { 0 0 0 } scale = 4 }
+	locator = { name = "core2" position = { 0 0 50 } rotation = { 0 0 0 } scale = 2 }
+
+	attach = {
+		"core1" = "im_angelic_civilian_entity"
+		"core2" = "im_angelic_station_large_entity"
+	}
+	attach = {
+		"part1" = "im_angelic_station_small_entity"
+		"part2" = "im_angelic_station_small_entity"
+		"part3" = "im_angelic_station_small_entity"
+		"part4" = "im_angelic_station_small_entity"
+	}
+	game_data = {
+		emissive_recolor_crunch = 0.0
+	}
+}
+
+entity = {
+	name = "im_pylon_of_hearth_entity"
+	
+	locator = { name = "part1" position = { 0 0 0 } rotation = { 0 0 0 } scale = 1 }
+	locator = { name = "part2" position = { 0 30 0 } rotation = { 0 90 0 } scale = 1 }
+	locator = { name = "part3" position = { 0 -30 0 } rotation = { 0 -90 0 } scale = 1 }
+
+	attach = {
+		"part2" = "im_angelic_ophanim_megas_entity"
+		"part3" = "im_angelic_ophanim_megas_entity"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		start_event = { node = "part1" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+	}
+}
+
+
+entity = {
+	name = "im_dyson_sphere_entity"
+
+	locator = { name = "part1" position = { 0 0 0 } rotation = { 0 0 0 } scale = 0.75 }
+	locator = { name = "part2" position = { 0 0 0 } rotation = { 0 90 0 } scale = 0.75 }
+	locator = { name = "shield" scale = 2.75 }
+
+	attach = { "part1" = "im_angelic_ring_small_entity" }
+	attach = { "part2" = "im_angelic_ring_small_entity" }
+	attach = { "shield" = "planet_shield_effect_entity" }
+}
+
+entity = {
+	name = "im_planetminer_entity"
+
+	locator = { name = "zero" scale = 0.5 }
+	locator = { name = "ring" rotation = { 0 90 0 } scale = 0.95 }
+	locator = { name = "part1" rotation = { 0 0 0 } position = { 0 0 0 } scale = 0.75 }
+	locator = { name = "part2" rotation = { 0 0 0 } position = { 0 0 0 } scale = 0.75 }
+
+	attach = {
+		"zero" = "pulsar_outbursts_entity"
+		"ring" = "im_angelic_ring_small_entity"
+		"part1" = "im_angelic_escort_entity"
+		"part2" = "im_angelic_escort_entity"
+	}
+}

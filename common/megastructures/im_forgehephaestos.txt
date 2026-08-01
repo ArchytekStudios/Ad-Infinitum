@@ -1,0 +1,403 @@
+
+im_forgehephaestos_base = {
+	entity = "im_forgehephaestos_constructionbase_entity"
+	construction_entity = "im_forgehephaestos_constructionbase_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = yes
+	scales_with_planet = yes
+	build_type = around_planet
+	show_galactic_map_icon = yes
+	show_in_outliner = yes
+	potential = { clib_is_infinite_empire = yes }
+	possible = {
+		hidden_trigger = {
+			exists = starbase
+		}
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "only_one_per_country"
+			exists = owner
+			NOT = {
+				owner = {
+					has_country_flag = im_has_forgehephaestos
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_black_hole"
+			is_star_class = sc_black_hole
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_existing_megastructure"
+			has_no_non_gate_megastructure = yes
+			NOT = {
+				any_system_planet = {
+					is_planet_class = pc_cosmogenesis_world
+				}
+			}
+		}
+	}
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "must_build_around_star"
+				is_star = yes
+			}
+		}
+	}
+	prerequisites = { tech_forgehephaestos }
+	show_prereqs = yes
+	build_time = 980
+	resources = {
+		category = megastructures
+		cost = {
+			im_infinityenergy = 2750
+			im_infinitymatter = 530
+		}
+		upkeep = {
+			im_infinitypoints = 10
+			im_infinityenergy = 15
+		}
+	}
+	construction_blocks_and_blocked_by = self_type
+
+	dismantle_cost = {
+		category = megastructures
+		cost = {
+			im_infinitymatter = 125
+		}
+	}
+
+	dismantle_time = 360
+
+	dismantle_potential = {
+		always = yes
+	}
+
+	dismantle_possible = {
+		exists = owner
+		owner = { clib_is_infinite_empire = yes }
+	}
+
+	on_dismantle_complete = {
+		from = {
+			add_resource = {
+				im_infinityenergy = 1500
+				im_infinitymatter = 285
+				mult = modifier:megastructure_dismantle_refund_mult
+			}
+			remove_country_flag = im_has_forgehephaestos
+		}
+	}
+
+	on_build_complete = {
+		from = { set_country_flag = im_has_forgehephaestos }
+		every_system_planet = {
+			limit = { is_star = no }
+			remove_planet = yes
+		}
+		set_asteroid_belt = {
+			radius = 0
+		}
+	}
+}
+
+im_forgehephaestos_iris = {
+	entity = "im_forgehephaestos_iris_entity"
+	construction_entity = "im_forgehephaestos_iris_entity"
+	portrait = "GFX_megastructure_construction_background"
+	scales_with_planet = yes
+	upgrade_from = { im_forgehephaestos_base }
+	build_time = 720
+	resources = {
+		category = megastructures
+		cost = {
+			im_infinityenergy = 150
+			im_infinitymatter = 500
+		}
+		upkeep = {
+			im_infinitypoints = 10
+			im_infinityenergy = 25
+		}
+	}
+	
+	dismantle_cost = {
+		category = megastructures
+		cost = { im_infinitymatter = 125 }
+	}
+	dismantle_time = 360
+	dismantle_potential = { always = yes }
+	dismantle_possible = {
+		exists = owner
+		owner = { clib_is_infinite_empire = yes }
+	}
+	on_dismantle_complete = {
+		from = {
+			add_resource = {
+				im_infinityenergy = 1500
+				im_infinitymatter = 285
+				mult = modifier:megastructure_dismantle_refund_mult
+			}
+			remove_country_flag = im_has_forgehephaestos
+		}
+	}
+}
+
+im_forgehephaestos_armature = {
+	entity = "im_forgehephaestos_armature_entity"
+	construction_entity = "im_forgehephaestos_armature_entity"
+	portrait = "GFX_megastructure_construction_background"
+	scales_with_planet = yes
+	upgrade_from = { im_forgehephaestos_iris }
+	build_time = 1080
+	resources = {
+		category = megastructures
+		cost = {
+			im_infinityenergy = 135
+			im_infinitymatter = 2500
+		}
+		upkeep = {
+			im_infinitypoints = 10
+			im_infinityenergy = 25
+		}
+	}
+	
+	dismantle_cost = {
+		category = megastructures
+		cost = { im_infinitymatter = 125 }
+	}
+	dismantle_time = 360
+	dismantle_potential = { always = yes }
+	dismantle_possible = {
+		exists = owner
+		owner = { clib_is_infinite_empire = yes }
+	}
+	on_dismantle_complete = {
+		from = {
+			add_resource = {
+				im_infinityenergy = 1500
+				im_infinitymatter = 285
+				mult = modifier:megastructure_dismantle_refund_mult
+			}
+			remove_country_flag = im_has_forgehephaestos
+		}
+	}
+}
+
+im_forgehephaestos_half1 = {
+	entity = "im_forgehephaestos_half1_entity"
+	construction_entity = "im_forgehephaestos_half1_entity"
+	portrait = "GFX_megastructure_construction_background"
+	scales_with_planet = yes
+	upgrade_from = { im_forgehephaestos_armature }
+	build_time = 2160
+	resources = {
+		category = megastructures
+		cost = {
+			im_infinityenergy = 270
+			im_infinitymatter = 2500
+		}
+		upkeep = {
+			im_infinitymatter = 75
+			im_infinitypoints = 15
+			im_infinityenergy = 50
+		}
+		produces = {
+			alloys = 515
+			energy = 205
+		}
+	}
+	
+	dismantle_cost = {
+		category = megastructures
+		cost = { im_infinitymatter = 125 }
+	}
+	dismantle_time = 360
+	dismantle_potential = { always = yes }
+	dismantle_possible = {
+		exists = owner
+		owner = { clib_is_infinite_empire = yes }
+	}
+	on_dismantle_complete = {
+		from = {
+			add_resource = {
+				im_infinityenergy = 1500
+				im_infinitymatter = 285
+				mult = modifier:megastructure_dismantle_refund_mult
+			}
+			remove_country_flag = im_has_forgehephaestos
+		}
+	}
+}
+
+im_forgehephaestos_half2 = {
+	entity = "im_forgehephaestos_half2_entity"
+	construction_entity = "im_forgehephaestos_half2_entity"
+	portrait = "GFX_megastructure_construction_background"
+	scales_with_planet = yes
+	upgrade_from = { im_forgehephaestos_half1 }
+	build_time = 1080
+	resources = {
+		category = megastructures
+		cost = {
+			im_infinityenergy = 270
+			im_infinitymatter = 2500
+		}
+		upkeep = {
+			im_infinitymatter = 250
+			im_infinityenergy = 250
+		}
+		produces = {
+			alloys = 775
+			energy = 395
+			im_infinitypoints = 15
+			food = 325
+			consumer_goods = 325
+			volatile_motes = 65
+			rare_crystals = 65
+			exotic_gases = 65
+		}
+	}
+	
+	dismantle_cost = {
+		category = megastructures
+		cost = { im_infinitymatter = 125 }
+	}
+	dismantle_time = 360
+	dismantle_potential = { always = yes }
+	dismantle_possible = {
+		exists = owner
+		owner = { clib_is_infinite_empire = yes }
+	}
+	on_dismantle_complete = {
+		from = {
+			add_resource = {
+				im_infinityenergy = 1500
+				im_infinitymatter = 285
+				mult = modifier:megastructure_dismantle_refund_mult
+			}
+			remove_country_flag = im_has_forgehephaestos
+		}
+	}
+}
+
+im_forgehephaestos_nearcomplete = {
+	entity = "im_forgehephaestos_nearcomplete_entity"
+	construction_entity = "im_forgehephaestos_nearcomplete_entity"
+	portrait = "GFX_megastructure_construction_background"
+	scales_with_planet = yes
+	upgrade_from = { im_forgehephaestos_half2 }
+	build_time = 1080
+	resources = {
+		category = megastructures
+		cost = {
+			im_infinityenergy = 270
+			im_infinitymatter = 2500
+		}
+		upkeep = {
+			im_infinitymatter = 250
+			im_infinityenergy = 250
+		}
+		produces = {
+			alloys = 775
+			energy = 395
+			im_infinitypoints = 15
+		}
+	}
+	
+	dismantle_cost = {
+		category = megastructures
+		cost = { im_infinitymatter = 125 }
+	}
+	dismantle_time = 360
+	dismantle_potential = { always = yes }
+	dismantle_possible = {
+		exists = owner
+		owner = { clib_is_infinite_empire = yes }
+	}
+	on_dismantle_complete = {
+		from = {
+			add_resource = {
+				im_infinityenergy = 1500
+				im_infinitymatter = 285
+				mult = modifier:megastructure_dismantle_refund_mult
+			}
+			remove_country_flag = im_has_forgehephaestos
+		}
+	}
+}
+
+im_forgehephaestos_full = {
+	entity = "im_forgehephaestos_nearcomplete_entity"
+	construction_entity = "im_forgehephaestos_nearcomplete_entity"
+	portrait = "GFX_megastructure_construction_background"
+	scales_with_planet = yes
+	upgrade_from = { im_forgehephaestos_nearcomplete }
+	build_time = 180
+	resources = {
+		category = megastructures
+		cost = {
+			im_infinityenergy = 270
+			im_infinitymatter = 2500
+		}
+		upkeep = {
+			im_infinityenergy = 550
+		}
+		produces = {
+			alloys = 775
+			energy = 395
+			im_infinitypoints = 35
+			im_infinitymatter = 175
+			sr_dark_matter = 150
+		}
+		produces = {
+			trigger = { # for ACOT
+				has_global_flag = acot_activated
+				has_technology = tech_mine_dark_energy
+			}
+			acot_sr_dark_energy = 125
+		}
+		produces = {
+			trigger = { # for TCR
+				has_global_flag = has_tcr_contingency_mod
+				has_technology = tech_tcr_contingency_theory
+			}
+			tcr_substrate = 25
+		}
+	}
+	
+	dismantle_cost = {
+		category = megastructures
+		cost = { im_infinitymatter = 125 }
+	}
+	dismantle_time = 360
+	dismantle_potential = { always = yes }
+	dismantle_possible = {
+		exists = owner
+		owner = { clib_is_infinite_empire = yes }
+	}
+	on_dismantle_complete = {
+		from = {
+			add_resource = {
+				im_infinityenergy = 1500
+				im_infinitymatter = 285
+				mult = modifier:megastructure_dismantle_refund_mult
+			}
+			remove_country_flag = im_has_forgehephaestos
+		}
+	}
+}

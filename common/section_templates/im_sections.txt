@@ -1,0 +1,905 @@
+
+ship_section_template = {
+	key = "im_angelic_debug_ophanim"
+	ship_size = im_angelic_debug
+	fits_on_slot = mid
+	entity = "im_angelic_ophanim_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name = "L_01"
+		template = "invisible_large_turret"
+		locatorname = "part_01"
+	}
+}
+
+ship_section_template = {
+	key = "im_angelic_debug_archangel"
+	ship_size = im_angelic_debug
+	fits_on_slot = mid
+	entity = "im_angelic_archangel_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name = "L_01"
+		template = "invisible_large_turret"
+		locatorname = "part_01"
+	}
+}
+
+ship_section_template = {
+	key = "im_angelic_debug_seraphim"
+	ship_size = im_angelic_debug
+	fits_on_slot = mid
+	entity = "im_angelic_seraphim_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name = "L_01"
+		template = "invisible_large_turret"
+		locatorname = "part_01"
+	}
+}
+
+ship_section_template = {
+	key = "im_angelic_ophanim_6m2p" #6m3p
+	ship_size = im_angelic_ophanim
+	fits_on_slot = mid
+	entity = "im_ophan_frame_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name = "M_01"
+		template = "invisible_medium_turret"
+		locatorname = "bottom_fin_core"
+	}
+	component_slot = {
+		name = "M_02"
+		template = "invisible_medium_turret"
+		locatorname = "right_fin_core"
+	}
+	component_slot = {
+		name = "M_03"
+		template = "invisible_medium_turret"
+		locatorname = "left_fin_core"
+	}
+	component_slot = {
+		name = "M_04"
+		template = "invisible_medium_turret"
+		locatorname = "front_left_eye"
+	}
+	component_slot = {
+		name = "M_05"
+		template = "invisible_medium_turret"
+		locatorname = "front_right_eye"
+	}
+	component_slot = {
+		name = "M_06"
+		template = "invisible_medium_turret"
+		locatorname = "front_top_eye"
+	}
+	component_slot = {
+		name = "PD_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "bottom_fin_core"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "right_fin_core"
+	}
+	component_slot = {
+		name = "PD_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "left_fin_core"
+	}
+
+	small_utility_slots = 4
+	aux_utility_slots = 3
+}
+
+ship_section_template = {
+	key = "im_angelic_ophanim_8s2p" #9s3p
+	ship_size = im_angelic_ophanim
+	fits_on_slot = mid
+	entity = "im_ophan_frame_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name = "S_01"
+		template = "invisible_small_turret"
+		locatorname = "front_left_eye"
+	}
+	component_slot = {
+		name = "S_02"
+		template = "invisible_small_turret"
+		locatorname = "back_left_eye"
+	}
+	component_slot = {
+		name = "S_03"
+		template = "invisible_small_turret"
+		locatorname = "front_right_eye"
+	}
+	component_slot = {
+		name = "S_04"
+		template = "invisible_small_turret"
+		locatorname = "back_right_eye"
+	}
+	component_slot = {
+		name = "S_05"
+		template = "invisible_small_turret"
+		locatorname = "front_top_eye"
+	}
+	component_slot = {
+		name = "S_06"
+		template = "invisible_small_turret"
+		locatorname = "back_top_eye"
+	}
+	component_slot = {
+		name = "S_07"
+		template = "invisible_small_turret"
+		locatorname = "side_bottom_eye"
+	}
+	component_slot = {
+		name = "S_08"
+		template = "invisible_small_turret"
+		locatorname = "side_left_eye"
+	}
+	component_slot = {
+		name = "S_09"
+		template = "invisible_small_turret"
+		locatorname = "side_right_eye"
+	}
+	component_slot = {
+		name = "PD_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "ring_r_loc"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "ring_l_loc"
+	}
+	component_slot = {
+		name = "PD_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "ring_top_loc"
+	}
+
+	small_utility_slots = 4
+	aux_utility_slots = 3
+}
+
+ship_section_template = {
+	key = "im_angelic_ophanim_4lp2" #4l3p
+	ship_size = im_angelic_ophanim
+	fits_on_slot = mid
+	entity = "im_ophan_frame_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name = "L_01"
+		template = "invisible_large_turret"
+		locatorname = "spinal_gun"
+	}
+	component_slot = {
+		name = "L_02"
+		template = "invisible_large_turret"
+		locatorname = "side_bottom_eye"
+	}
+	component_slot = {
+		name = "L_03"
+		template = "invisible_large_turret"
+		locatorname = "side_right_eye"
+	}
+	component_slot = {
+		name = "L_04"
+		template = "invisible_large_turret"
+		locatorname = "side_left_eye"
+	}
+	component_slot = {
+		name = "PD_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "ring_r_loc"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "ring_l_loc"
+	}
+	component_slot = {
+		name = "PD_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "ring_top_loc"
+	}
+
+	small_utility_slots = 4
+	aux_utility_slots = 3
+
+	prerequisites = { tech_honorguard_l3 }
+}
+
+
+	####
+	###
+	#####
+	###
+	####
+
+ship_section_template = {
+	key = "im_angelic_cherubim_bow_2l8m2p" # Gunship Bow
+	ship_size = im_angelic_cherubim
+	fits_on_slot = bow
+	entity = "im_cherub_frame_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name = "L_01"
+		template = "invisible_large_turret"
+		locatorname = "spinal_gun"
+	}
+	component_slot = {
+		name = "L_02"
+		template = "invisible_large_turret"
+		locatorname = "spinal_gun"
+	}
+	component_slot = {
+		name = "M_01"
+		template = "invisible_medium_turret"
+		locatorname = "r_fin_core"
+	}
+	component_slot = {
+		name = "M_02"
+		template = "invisible_medium_turret"
+		locatorname = "l_fin_core"
+	}
+	component_slot = {
+		name = "M_03"
+		template = "invisible_medium_turret"
+		locatorname = "b_fin_core"
+	}
+	component_slot = {
+		name = "M_04"
+		template = "invisible_medium_turret"
+		locatorname = "r_fin_core"
+	}
+	component_slot = {
+		name = "M_05"
+		template = "invisible_medium_turret"
+		locatorname = "l_fin_core"
+	}
+	component_slot = {
+		name = "M_06"
+		template = "invisible_medium_turret"
+		locatorname = "b_fin_core"
+	}
+	component_slot = {
+		name = "M_07"
+		template = "invisible_medium_turret"
+		locatorname = "r_fin_core"
+	}
+	component_slot = {
+		name = "M_08"
+		template = "invisible_medium_turret"
+		locatorname = "l_fin_core"
+	}
+	component_slot = {
+		name = "PD_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "b_fin_core"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "reactor"
+	}
+
+	medium_utility_slots = 6
+	aux_utility_slots = 2
+}
+
+ship_section_template = {
+	key = "im_angelic_cherubim_stern_1l6m2p" # Gunship Stern
+	ship_size = im_angelic_cherubim
+	fits_on_slot = stern
+	entity = "im_cherub_frame_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name = "L_01"
+		template = "invisible_large_turret"
+		locatorname = "spinal_gun"
+	}
+	component_slot = {
+		name = "M_01"
+		template = "invisible_medium_turret"
+		locatorname = "hangar_1"
+	}
+	component_slot = {
+		name = "M_02"
+		template = "invisible_medium_turret"
+		locatorname = "hangar_2"
+	}
+	component_slot = {
+		name = "M_03"
+		template = "invisible_medium_turret"
+		locatorname = "hangar_3"
+	}
+	component_slot = {
+		name = "M_04"
+		template = "invisible_medium_turret"
+		locatorname = "hangar_1"
+	}
+	component_slot = {
+		name = "M_05"
+		template = "invisible_medium_turret"
+		locatorname = "hangar_2"
+	}
+	component_slot = {
+		name = "M_06"
+		template = "invisible_medium_turret"
+		locatorname = "hangar_3"
+	}
+	component_slot = {
+		name = "PD_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "ring_r_loc"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "ring_l_loc"
+	}
+	component_slot = {
+		name = "PD_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "ring_top_loc"
+	}
+
+	medium_utility_slots = 6
+	aux_utility_slots = 2
+}
+
+
+ship_section_template = {
+	key = "im_angelic_cherubim_bow_6l2g" # Artillery Bow
+	ship_size = im_angelic_cherubim
+	fits_on_slot = bow
+	entity = "im_cherub_frame_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name = "L_01"
+		template = "invisible_large_turret"
+		locatorname = "spinal_gun"
+	}
+	component_slot = {
+		name = "L_02"
+		template = "invisible_large_turret"
+		locatorname = "spinal_gun"
+	}
+	component_slot = {
+		name = "L_03"
+		template = "invisible_large_turret"
+		locatorname = "spinal_gun"
+	}
+	component_slot = {
+		name = "L_04"
+		template = "invisible_large_turret"
+		locatorname = "spinal_gun"
+	}
+	component_slot = {
+		name = "L_05"
+		template = "invisible_large_turret"
+		locatorname = "spinal_gun"
+	}
+	component_slot = {
+		name = "L_06"
+		template = "invisible_large_turret"
+		locatorname = "spinal_gun"
+	}
+	component_slot = {
+		name = "G_01"
+		template = "invisible_missile_turret"
+		locatorname = "spinal_gun"
+	}
+	component_slot = {
+		name = "G_02"
+		template = "invisible_missile_turret"
+		locatorname = "spinal_gun"
+	}
+
+	medium_utility_slots = 8
+	aux_utility_slots = 2
+}
+
+ship_section_template = {
+	key = "im_angelic_cherubim_stern_1h2m4p" # Picket Stern
+	ship_size = im_angelic_cherubim
+	fits_on_slot = stern
+	entity = "im_cherub_frame_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name = "H_01"
+		template = "large_strike_craft"
+		locatorname = "hangar_1"
+	}
+	component_slot = {
+		name = "M_01"
+		template = "invisible_medium_turret"
+		locatorname = "hangar_2"
+	}
+	component_slot = {
+		name = "M_02"
+		template = "invisible_medium_turret"
+		locatorname = "hangar_3"
+	}
+	component_slot = {
+		name = "PD_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "r_fin_core"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "l_fin_core"
+	}
+	component_slot = {
+		name = "PD_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "b_fin_core"
+	}
+	component_slot = {
+		name = "PD_04"
+		template = "invisible_point_defence_turret"
+		locatorname = "ring_r_loc"
+	}
+	component_slot = {
+		name = "PD_05"
+		template = "invisible_point_defence_turret"
+		locatorname = "ring_l_loc"
+	}
+	component_slot = {
+		name = "PD_06"
+		template = "invisible_point_defence_turret"
+		locatorname = "ring_top_loc"
+	}
+
+	medium_utility_slots = 4
+	aux_utility_slots = 2
+}
+
+ship_section_template = {
+	key = "im_angelic_cherubim_bow_4l6h" # Carrier Bow
+	ship_size = im_angelic_cherubim
+	fits_on_slot = bow
+	entity = "im_cherub_frame_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name = "L_01"
+		template = "invisible_large_turret"
+		locatorname = "spinal_gun"
+	}
+	component_slot = {
+		name = "L_02"
+		template = "invisible_large_turret"
+		locatorname = "spinal_gun"
+	}
+	component_slot = {
+		name = "L_03"
+		template = "invisible_large_turret"
+		locatorname = "spinal_gun"
+	}
+	component_slot = {
+		name = "L_04"
+		template = "invisible_large_turret"
+		locatorname = "spinal_gun"
+	}
+	component_slot = {
+		name = "H_01"
+		template = "large_strike_craft"
+		locatorname = "hangar_1"
+	}
+	component_slot = {
+		name = "H_02"
+		template = "large_strike_craft"
+		locatorname = "hangar_2"
+	}
+	component_slot = {
+		name = "H_03"
+		template = "large_strike_craft"
+		locatorname = "hangar_3"
+	}
+	component_slot = {
+		name = "H_04"
+		template = "large_strike_craft"
+		locatorname = "hangar_1"
+	}
+	component_slot = {
+		name = "H_05"
+		template = "large_strike_craft"
+		locatorname = "hangar_2"
+	}
+	component_slot = {
+		name = "H_06"
+		template = "large_strike_craft"
+		locatorname = "hangar_3"
+	}
+
+	medium_utility_slots = 6
+	aux_utility_slots = 2
+}
+
+ship_section_template = {
+	key = "im_angelic_cherubim_stern_6g2p" # Grenadier Stern
+	ship_size = im_angelic_cherubim
+	fits_on_slot = stern
+	entity = "im_cherub_frame_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name = "G_01"
+		template = "invisible_missile_turret"
+		locatorname = "hangar_1"
+	}
+	component_slot = {
+		name = "G_02"
+		template = "invisible_missile_turret"
+		locatorname = "hangar_2"
+	}
+	component_slot = {
+		name = "G_03"
+		template = "invisible_missile_turret"
+		locatorname = "hangar_3"
+	}
+	component_slot = {
+		name = "G_04"
+		template = "invisible_missile_turret"
+		locatorname = "hangar_1"
+	}
+	component_slot = {
+		name = "G_05"
+		template = "invisible_missile_turret"
+		locatorname = "hangar_2"
+	}
+	component_slot = {
+		name = "G_06"
+		template = "invisible_missile_turret"
+		locatorname = "hangar_3"
+	}
+	component_slot = {
+		name = "PD_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "ring_r_loc"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "ring_l_loc"
+	}
+	component_slot = {
+		name = "PD_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "ring_top_loc"
+	}
+
+	medium_utility_slots = 4
+	aux_utility_slots = 2
+}
+
+
+	####
+	###
+	#####
+	###
+	####
+
+ship_section_template = {
+	key = "im_seraph_shipbreaker_bow"
+	ship_size = im_angelic_seraphim
+	fits_on_slot = bow
+	entity = "im_seraph_frame_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name = "T_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "core_front"
+	}
+
+	large_utility_slots = 8
+	aux_utility_slots = 2
+}
+
+ship_section_template = {
+	key = "im_seraph_artillery_midships"
+	ship_size = im_angelic_seraphim
+	fits_on_slot = mid
+	entity = "im_seraph_frame_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name = "XL_01"
+		template = "invisible_extra_large_turret"
+		locatorname = "fin_c_bottom"
+	}
+	component_slot = {
+		name = "XL_02"
+		template = "invisible_extra_large_turret"
+		locatorname = "fin_r_top"
+	}
+	component_slot = {
+		name = "XL_03"
+		template = "invisible_extra_large_turret"
+		locatorname = "fin_l_top"
+	}
+	component_slot = {
+		name = "XL_04"
+		template = "invisible_extra_large_turret"
+		locatorname = "ring_f_c_top"
+	}
+	component_slot = {
+		name = "XL_05"
+		template = "invisible_extra_large_turret"
+		locatorname = "ring_f_r_bottom"
+	}
+	component_slot = {
+		name = "XL_06"
+		template = "invisible_extra_large_turret"
+		locatorname = "ring_f_l_bottom"
+	}
+	component_slot = {
+		name = "L_01"
+		template = "invisible_large_turret"
+		locatorname = "fin_c_bottom"
+	}
+	component_slot = {
+		name = "L_02"
+		template = "invisible_large_turret"
+		locatorname = "fin_r_top"
+	}
+	component_slot = {
+		name = "L_03"
+		template = "invisible_large_turret"
+		locatorname = "fin_l_top"
+	}
+	component_slot = {
+		name = "L_04"
+		template = "invisible_large_turret"
+		locatorname = "ring_f_c_top"
+	}
+	component_slot = {
+		name = "L_05"
+		template = "invisible_large_turret"
+		locatorname = "ring_f_r_bottom"
+	}
+	component_slot = {
+		name = "L_06"
+		template = "invisible_large_turret"
+		locatorname = "ring_f_l_bottom"
+	}
+	component_slot = {
+		name = "L_07"
+		template = "invisible_large_turret"
+		locatorname = "fin_c_bottom"
+	}
+	component_slot = {
+		name = "L_08"
+		template = "invisible_large_turret"
+		locatorname = "fin_r_top"
+	}
+	component_slot = {
+		name = "L_09"
+		template = "invisible_large_turret"
+		locatorname = "fin_l_top"
+	}
+	component_slot = {
+		name = "L_10"
+		template = "invisible_large_turret"
+		locatorname = "ring_f_c_top"
+	}
+	component_slot = {
+		name = "L_11"
+		template = "invisible_large_turret"
+		locatorname = "ring_f_r_bottom"
+	}
+	component_slot = {
+		name = "L_12"
+		template = "invisible_large_turret"
+		locatorname = "ring_f_l_bottom"
+	}
+
+	large_utility_slots = 8
+	aux_utility_slots = 2
+}
+
+ship_section_template = {
+	key = "im_seraph_grenadier_midships"
+	ship_size = im_angelic_seraphim
+	fits_on_slot = mid
+	entity = "im_seraph_frame_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	component_slot = {
+		name = "L_01"
+		template = "invisible_large_turret"
+		locatorname = "fin_c_bottom"
+	}
+	component_slot = {
+		name = "L_02"
+		template = "invisible_large_turret"
+		locatorname = "fin_r_top"
+	}
+	component_slot = {
+		name = "L_03"
+		template = "invisible_large_turret"
+		locatorname = "fin_l_top"
+	}
+	component_slot = {
+		name = "L_04"
+		template = "invisible_large_turret"
+		locatorname = "ring_f_c_top"
+	}
+	component_slot = {
+		name = "L_05"
+		template = "invisible_large_turret"
+		locatorname = "ring_f_r_bottom"
+	}
+	component_slot = {
+		name = "L_06"
+		template = "invisible_large_turret"
+		locatorname = "ring_f_l_bottom"
+	}
+	component_slot = {
+		name = "G_01"
+		template = "invisible_missile_turret"
+		locatorname = "fin_c_bottom"
+	}
+	component_slot = {
+		name = "G_02"
+		template = "invisible_missile_turret"
+		locatorname = "fin_r_top"
+	}
+	component_slot = {
+		name = "G_03"
+		template = "invisible_missile_turret"
+		locatorname = "fin_l_top"
+	}
+	component_slot = {
+		name = "G_04"
+		template = "invisible_missile_turret"
+		locatorname = "ring_f_c_top"
+	}
+	component_slot = {
+		name = "G_05"
+		template = "invisible_missile_turret"
+		locatorname = "ring_f_r_bottom"
+	}
+	component_slot = {
+		name = "G_06"
+		template = "invisible_missile_turret"
+		locatorname = "ring_f_l_bottom"
+	}
+	component_slot = {
+		name = "G_07"
+		template = "invisible_missile_turret"
+		locatorname = "fin_c_bottom"
+	}
+	component_slot = {
+		name = "G_08"
+		template = "invisible_missile_turret"
+		locatorname = "fin_r_top"
+	}
+	component_slot = {
+		name = "G_09"
+		template = "invisible_missile_turret"
+		locatorname = "fin_l_top"
+	}
+	component_slot = {
+		name = "G_10"
+		template = "invisible_missile_turret"
+		locatorname = "ring_f_c_top"
+	}
+	component_slot = {
+		name = "G_11"
+		template = "invisible_missile_turret"
+		locatorname = "ring_f_r_bottom"
+	}
+	component_slot = {
+		name = "G_12"
+		template = "invisible_missile_turret"
+		locatorname = "ring_f_l_bottom"
+	}
+
+	large_utility_slots = 8
+	aux_utility_slots = 2
+}
+
+ship_section_template = {
+	key = "im_seraph_interceptor_stern"
+	ship_size = im_angelic_seraphim
+	fits_on_slot = stern
+	entity = "im_seraph_frame_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name = "PD_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "fin_c_end_bottom"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "fin_r_end_top"
+	}
+	component_slot = {
+		name = "PD_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "fin_l_end_top"
+	}
+	component_slot = {
+		name = "S_01"
+		template = "invisible_small_turret"
+		locatorname = "ring_c_end_top"
+	}
+	component_slot = {
+		name = "S_02"
+		template = "invisible_small_turret"
+		locatorname = "ring_l_end_bottom"
+	}
+	component_slot = {
+		name = "S_03"
+		template = "invisible_small_turret"
+		locatorname = "ring_r_end_bottom"
+	}
+	component_slot = {
+		name = "S_04"
+		template = "invisible_small_turret"
+		locatorname = "ring_c_top"
+	}
+	component_slot = {
+		name = "S_05"
+		template = "invisible_small_turret"
+		locatorname = "ring_l_bottom"
+	}
+	component_slot = {
+		name = "S_06"
+		template = "invisible_small_turret"
+		locatorname = "ring_r_bottom"
+	}
+	component_slot = {
+		name = "S_07"
+		template = "invisible_small_turret"
+		locatorname = "ring_c_end_top"
+	}
+	component_slot = {
+		name = "S_08"
+		template = "invisible_small_turret"
+		locatorname = "ring_l_end_bottom"
+	}
+	component_slot = {
+		name = "S_09"
+		template = "invisible_small_turret"
+		locatorname = "ring_r_end_bottom"
+	}
+	component_slot = {
+		name = "S_10"
+		template = "invisible_small_turret"
+		locatorname = "ring_c_top"
+	}
+	component_slot = {
+		name = "S_11"
+		template = "invisible_small_turret"
+		locatorname = "ring_l_bottom"
+	}
+	component_slot = {
+		name = "S_12"
+		template = "invisible_small_turret"
+		locatorname = "ring_r_bottom"
+	}
+
+	large_utility_slots = 8
+	aux_utility_slots = 2
+}

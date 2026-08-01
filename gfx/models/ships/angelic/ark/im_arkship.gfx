@@ -1,0 +1,158 @@
+objectTypes = {
+	pdxmesh = {
+		name = "im_angelic_weapon_mesh"
+		file = "gfx/models/ships/angelic/ark/im_angelic_weapon.mesh"
+		scale = 2.6
+		
+		# animation = { id = "opened"			type = "im_angelic_weapon_open_animation" }
+		animation = { id = "closed"			type = "im_angelic_weapon_close_animation" }
+		animation = { id = "opening"		type = "im_angelic_weapon_opening_animation" }
+		animation = { id = "closing"		type = "im_angelic_weapon_closing_animation" }
+		animation = { id = "idle_1"			type = "im_angelic_weapon_01_idle_animation" }
+		animation = { id = "idle_2"			type = "im_angelic_weapon_02_idle_animation" }
+
+		meshsettings = {
+			name = "ragnarokShape"
+			index = 0
+			texture_diffuse = "im_angelic_weapon_s_funnel_diffuse.dds"
+			texture_normal = "im_angelic_weapon_s_funnel_normal.dds"
+			texture_specular = "im_angelic_weapon_s_funnel_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "ragnarokShape"
+			index = 1
+			texture_diffuse = "im_angelic_weapon_reactor_diffuse.dds"
+			texture_normal = "im_angelic_weapon_reactor_normal.dds"
+			texture_specular = "im_angelic_weapon_reactor_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "ragnarokShape"
+			index = 2
+			texture_diffuse = "im_angelic_weapon_l_funnel_diffuse.dds"
+			texture_normal = "im_angelic_weapon_l_funnel_normal.dds"
+			texture_specular = "im_angelic_weapon_l_funnel_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "ragnarokShape"
+			index = 3
+			texture_diffuse = "im_angelic_weapon_mount_diffuse.dds"
+			texture_normal = "im_angelic_weapon_mount_normal.dds"
+			texture_specular = "im_angelic_weapon_mount_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "ragnarokShape"
+			index = 4
+			texture_diffuse = "im_angelic_weapon_frame_diffuse.dds"
+			texture_normal = "im_angelic_weapon_frame_normal.dds"
+			texture_specular = "im_angelic_weapon_frame_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "ragnarokShape"
+			index = 5
+			texture_diffuse = "im_angelic_weapon_core_diffuse.dds"
+			texture_normal = "im_angelic_weapon_core_normal.dds"
+			texture_specular = "im_angelic_weapon_core_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "im_angelic_megastructure_weapon_core_mesh"
+		file = "gfx/models/ships/angelic/ark/im_angelic_megastructure_weapon_core.mesh"
+		scale = 2.6
+
+		meshsettings = {
+			name = "ragnarok_coreShape"
+			index = 0
+			texture_diffuse = "bwm_lex_ancient_weapon_core_diffuse.dds"
+			texture_normal = "bwm_lex_ancient_weapon_core_normal.dds"
+			texture_specular = "bwm_lex_ancient_weapon_core_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "im_angelic_megastructure_weapon_structure_mesh"
+		file = "gfx/models/ships/angelic/ark/im_angelic_megastructure_weapon_structure.mesh"
+		scale = 2.6
+
+		meshsettings = {
+			name = "ragnarok_structure_1Shape"
+			index = 0
+			texture_diffuse = "bwm_lex_ancient_weapon_frame_diffuse.dds"
+			texture_normal = "bwm_lex_ancient_weapon_frame_normal.dds"
+			texture_specular = "bwm_lex_ancient_weapon_frame_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "im_angelic_megastructure_weapon_mount_mesh"
+		file = "gfx/models/ships/angelic/ark/im_angelic_megastructure_weapon_mount.mesh"
+		scale = 2.6
+
+		meshsettings = {
+			name = "ragnarok_mount_1Shape"
+			index = 0
+			texture_diffuse = "bwm_lex_ancient_weapon_mount_diffuse.dds"
+			texture_normal = "bwm_lex_ancient_weapon_mount_normal.dds"
+			texture_specular = "bwm_lex_ancient_weapon_mount_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "im_angelic_megastructure_weapon_reactor_mesh"
+		file = "gfx/models/ships/angelic/ark/im_angelic_megastructure_weapon_reactor.mesh"
+		scale = 2.6
+
+		meshsettings = {
+			name = "ragnarok_reactor_1Shape"
+			index = 0
+			texture_diffuse = "bwm_lex_ancient_weapon_reactor_diffuse.dds"
+			texture_normal = "bwm_lex_ancient_weapon_reactor_normal.dds"
+			texture_specular = "bwm_lex_ancient_weapon_reactor_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "im_angelic_megastructure_weapon_s_fin_mesh"
+		file = "gfx/models/ships/angelic/ark/im_angelic_megastructure_weapon_s_fin.mesh"
+		scale = 2.6
+
+		meshsettings = {
+			name = "ragnarok_S_funnel_1Shape"
+			index = 0
+			texture_diffuse = "bwm_lex_ancient_weapon_s_funnel_diffuse.dds"
+			texture_normal = "bwm_lex_ancient_weapon_s_funnel_normal.dds"
+			texture_specular = "bwm_lex_ancient_weapon_s_funnel_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "im_angelic_megastructure_weapon_l_fin_mesh"
+		file = "gfx/models/ships/angelic/ark/im_angelic_megastructure_weapon_l_fin.mesh"
+		scale = 2.6
+
+		meshsettings = {
+			name = "ragnarok_L_funnel_1Shape"
+			index = 0
+			texture_diffuse = "bwm_lex_ancient_weapon_l_funnel_diffuse.dds"
+			texture_normal = "bwm_lex_ancient_weapon_l_funnel_normal.dds"
+			texture_specular = "bwm_lex_ancient_weapon_l_funnel_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

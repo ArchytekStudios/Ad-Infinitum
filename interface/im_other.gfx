@@ -1,0 +1,21 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_ap_im_infinityempire"
+		textureFile = "gfx/interface/icons/ascension_perks/ap_im_infinityempire.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_text_infinitypoints"
+		textureFile = "gfx/interface/icons/resources/im_infinitypoints.dds"
+	}
+
+	spriteType = {
+		name = "GFX_evt_searing_star"
+		textureFile = "gfx/event_pictures/im_star_searing.dds"
+ 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+ 		alwaystransparent = yes
+	}
+
+}

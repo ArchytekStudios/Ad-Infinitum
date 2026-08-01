@@ -1,0 +1,29 @@
+
+#	# Strange Rumbles
+#	im_anomaly_legacyofthedead_starter = {
+#		should_ai_and_humans_use = yes
+#	
+#		desc = im_anomaly_desc
+#		picture = GFX_evt_alien_ruins
+#		level = 7
+#	
+#		null_spawn_chance = 0
+#		max_once = yes
+#		max_once_global = no
+#	
+#		spawn_chance = {
+#			base = 0
+#			modifier = {
+#				add = 1
+#				is_barren = yes
+#			}
+#			modifier = {
+#				add = 1
+#				from.owner = { has_country_flag = im_made_a_searing_star }
+#			}
+#		}
+#		on_spawn = {
+#			set_planet_flag = im_is_legacydead_relic
+#		}
+#		on_success = im_general.2005
+#	}

@@ -1,0 +1,49 @@
+
+objectTypes = {
+    
+    ###----------------###
+    ##  WEAPONS - HITS  ##
+    ###----------------###
+
+    pdxparticle = {
+		name = "im_angel_laser_small_hit_effect"
+		type = "im_angel_laser_hit_effect"
+		
+		scale = 0.75
+	}
+
+    pdxparticle = {
+		name = "im_angel_laser_medium_hit_effect"
+		type = "im_angel_laser_hit_effect"
+		
+		scale = 1
+	}
+
+    pdxparticle = {
+		name = "im_angel_laser_large_hit_effect"
+		type = "im_angel_laser_hit_effect"
+		
+		scale = 2
+	}
+    
+	pdxparticle = {
+		name = "infrared_laser_large_muzzle_particle"
+		type = "im_angel_laser_muzzle_effect"
+		
+		scale = 4
+	}
+	
+	pdxparticle = {
+		name = "infrared_laser_medium_muzzle_particle"
+		type = "im_angel_laser_muzzle_effect"
+		
+		scale = 2
+	}
+	
+	pdxparticle = {
+		name = "infrared_laser_small_muzzle_particle"
+		type = "im_angel_laser_muzzle_effect"
+		
+		scale = 1.5
+	}
+}

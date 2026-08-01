@@ -1,0 +1,167 @@
+
+tech_angel_bldg_capitol = {
+	cost = 42500
+	area = society
+	tier = 1
+	is_rare = yes
+	category = { statecraft }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire 
+		has_country_flag = IM_INFINITE_EMPIRE_PROPHET
+	}
+	weight = 9999
+}
+
+tech_angel_bldg_labs = {
+	cost = 42500
+	area = physics
+	tier = 1
+	is_rare = yes
+	category = { particles }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire 
+		has_country_flag = IM_INFINITE_EMPIRE_PROPHET
+	}
+	prerequisites = { tech_angel_bldg_capitol }
+	weight = 9999
+}
+
+tech_angel_bldg_fabricator = {
+	cost = 42500
+	area = engineering
+	tier = 1
+	is_rare = yes
+	category = { materials }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire 
+		has_country_flag = IM_INFINITE_EMPIRE_PROPHET
+	}
+	prerequisites = { tech_angel_bldg_capitol }
+	weight = 9999
+}
+
+tech_angel_bldg_manipulator = {
+	cost = 85000
+	area = physics
+	tier = 1
+	is_rare = yes
+	category = { field_manipulation }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire 
+		has_country_flag = IM_INFINITE_EMPIRE_SAGE
+	}
+	prerequisites = { tech_angel_bldg_capitol }
+	weight = 9999
+}
+
+tech_angel_bldg_shield = {
+	cost = 85000
+	area = physics
+	tier = 1
+	is_rare = yes
+	category = { field_manipulation }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire 
+		has_country_flag = IM_INFINITE_EMPIRE_SAGE
+	}
+	prerequisites = { tech_angel_bldg_capitol }
+	weight = 9999
+}
+
+tech_angel_bldg_tetraforge = {
+	cost = 85000
+	area = engineering
+	tier = 1
+	is_rare = yes
+	category = { materials }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire 
+		has_country_flag = IM_INFINITE_EMPIRE_SAGE
+	}
+	prerequisites = { tech_angel_bldg_capitol }
+	weight = 9999
+}
+
+tech_angel_bldg_energyplant = {
+	cost = 85000
+	area = physics
+	tier = 1
+	is_rare = yes
+	category = { field_manipulation }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire 
+		has_country_flag = IM_INFINITE_EMPIRE_SAGE
+	}
+	prerequisites = { tech_angel_bldg_capitol }
+	weight = 9999
+}
+
+tech_angel_bldg_supercity = {
+	cost = 85000
+	area = society
+	tier = 1
+	is_rare = yes
+	category = { statecraft }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire 
+		has_country_flag = IM_INFINITE_EMPIRE_SAGE
+	}
+	prerequisites = { tech_angel_bldg_capitol }
+	weight = 9999
+}
+
+tech_angel_bldg_entertainment_hall = {
+	cost = 85000
+	area = society
+	tier = 1
+	is_rare = yes
+	category = { statecraft }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire 
+		has_country_flag = IM_INFINITE_EMPIRE_SAGE
+	}
+	prerequisites = { tech_angel_bldg_capitol }
+	weight = 9999
+}
+
+tech_angel_bldg_sentry_station = {
+	cost = 85000
+	area = society
+	tier = 1
+	is_rare = yes
+	category = { military_theory }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire 
+		has_country_flag = IM_INFINITE_EMPIRE_SAGE
+	}
+	prerequisites = { tech_angel_bldg_capitol }
+	weight = 9999
+}
+
+tech_angel_bldg_health_ward = {
+	cost = 85000
+	area = society
+	tier = 1
+	is_rare = yes
+	category = { statecraft }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire 
+		has_country_flag = IM_INFINITE_EMPIRE_SAGE
+	}
+	prerequisites = { tech_angel_bldg_capitol }
+	weight = 9999
+}
+
+tech_angel_bldg_machination_complex = {
+	cost = 85000
+	area = engineering
+	tier = 1
+	is_rare = yes
+	category = { industry }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire 
+		has_country_flag = IM_INFINITE_EMPIRE_SAGE
+	}
+	prerequisites = { tech_angel_bldg_capitol }
+	weight = 9999
+}

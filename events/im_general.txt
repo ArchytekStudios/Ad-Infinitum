@@ -1,0 +1,91 @@
+namespace = im_general
+
+system_event = {
+	id = im_general.1995
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		set_star_class = sc_im_searing_star
+		every_system_planet = {
+			IF = {
+				limit = { NOR = { is_star = yes clib_is_standard_star_planet = yes } }
+				IF = { 
+					limit = { OR = { clib_is_tiny_planet = yes is_planet_class = pc_gas_giant } }
+					remove_planet = yes 
+				}
+				ELSE = { change_pc = pc_im_bleeding_world }
+			}
+		}
+	}
+}
+
+country_event = {	# First Searing Star
+	id = im_general.2000
+	is_triggered_only = yes
+	trigger = { NOT = { has_country_flag = im_made_a_searing_star } }
+
+	title = im_general.2000
+	desc = im_general.2000_b
+	picture = GFX_evt_searing_star
+
+	option = {
+		name = EXCELLENT
+	}
+	immediate = {
+		set_country_flag = im_made_a_searing_star
+	}
+}
+
+country_event = {
+	id = im_general.2005
+	is_triggered_only = yes
+	trigger = { has_country_flag = im_made_a_searing_star }
+
+	title = im_legacyofthedead
+	desc = im_legacydead_evt_desc
+	picture = GFX_evt_relic_world
+
+	option = { name = INTERESTING }
+	immediate = { 
+		random_planet_within_border = { 
+			limit = { 
+				clib_is_tiny_planet = no 
+				#is_star = no 
+				#is_artificial = no
+				#is_colonizable = no
+				is_barren = yes
+				#NOT = { is_planet_class = pc_gas_giant }
+			} 
+			planet_event = { id = im_general.2007 } 
+		} 
+	}
+}
+
+planet_event = { # LOTD, barren
+	id = im_general.2007
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = { create_archaeological_site = site_legacyofthedead_adinf }
+}
+
+
+planet_event = { # GIG, cold barren
+	id = im_general.2010
+	is_triggered_only = yes
+	hide_window = yes
+#	immediate = { create_archaeological_site = site_grandimpossiblygrand_adinf }
+}
+
+planet_event = { # LATH, molten or barren
+	id = im_general.2015
+	is_triggered_only = yes
+	hide_window = yes
+#	immediate = { create_archaeological_site = site_likeantennastoheaven_adinf }
+}
+
+planet_event = { # HEV, toxic
+	id = im_general.2020
+	is_triggered_only = yes
+	hide_window = yes
+#	immediate = { create_archaeological_site = site_hazardousenvironments_adinf }
+}

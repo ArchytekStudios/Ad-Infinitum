@@ -1,0 +1,257 @@
+
+im_aresforge_base = {
+	entity = "im_aresforge_constructionbase_entity"
+	construction_entity = "im_aresforge_constructionbase_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = yes
+	scales_with_planet = yes
+	build_type = around_planet
+	show_galactic_map_icon = yes
+	show_in_outliner = yes
+	potential = { clib_is_infinite_empire = yes }
+	possible = {
+		hidden_trigger = {
+			exists = starbase
+		}
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "only_one_per_country"
+			exists = owner
+			NOT = {
+				owner = {
+					has_country_flag = im_has_aresforge
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "clib_requires_standard_star"
+			clib_is_standard_star = yes
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_habitable_planets"
+			NOT = {
+				any_system_planet = {
+					colonizable_planet = yes
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_existing_megastructure"
+			has_no_non_gate_megastructure = yes
+			NOT = {
+				any_system_planet = {
+					is_planet_class = pc_cosmogenesis_world
+				}
+			}
+		}
+	}
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "must_build_around_star"
+				is_star = yes
+			}
+		}
+	}
+	prerequisites = { tech_aresforge }
+	show_prereqs = yes
+	build_time = 720
+	resources = {
+		category = megastructures
+		cost = {
+			im_infinityenergy = 1500
+			im_infinitymatter = 285
+		}
+		upkeep = {
+			im_infinitypoints = 10
+			im_infinityenergy = 15
+		}
+	}
+	construction_blocks_and_blocked_by = self_type
+
+	dismantle_cost = {
+		category = megastructures
+		cost = {
+			im_infinitymatter = 125
+		}
+	}
+
+	dismantle_time = 360
+
+	dismantle_potential = {
+		always = yes
+	}
+
+	dismantle_possible = {
+		exists = owner
+		owner = { clib_is_infinite_empire = yes }
+	}
+
+	on_dismantle_complete = {
+		from = {
+			add_resource = {
+				im_infinityenergy = 1500
+				im_infinitymatter = 285
+				mult = modifier:megastructure_dismantle_refund_mult
+			}
+			remove_country_flag = im_has_aresforge
+		}
+	}
+
+	on_build_complete = {
+		from = { set_country_flag = im_has_aresforge }
+		every_system_planet = {
+			limit = { is_star = no }
+			remove_planet = yes
+		}
+		set_asteroid_belt = {
+			radius = 0
+		}
+	}
+}
+
+im_aresforge_shieldplus = {
+	entity = "im_aresforge_shieldplus_entity"
+	construction_entity = "im_aresforge_shieldplus_entity"
+	portrait = "GFX_megastructure_construction_background"
+	scales_with_planet = yes
+	upgrade_from = { im_aresforge_base }
+	build_time = 360
+	resources = {
+		category = megastructures
+		cost = {
+			im_infinityenergy = 150
+			im_infinitymatter = 500
+		}
+		upkeep = {
+			im_infinitypoints = 10
+			im_infinityenergy = 25
+		}
+	}
+	
+	dismantle_cost = {
+		category = megastructures
+		cost = { im_infinitymatter = 125 }
+	}
+	dismantle_time = 360
+	dismantle_potential = { always = yes }
+	dismantle_possible = {
+		exists = owner
+		owner = { clib_is_infinite_empire = yes }
+	}
+	on_dismantle_complete = {
+		from = {
+			add_resource = {
+				im_infinityenergy = 1500
+				im_infinitymatter = 285
+				mult = modifier:megastructure_dismantle_refund_mult
+			}
+			remove_country_flag = im_has_aresforge
+		}
+	}
+}
+
+im_aresforge_ring = {
+	entity = "im_aresforge_ring_entity"
+	construction_entity = "im_aresforge_ring_entity"
+	portrait = "GFX_megastructure_construction_background"
+	scales_with_planet = yes
+	upgrade_from = { im_aresforge_shieldplus }
+	build_time = 360
+	resources = {
+		category = megastructures
+		cost = {
+			im_infinityenergy = 150
+			im_infinitymatter = 500
+		}
+		upkeep = {
+			im_infinitypoints = 10
+			im_infinityenergy = 35
+		}
+	}
+	
+	dismantle_cost = {
+		category = megastructures
+		cost = { im_infinitymatter = 125 }
+	}
+	dismantle_time = 360
+	dismantle_potential = { always = yes }
+	dismantle_possible = {
+		exists = owner
+		owner = { clib_is_infinite_empire = yes }
+	}
+	on_dismantle_complete = {
+		from = {
+			add_resource = {
+				im_infinityenergy = 1500
+				im_infinitymatter = 285
+				mult = modifier:megastructure_dismantle_refund_mult
+			}
+			remove_country_flag = im_has_aresforge
+		}
+	}
+}
+
+im_aresforge_complete = {
+	entity = "im_aresforge_complete_entity"
+	construction_entity = "im_aresforge_complete_entity"
+	portrait = "GFX_megastructure_construction_background"
+	scales_with_planet = yes
+	upgrade_from = { im_aresforge_ring }
+	build_time = 360
+	resources = {
+		category = megastructures
+		cost = {
+			im_infinityenergy = 150
+			im_infinitymatter = 500
+		}
+		upkeep = {
+			im_infinitypoints = 15
+			im_infinityenergy = 45
+		}
+		produces = {
+			alloys = 2500
+			energy = 250
+			im_infinitymatter = 250
+		}
+	}
+	
+	dismantle_cost = {
+		category = megastructures
+		cost = { im_infinitymatter = 125 }
+	}
+	dismantle_time = 360
+	dismantle_potential = { always = yes }
+	dismantle_possible = {
+		exists = owner
+		owner = { clib_is_infinite_empire = yes }
+	}
+	on_dismantle_complete = {
+		from = {
+			add_resource = {
+				im_infinityenergy = 1500
+				im_infinitymatter = 285
+				mult = modifier:megastructure_dismantle_refund_mult
+			}
+			remove_country_flag = im_has_aresforge
+		}
+	}
+	on_build_complete = { # THIS = system, FROM = owner
+		system_event = { id = im_general.1995 }
+		FROM = { country_event = { id = im_general.2000 } }
+	}
+}

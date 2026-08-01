@@ -1,0 +1,132 @@
+
+ap_im_infinityempire = {
+	potential = {
+		OR = {
+			has_nemesis = yes
+			has_biogenesis_dlc = yes
+			has_machine_age_dlc = yes
+			has_infernals = yes
+			has_nomads = yes # prepped for nomads
+		}
+		NOR = {
+			has_ascension_perk = ap_become_the_crisis			# being an angel is anathema to being a crisis
+			has_ascension_perk = ap_cosmogenesis				# you're trying to leave the galaxy? you can't be an angel
+			has_ascension_perk = ap_defender_of_the_galaxy 		# because the Ambition is incompatible
+			has_ascension_perk = ap_behemoths					# being an angel is anathema to being an Everhungry
+			has_origin = origin_slavers 						# No crisis for MSI
+			has_origin = origin_endbringers 					# No additional crisis for Endbringers
+			is_player_crisis = yes 								# can't be a crisis already!
+			is_fallen_empire = yes								# why?
+			clib_is_infinite_empire = yes 						# can't have the origin AND the crisis...
+			is_nomadic = yes 									# compat unconfirmed since most of the strategic megas REQUIRE a system, though maybe won't need megas except the Grand Arkweapon to replace the Throne
+			is_wilderness_empire = yes							# incompatible
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_3"
+			num_ascension_perks > 2
+		}
+		custom_tooltip = {
+			fail_text = "requires_independence"
+			is_subject = no
+		}
+		custom_tooltip = {
+			fail_text = "must_not_be_custodian"
+			is_galactic_custodian = no
+		}
+		custom_tooltip = {
+			fail_text = "must_not_be_emperor"
+			is_galactic_emperor = no
+		}
+		NOT = { clib_is_infinite_empire = yes } # can't already be Infinite!
+		AND = {
+			has_technology = tech_zero_point_power
+			OR = {
+				has_technology = tech_positronic_implants
+				has_technology = tech_sapient_ai
+				has_technology = tech_psionic_theory
+			}
+		}
+	}
+
+	on_enabled = {
+		hidden_effect = {
+			set_variable = {
+				which = im_infinitypoints_earned
+				value = 0
+			}
+			country_event = { id = im_angel_crisis.1000 }
+		}
+		custom_tooltip = IM_UNLOCK_SINGBUILDING
+		custom_tooltip = IM_UNLOCK_INFENGINE
+		custom_tooltip = IM_UNLOCK_INFPTS
+		activate_crisis_progression = im_infinityempire_path
+		set_country_flag = im_angelic_empire
+		set_country_flag = is_player_crisis
+	}
+
+	ai_weight = {
+		factor = 7.5
+		modifier = {
+			factor = 0.5
+			OR = {
+				is_materialist = yes
+				is_xenophile = yes
+			}
+		}
+		modifier = {
+			factor = 0
+			has_ethic = ethic_fanatic_materialist
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_tradition = tr_psionics_finish
+				has_tradition = tr_harmony_finish
+			}
+		}
+		modifier = {
+			factor = 2
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 2
+			has_ascension_perk = ap_enigmatic_engineering
+		}
+		modifier = {
+			factor = 5
+			is_spiritualist = yes
+		}
+		modifier = {
+			factor = 2
+			vassals > 0
+			any_subject = {
+				any_agreement = {
+					has_active_specialization = specialist_scholarium
+				}
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = whisperers_covenant_confirmed
+		}
+		modifier = {
+			factor = 0
+			galaxy_percentage < 0.1
+		}
+		modifier = {
+			factor = 2
+			galaxy_percentage > 0.2
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				is_ai = yes # because weights will come later
+				has_ascension_perk = ap_im_infinityempire
+			}
+		}
+	}
+
+}

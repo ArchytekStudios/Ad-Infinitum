@@ -1,0 +1,58 @@
+#this is the asset file
+
+entity = {
+	name = "bleeding_world_01_entity" 
+	# "Bleeding World" - Baked in the light of a Searing Star, this world has effectively become obliterated, barely holding together under the immense heat and
+	#	radiation of its' parent star. However, with the right technology, it can be transformed into a thriving ecumenopolis that harvests this power.
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+
+	meshsettings = {
+		name = "planet_geosphereShape"
+		shader = "PdxMeshMoltenPlanet"
+		texture_diffuse = "im_bleeding_planet_diffuse.dds"
+		texture_normal = "im_bleeding_planet_normals.dds"
+		texture_specular = "im_bleeding_planet_specular.dds"
+	}
+
+	default_state = "idle"
+	playback_rate = -1.0 # Rotation is reversed
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_molten_world_a" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_molten_world_b" } }
+	}
+	
+	game_data = {
+		uv_animation_speed 	= 0.1
+		bloom_factor 		= 2.5
+	}
+}
+
+entity = {
+	name = "bleeding_ecu_01_entity"
+	# "Hestian Cityworld" - A dead world given life, the Hestian Cityworld is a planet-scale ecumenopolis harvesting the violent heat of the star above the sky.
+	#	Powered both by the heat of the star, of itself, and by the resilience of the people, this structure is enough to be the capitol of an empire.
+	pdxmesh = "planet_non_clouded_mesh"
+
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "im_bleeding_ecu_diffuse.dds"
+		texture_normal = "im_bleeding_ecu_normal.dds"
+		texture_specular = "im_bleeding_ecu_specular.dds"
+		shader = "PdxMeshPlanetEmissive"
+	}	
+
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "poles_tropical_1_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_city_planet" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_city_planet_flyby" } }
+	}
+
+	attach = { planet = "city_planet_surface_ships_entity" }
+}

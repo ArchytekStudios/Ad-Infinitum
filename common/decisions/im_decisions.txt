@@ -1,0 +1,28 @@
+
+
+decision_im_spawn_capitol = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_open_shroud_rift
+
+	enactment_time = 10
+	prerequisites = { tech_angel_bldg_capitol }
+
+	potential = { NOT = { has_building = building_im_capitol } }
+	resources = {
+		category = decisions
+		cost = {
+			im_infinitypoints = 25
+			im_infinitymatter = 500
+			im_infinityenergy = 25
+		}
+	}
+
+	effect = {
+		custom_tooltip = IM_SPAWN_CAPITOL_EFFECT
+		hidden_effect = {
+			remove_capital_building = yes
+			add_building = building_im_capitol
+		}
+	}
+}

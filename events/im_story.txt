@@ -1,0 +1,170 @@
+namespace = im_story_lotd
+
+# .1; Echoes of the Damned
+# .2; Palace of the Divine
+# .3; Shroud Handiwork?
+# .4; Odd Ship Designs
+# .5; Into the Core
+# .6; Daedalus Brain Theory
+
+fleet_event = {
+	id = im_story_lotd.1
+
+	picture = GFX_evt_alien_ruins
+	show_sound = event_burning_city
+
+	archaeology = yes
+	is_triggered_only = yes
+
+	title = lotd_1_title
+	desc = lotd_1_desc
+	option = { 
+		name = INTERESTING 
+		this.owner = {
+			#add_research_option = tech_thothcomplex
+			IF = {
+				limit = { has_grand_archive_dlc = yes }
+				give_specimen = { key = lotd_angelic_writings_1 }
+			}
+		}
+	}
+	
+	immediate = { from = { set_site_progress_locked = yes } }
+	after = { from = { set_site_progress_locked = no } }
+}
+
+fleet_event = {
+	id = im_story_lotd.2
+
+	picture = GFX_evt_discovered_hidden_door
+	show_sound = event_big_door_opening
+
+	archaeology = yes
+	is_triggered_only = yes
+
+	title = lotd_2_title
+	desc = lotd_2_desc
+	option = { 
+		name = EXCELLENT 
+		this.owner = {
+			add_resource = {
+				im_infinitypoints = 125
+				sr_dark_matter = 150
+				im_infinitymatter = 125
+				im_infinityenergy = 125
+			}
+		}
+	}
+	
+	immediate = { from = { set_site_progress_locked = yes } }
+	after = { 
+		from = { set_site_progress_locked = no } 
+		this.owner = {
+		}
+	}
+}
+
+fleet_event = {
+	id = im_story_lotd.3
+
+	picture = GFX_evt_decryption
+	show_sound = event_conversation
+
+	archaeology = yes
+	is_triggered_only = yes
+
+	title = lotd_3_title
+	desc = lotd_3_desc
+	option = { name = KEEP_SEARCHING }
+	
+	immediate = { from = { set_site_progress_locked = yes } }
+	after = { from = { set_site_progress_locked = no } }
+}
+
+fleet_event = {
+	id = im_story_lotd.4
+
+	picture = GFX_evt_ancient_databank
+	show_sound = event_machinery
+
+	archaeology = yes
+	is_triggered_only = yes
+
+	title = lotd_4_title
+	desc = lotd_4_desc
+	option = { 
+		name = EXCELLENT 
+		this.owner = {
+			#add_research_option = tech_archon_ship
+			IF = {
+				limit = { has_grand_archive_dlc = yes }
+				give_specimen = { key = lotd_angelic_writings_2 }
+			}
+		}
+	}
+	
+	immediate = { from = { set_site_progress_locked = yes } }
+	after = { from = { set_site_progress_locked = no } }
+}
+
+fleet_event = {
+	id = im_story_lotd.5
+
+	picture = GFX_evt_derelict_interior
+	show_sound = event_ghost_town
+
+	archaeology = yes
+	is_triggered_only = yes
+
+	title = lotd_5_title
+	desc = lotd_5_desc
+	option = { 
+		name = KEEP_SEARCHING 
+		this.owner = {
+			add_resource = {
+				im_infinitypoints = 125
+				sr_dark_matter = 150
+				im_infinitymatter = 125
+				im_infinityenergy = 125
+			}
+		}
+	}
+	
+	immediate = { from = { set_site_progress_locked = yes } }
+	after = { from = { set_site_progress_locked = no } }
+}
+
+fleet_event = {
+	id = im_story_lotd.6
+
+	picture = GFX_evt_endbringers
+	show_sound = event_bad_omen #?changme
+
+	archaeology = yes
+	is_triggered_only = yes
+
+	title = lotd_6_title
+	desc = lotd_6_desc
+	option = { 
+		name = INTERESTING 
+		this.owner = { 
+			add_research_option = tech_daedalusbrain
+			#add_research_option = tech_micro_daedalusbrain
+			IF = {
+				limit = { has_grand_archive_dlc = yes }
+				give_specimen = { key = lotd_angelic_writings_3 }
+			}
+		}
+	}
+	
+	immediate = { from = { set_site_progress_locked = yes } }
+	after = { from = { set_site_progress_locked = no } }
+}
+
+namespace = im_story_gig
+
+
+namespace = im_story_lath
+
+
+namespace = im_story_hazenv

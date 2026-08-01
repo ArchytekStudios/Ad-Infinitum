@@ -1,0 +1,73 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_im_searing_star"
+		textureFile = "gfx/map/star_classes/im_searing_star.dds"
+	}
+	spriteType = {
+		name = "GFX_ico_bleeding_planet"
+		textureFile = "gfx/interface/icons/bleeding_planet_icon_s.dds"
+	}
+	spriteType = {
+		name = "GFX_ico_bleeding_planet_big"
+		textureFile = "gfx/interface/icons/bleeding_planet_icon_l.dds"
+	}
+	spriteType = {
+		name = "GFX_ico_bleeding_ecu"
+		textureFile = "gfx/interface/icons/bleeding_ecu_icon_s.dds"
+	}
+	spriteType = {
+		name = "GFX_ico_bleeding_ecu_big"
+		textureFile = "gfx/interface/icons/bleeding_ecu_icon_l.dds"
+	}
+
+	spriteType = {
+		name = "GFX_zone_angelic_energy"
+		texturefile = "gfx/interface/icons/districts/district_specialization_icons/district_specialization_infinity_energy.dds"
+	}
+	spriteType = {
+		name = "GFX_zone_angelic_fortress"
+		texturefile = "gfx/interface/icons/districts/district_specialization_icons/district_specialization_infinity_fortress.dds"
+	}
+	spriteType = {
+		name = "GFX_zone_angelic_hydroponics"
+		texturefile = "gfx/interface/icons/districts/district_specialization_icons/district_specialization_infinity_hydroponics.dds"
+	}
+	spriteType = {
+		name = "GFX_zone_angelic_industrial"
+		texturefile = "gfx/interface/icons/districts/district_specialization_icons/district_specialization_infinity_industrial.dds"
+	}
+	spriteType = {
+		name = "GFX_zone_angelic_research"
+		texturefile = "gfx/interface/icons/districts/district_specialization_icons/district_specialization_infinity_research.dds"
+	}
+	spriteType = {
+		name = "GFX_zone_angelic_trade"
+		texturefile = "gfx/interface/icons/districts/district_specialization_icons/district_specialization_infinity_trade.dds"
+	}
+	spriteType = {
+		name = "GFX_zone_angelic_urban"
+		texturefile = "gfx/interface/icons/districts/district_specialization_icons/district_specialization_infinity_urban.dds"
+	}
+
+	spriteType = {
+		name = "GFX_district_im_PLACEHOLDER_box_icon_rectangle"
+		texturefile = "gfx/interface/icons/districts/grid_box/district_infinity_rectangle.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/icons/districts/grid_box/default_animated_mask.dds"
+			animationtexturefile = "gfx/interface/icons/districts/grid_box/default_animated_texture.dds"
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 2.0
+			animationdelay = 0.0
+			animationblendmode = "add"   
+			animationtype = "pulsing"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			#animationframes = { 1 2 3 }
+		}
+	}
+
+}

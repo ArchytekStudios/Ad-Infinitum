@@ -1,0 +1,18 @@
+
+im_infinitymatter = {
+	tradable = yes
+	max = -1
+	visibility_prerequisite = { always = yes }
+}
+
+im_infinityenergy = {
+	tradable = yes
+	max = -1
+	visibility_prerequisite = { always = yes }
+}
+
+im_infinitypoints = {
+	tradable = no
+	max = -1
+	visibility_prerequisite = { always = yes }
+}

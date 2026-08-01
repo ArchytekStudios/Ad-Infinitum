@@ -1,0 +1,110 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_im_hermes_gateway_build_icon"
+		textureFile = "gfx/interface/icons/megastructures/build_menu/build_option_im_hermes_gateway.dds"
+	}
+	spriteType = {
+		name = "GFX_im_hermes_gateway_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/gateway.dds"
+	}
+
+	spriteType = {
+		name = "GFX_im_athena_bow_build_icon"
+		textureFile = "gfx/interface/icons/megastructures/build_menu/build_option_im_athena_bow.dds"
+	}
+	spriteType = {
+		name = "GFX_im_athena_bow_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/strategic_coordination_center.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_im_pylon_of_hearth_build_icon"
+		textureFile = "gfx/interface/icons/megastructures/build_menu/build_option_im_pylon_of_hearth.dds"
+	}
+	spriteType = {
+		name = "GFX_im_pylon_of_hearth_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/behemoth_egg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_im_aresforge_base_build_icon"
+		textureFile = "gfx/interface/icons/megastructures/build_menu/build_option_im_aresforge_base.dds"
+	}
+	spriteType = {
+		name = "GFX_im_aresforge_base_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/dyson_swarm_1.dds"
+	}
+	spriteType = {
+		name = "GFX_im_aresforge_shieldplus_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/dyson_swarm_2.dds"
+	}
+	spriteType = {
+		name = "GFX_im_aresforge_ring_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/interstellar_assembly.dds"
+	}
+	spriteType = {
+		name = "GFX_im_aresforge_complete_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/interstellar_assembly.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_im_dysonsphere_build_icon"
+		textureFile = "gfx/interface/icons/megastructures/build_menu/build_option_im_dysonsphere.dds"
+	}
+	spriteType = {
+		name = "GFX_im_dysonsphere_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/orbital_ring.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_im_star_searer_build_icon"
+		textureFile = "gfx/interface/icons/megastructures/build_menu/build_option_im_star_searer.dds"
+	}
+
+	spriteType = {
+		name = "GFX_im_forgehephaestos_base_build_icon"
+		textureFile = "gfx/interface/icons/megastructures/build_menu/build_option_im_forgehephaestos_base.dds"
+	}
+	spriteType = {
+		name = "GFX_im_forgehephaestos_base_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/dyson_swarm_1.dds"
+	}
+	spriteType = {
+		name = "GFX_im_forgehephaestos_iris_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/hyper_relay.dds"
+	}
+	spriteType = {
+		name = "GFX_im_forgehephaestos_armature_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/ring_world.dds"
+	}
+	spriteType = {
+		name = "GFX_im_forgehephaestos_half1_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/spy_orb.dds"
+	}
+	spriteType = {
+		name = "GFX_im_forgehephaestos_half2_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/spy_orb.dds"
+	}
+	spriteType = {
+		name = "GFX_im_forgehephaestos_nearcomplete_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/spy_orb.dds"
+	}
+	spriteType = {
+		name = "GFX_im_forgehephaestos_full_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/spy_orb.dds"
+	}
+
+	spriteType = {
+		name = "GFX_im_daedalusbrain_base_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/dyson_swarm_1.dds"
+	}
+	spriteType = {
+		name = "GFX_im_daedalusbrain_hull_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/ring_world.dds"
+	}
+	spriteType = {
+		name = "GFX_im_daedalusbrain_complete_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/spy_orb.dds"
+	}
+}

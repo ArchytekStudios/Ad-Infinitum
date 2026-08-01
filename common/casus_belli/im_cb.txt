@@ -1,0 +1,22 @@
+
+#	cb_im_only_one_crisis = {	# no.
+#		show_in_diplomacy = yes
+#		show_notification = yes
+#		potential = {
+#			this = {
+#				has_ascension_perk = ap_im_infinityempire
+#			}
+#		}
+#		is_valid = {
+#			from = { has_country_flag = im_angelic_empire }
+#		}	
+#		proxy_war_resources = {
+#			category = proxy_war
+#			cost = {
+#				influence = 100
+#			}
+#		}
+#		on_proxy_war_start = {
+#			pay_proxy_war_additional_resources = { VALUE = -25 }
+#		}
+#	}

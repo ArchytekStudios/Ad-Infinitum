@@ -1,0 +1,69 @@
+# custom ships
+entity = {
+	name = "im_angelic_purveyor_entity"
+
+	locator = { name = "part1" position = { 0 0 0 } scale = 1.5 }
+	locator = { name = "part2" position = { 0 0 2 } rotation = { 0 0 90 } scale = 0.75 }
+	#locator = { name = "part2" position = { 0 0 2 } rotation = { 0 0 45 } scale = 1.25 }
+	#locator = { name = "part3" position = { 0 0 2 } rotation = { 0 0 -45 } scale = 1.25 }
+
+	attach = {
+		"part1" = "im_angelic_escort_entity"
+		"part2" = "im_angelic_battlecruiser_entity"
+		#"part2" = "im_angelic_escort_entity"
+		#"part3" = "im_angelic_escort_entity"
+	}
+	game_data = {
+		emissive_recolor_crunch = 0.0
+	}
+}
+
+entity = {
+	name = "im_angelic_sentinel_entity"
+
+	locator = { name = "part1" position = { 0 0 0 } scale = 1.75 }
+	locator = { name = "part2" position = { 0 0 1 } rotation = { 0 0 90 } scale = 1.25 }
+
+	attach = {
+		"part1" = "im_angelic_battlecruiser_entity"
+		"part2" = "im_angelic_battlecruiser_entity"
+	}
+	game_data = {
+		emissive_recolor_crunch = 0.0
+	}
+}
+
+entity = { # large hangar
+	name = "im_angelic_assassin_entity"
+	
+	locator = { name = "part1" position = { 0 0 0 } }
+	locator = { name = "part2" position = { 0.255 0.25 0.25 } rotation = { 0 0 90 } }
+
+	attach = {
+		"part1" = "im_angelic_heir_entity"
+		"part2" = "im_angelic_heir_entity"
+	}
+	game_data = {
+		emissive_recolor_crunch = 0.0
+	}
+}
+
+entity = { # maybe an escort-type deal? smaller than the Purveyor <--- No.
+	name = "im_angelic_observer_entity"
+	
+	locator = { name = "part1" scale = 6 }
+
+	attach = {
+		"part1" = "im_angelic_heir_entity"
+	}
+	
+	game_data = {
+		emissive_recolor_crunch = 0.0
+	}
+}
+
+entity = {
+	name = "im_angelic_shipfiller_entity"
+
+	locator = { name = "part_01" position = { 0 0 0 } }
+}

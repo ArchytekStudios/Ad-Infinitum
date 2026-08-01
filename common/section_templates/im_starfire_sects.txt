@@ -1,0 +1,53 @@
+
+# assault_wing_large_weapon_1
+# assault_wing_large_weapon_2
+# assault_wing_medium_weapon_1
+# assault_wing_medium_weapon_2
+# assault_wing_medium_weapon_3
+# assault_wing_medium_weapon_4
+# assault_wing_medium_weapon_5
+# assault_wing_medium_weapon_6
+# assault_wing_medium_weapon_7
+# assault_wing_medium_weapon_8
+# assault_wing_small_weapon_1 (PD)
+# assault_wing_small_weapon_2 (PD)
+# assault_wing_small_weapon_3 (PD)
+# assault_wing_small_weapon_4 (PD)
+# assault_wing_small_weapon_5 (PD)
+# assault_wing_small_weapon_6 (PD)
+# assault_wing_small_weapon_7 (PD)
+# assault_wing_small_weapon_8 (PD)
+# assault_wing_xl_weapon_1
+# assault_wing_xl_weapon_2
+# assault_wing_xl_weapon_3
+# assault_wing_xl_weapon_4
+# assault_wing_xl_weapon_5
+# assault_wing_xl_weapon_6
+# assault_wing_xl_weapon_7
+# assault_wing_xl_weapon_8
+# top_sphere_1 (XL)
+# top_sphere_2 (XL)
+# top_sphere_3 (XL)
+# top_sphere_4 (XL)
+# top_sphere_5 (XL)
+# top_sphere_6 (XL)
+# top_sphere_7 (XL)
+# top_sphere_8 (XL)
+# top_wing_center_1_weapon_1 (G)
+# top_wing_center_1_weapon_2 (G)
+# top_wing_center_1_weapon_3 (G)
+# top_wing_center_1_weapon_4 (G)
+# top_wing_center_2_weapon_1 (G)
+# top_wing_center_2_weapon_2 (G)
+# top_wing_center_2_weapon_3 (G)
+# top_wing_center_2_weapon_4 (G)
+# top_wing_weapon_1 (T)
+# top_wing_weapon_2 (T)
+# top_wing_weapon_3 (T)
+# top_wing_weapon_4 (T)
+# top_center_weapon (T)
+#
+# total: 5x T, 16x XL, 2x L, 8x G, 8x M, 8x PD
+# Top: 1x T, 8x XL
+# Wings: 4x T, 8x XL
+# Center: 8x G, 8x M, 8x PD

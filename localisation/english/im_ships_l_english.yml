@@ -1,0 +1,32 @@
+﻿l_english:
+
+ ### Ships
+ im_angelic_ophanim: "Ophan"
+ im_angelic_ophanim_cap: "Ophan"
+ im_angelic_ophanim_plural: "Ophanim"
+ SHIP_GRAPHICS_IM_ANGELIC_OPHANIM_DESC: "Escorts, Guards, and Scouts of the Angelic, the Ophanim support the fleets and intelligence of the Divine."
+ im_angelic_cherubim: "Cherub"
+ im_angelic_cherubim_cap: "Cherub"
+ im_angelic_cherubim_plural: "Cherubim"
+ SHIP_GRAPHICS_IM_ANGELIC_CHERUBIM_DESC: "Bulwarks and Generals, the Cherubim are our main fleet composition, serving as front of our force."
+ im_angelic_seraphim: "Seraph"
+ im_angelic_seraphim_cap: "Seraph"
+ im_angelic_seraphim_plural: "Seraphim"
+ SHIP_GRAPHICS_IM_ANGELIC_SERAPHIM_DESC: "Commanders and Siegebreakers, the Seraphim are our heavy hitters, serving backline command."
+
+ ### Sections
+ im_angelic_ophanim_6m2p: "Gunship"
+ im_angelic_ophanim_8s2p: "Screen"
+ im_angelic_ophanim_4lp2: "Artillery"
+ 
+ im_angelic_cherubim_bow_2l8m2p: "Gunship Bow"
+ im_angelic_cherubim_bow_6l2g: "Artillery Bow"
+ im_angelic_cherubim_bow_4l6h: "Carrier Bow"
+ im_angelic_cherubim_stern_1l6m2p: "Gunship Stern"
+ im_angelic_cherubim_stern_1h2m4p: "Picket Stern"
+ im_angelic_cherubim_stern_6g2p: "Grenadier Stern"
+
+ im_seraph_shipbreaker_bow:0 "Shipbreaker Bow"
+ im_seraph_artillery_midships:0 "Artillery Midships"
+ im_seraph_grenadier_midships:0 "Grenadier Midships"
+ im_seraph_interceptor_stern:0 "Interceptor Stern"

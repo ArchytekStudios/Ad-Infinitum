@@ -1,0 +1,12 @@
+
+ANGEL_SUPERWEAPON_T = {
+	component = weapon
+	size = titanic
+	is_fixed = yes
+}
+
+ANGEL_SUPERWEAPON_SK = {
+	component = weapon
+	size = planet_killer
+	is_fixed = yes
+}

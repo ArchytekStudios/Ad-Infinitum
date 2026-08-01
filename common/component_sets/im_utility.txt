@@ -1,0 +1,39 @@
+component_set = {
+	key = "IM_INF_ARMOR"
+	icon = "GFX_infinity_armor"
+}
+
+component_set = {
+	key = "IM_INF_SHIELD"
+	icon = "GFX_infinity_shield"
+}
+
+component_set = {
+	key = "IM_ANGEL_DEFENSES"
+	icon = "GFX_infinity_angel_defense"
+}
+
+component_set = {
+	key = "IM_ARMOR_HARDENER"
+	icon = "GFX_infinity_armor_hardener"
+}
+
+component_set = {
+	key = "IM_SHIELD_HARDENER"
+	icon = "GFX_infinity_shield_hardener"
+}
+
+component_set = {
+	key = "IM_ENGINE_AMPLIFIER"
+	icon = "GFX_infinity_engine_amplifier"
+}
+
+component_set = {
+	key = "IM_WEAPON_ENHANCER"
+	icon = "GFX_infinity_weapon_enhancer"
+}
+
+component_set = {
+	key = "IM_SEAR_DEFLECTOR"
+	icon = "GFX_infinity_sear_deflector"
+}

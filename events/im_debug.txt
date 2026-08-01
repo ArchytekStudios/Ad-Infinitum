@@ -1,0 +1,111 @@
+namespace = im_debug
+
+country_event = {	# Toggle debug flag
+	id = im_debug.1
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = { has_country_flag = im_debug_flag }
+			remove_country_flag = im_debug_flag
+		}
+		else_if = {
+			limit = { NOT = { has_country_flag = im_debug_flag } }
+			set_country_flag = im_debug_flag
+		}
+	}
+}
+
+country_event = {	# Debug event to check if the AP ticker is acting appropriately
+	id = im_debug.2
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			has_nemesis = yes
+			has_biogenesis_dlc = yes
+			has_machine_age_dlc = yes
+		}
+		NOR = {
+			has_ascension_perk = ap_become_the_crisis
+			has_ascension_perk = ap_cosmogenesis
+			has_ascension_perk = ap_defender_of_the_galaxy
+			has_ascension_perk = ap_behemoths
+			has_origin = origin_slavers # No crisis for MSI
+			has_origin = origin_endbringers # No additional crisis for Endbringers
+		}
+		is_wilderness_empire = no
+
+		OR = {
+			has_technology = tech_psionic_theory
+			has_technology = tech_zero_point_power
+			has_technology = tech_positronic_implants
+			has_technology = tech_sapient_ai
+		}
+	}
+	immediate = {
+	}
+}
+
+system_event = {	# Turn star to Searing
+	id = im_debug.3
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		set_star_class = sc_im_searing_star
+	}
+}
+
+country_event = {	# Give all resources because fuck you that's why lol
+	id = im_debug.4
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		set_country_flag = im_debug_flag
+		add_resource = {
+			im_infinityenergy = 10000000
+			im_infinitymatter = 10000000
+			im_infinitypoints = 10000000
+		}
+	}
+}
+
+#	country_event = {	# Give EVERYTHING
+#		id = im_debug.5
+#		hide_window = yes
+#		is_triggered_only = yes
+#		immediate = {
+#			set_country_flag = im_debug_flag
+#			add_resource = {
+#				im_infinityenergy = 10000000
+#				im_infinitymatter = 10000000
+#				im_infinitypoints = 10000000
+#			}
+#			add_ascension_perk = ap_im_infinityempire
+#			set_country_flag = IM_INFINITE_EMPIRE_PROPHET
+#			set_country_flag = IM_INFINITE_EMPIRE_SAGE
+#			set_country_flag = IM_INFINITE_EMPIRE_ACOLYTE
+#			set_country_flag = IM_INFINITE_EMPIRE_DISCIPLE
+#			set_country_flag = IM_INFINITE_EMPIRE_DIVINE
+#			give_technology = { tech = tech_honorguard_l1 }
+#			give_technology = { tech = tech_honorguard_l1_2 }
+#			give_technology = { tech = tech_honorguard_l1_3 }
+#			give_technology = { tech = tech_honorguard_l1_4 }
+#			give_technology = { tech = tech_honorguard_l1_5 }
+#			give_technology = { tech = tech_ophanim_ship }
+#			give_technology = { tech = tech_cherubim_ship }
+#			give_technology = { tech = tech_seraphim_ship }
+#			give_technology = { tech = tech_honorguard_l2 }
+#			give_technology = { tech = tech_honorguard_l3 }
+#			give_technology = { tech = tech_honorguard_l3_2 }
+#			give_technology = { tech = tech_honorguard_l3_3 }
+#			give_technology = { tech = tech_honorguard_l3_4 }
+#			give_technology = { tech = tech_honorguard_l4 }
+#			give_technology = { tech = tech_hermes_gateway }
+#			give_technology = { tech = tech_aresforge }
+#			give_technology = { tech = tech_forgehephaestos }
+#			give_technology = { tech = tech_angel_buildings }
+#			give_technology = { tech = tech_angel_buildings_2 }
+#			give_technology = { tech = tech_star_searing }
+#		}
+#	}

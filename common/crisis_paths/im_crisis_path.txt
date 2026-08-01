@@ -1,0 +1,17 @@
+
+im_infinityempire_path = {
+	crisis_currency = im_infinitypoints
+
+	levels = {
+		crisis_infemp_tier1 # Prophet
+		crisis_infemp_tier2 # Sage
+		crisis_infemp_tier3 # Acolyte
+		crisis_infemp_tier4 # Disciple
+		crisis_infemp_tier5 # Divine
+	}
+	objectives = {
+		crisobj_destroy_enemy_ships
+		im_crisobj_addpts
+		im_crisobj_holdstructs
+	}
+}

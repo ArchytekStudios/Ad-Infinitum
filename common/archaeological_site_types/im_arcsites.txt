@@ -1,0 +1,63 @@
+#Legacy of the Dead (random barren world)
+# -> Precursor arcsite
+# -> Spawns via anomaly after (First Searing Star)
+# -> Gives Ship (Archon), Megastructure (Micro Daedalic Assembly), Megastructure (Brain of Daedalus), Megastructure (Thothian Archive Complex)
+
+#Grand, Impossibly Grand (random cold barren world)
+# -> Precursor arcsite
+# -> Spawns via event 170d after (First Searing Star)
+# -> Gives Ship (Architect), Megastructure (Dionysian Suprahall), Megastructure (Hermetic Supercatapult)
+
+#...Like Antennas To Heaven (random molten world)
+# -> Precursor arcsite
+# -> Spawns via event 240d after (First Searing Star)
+# -> Gives Megaship (Grand Arkweapon), Defense Citadel (Starfire Mechanism)
+
+#Hazardous Environments (random toxic world)
+# -> Precursor arcsite
+# -> Spawns via event 85d after (First Searing Star)
+# -> Gives Megastructure (Eye of the Shroud), Megastructure (Demeter Macro-Harvester)
+
+site_legacyofthedead_adinf = {
+	desc = legacyofthedead_adinf_desc
+	picture = GFX_evt_relic_world_building
+	stages = 6
+	weight = 0
+	allow = {
+		exists = owner
+		owner = { has_country_flag = im_made_a_searing_star }
+	}
+	visible = { default_site_visible_trigger = yes }
+	on_roll_failed = {  }
+
+	stage = {
+		difficulty = 4
+		icon = GFX_archaeology_runes_C1
+		event = im_story_lotd.1
+	}
+	stage = {
+		difficulty = 5
+		icon = GFX_archaeology_runes_C2
+		event = im_story_lotd.2
+	}
+	stage = {
+		difficulty = 6
+		icon = GFX_archaeology_runes_C3
+		event = im_story_lotd.3
+	}
+	stage = {
+		difficulty = 7
+		icon = GFX_archaeology_runes_C4
+		event = im_story_lotd.4
+	}
+	stage = {
+		difficulty = 8
+		icon = GFX_archaeology_runes_C5
+		event = im_story_lotd.5
+	}
+	stage = {
+		difficulty = 10
+		icon = GFX_archaeology_runes_C6
+		event = im_story_lotd.6
+	}
+}

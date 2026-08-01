@@ -1,0 +1,90 @@
+
+crisis_infemp_tier1 = { # Prophet
+	required_crisis_currency = 0
+	perks = { 
+		menp_angelduties_l1 
+		menp_honorguard_l1
+		menp_divinestructures
+		menp_structural_mastery
+	}
+	on_unlock = { set_country_flag = IM_INFINITE_EMPIRE_PROPHET }
+}
+
+crisis_infemp_tier2 = { # Sage
+	allow = { 
+		custom_tooltip = {
+			success_text = infemp_t2_req_clear_tooltip
+			fail_text = infemp_t2_req_tooltip
+			OR = {
+				has_country_flag = im_structmast_complete # for old dev saves, delete when done
+				has_country_flag = im_struct_master
+			}
+		}
+	}
+	required_crisis_currency = 1500
+	perks = { 
+		menp_angelduties_l2
+		menp_honorguard_l2
+		menp_shrouds_will_be_done
+		menp_biological_mastery
+	}
+	on_unlock = { set_country_flag = IM_INFINITE_EMPIRE_SAGE }
+}
+
+crisis_infemp_tier3 = { # Acolyte
+	allow = { 
+		custom_tooltip = {
+			success_text = infemp_t3_req_clear_tooltip
+			fail_text = infemp_t3_req_tooltip
+			OR = {
+				has_country_flag = im_biomast_complete # for old dev saves, delete when done
+				has_country_flag = im_bio_master
+			}
+		}
+	}
+	required_crisis_currency = 3500
+	perks = { 
+		menp_angelduties_l3
+		menp_honorguard_l3
+		menp_forgeofares
+		menp_psionic_mastery
+	}
+	on_unlock = { set_country_flag = IM_INFINITE_EMPIRE_ACOLYTE }
+}
+
+crisis_infemp_tier4 = { # Disciple
+	allow = { 
+		custom_tooltip = {
+			success_text = infemp_t4_req_clear_tooltip
+			fail_text = infemp_t4_req_tooltip
+			OR = {
+				has_country_flag = im_psimast_complete # for old dev saves, delete when done
+				has_country_flag = im_psi_master
+			}
+		}
+	}
+	required_crisis_currency = 5500
+	perks = { 
+		menp_angelduties_l4
+		menp_honorguard_l4
+		menp_predivinity
+	}
+	on_unlock = { set_country_flag = IM_INFINITE_EMPIRE_DISCIPLE }
+}
+
+crisis_infemp_tier5 = { # Divine
+	allow = { 
+		custom_tooltip = {
+			success_text = infemp_t5_req_clear_tooltip
+			fail_text = infemp_t5_req_tooltip
+			has_country_flag = im_prediv_complete
+		}
+	}
+	required_crisis_currency = 10000
+	perks = { 
+		menp_the_seraph
+		menp_honorguard_l5
+		menp_seat_of_divinity
+	}
+	on_unlock = { set_country_flag = IM_INFINITE_EMPIRE_DIVINE }
+}

@@ -1,0 +1,86 @@
+# Angelic
+component_set = {
+	key = "IM_ANGEL_SK" # SK
+	icon = "GFX_infinity_angel_sk"
+}
+
+component_set = {
+	key = "IM_ANGEL_LANCE"
+	icon = "GFX_infinity_angel_lance"
+}
+
+component_set = {
+	key = "IM_ANGEL_LASER_XL"
+	icon = "GFX_infinity_angel_laser_xl"
+}
+
+component_set = {
+	key = "IM_ANGEL_LASER_L"
+	icon = "GFX_infinity_angel_laser_l"
+}
+
+component_set = {
+	key = "IM_ANGEL_LASER_M"
+	icon = "GFX_infinity_angel_laser_m"
+}
+
+component_set = {
+	key = "IM_ANGEL_BOMBARDMENT"
+	icon = "GFX_infinity_angel_bombardment_g"
+}
+
+component_set = {
+	key = "IM_ANGEL_LASER_S"
+	icon = "GFX_infinity_angel_laser_s"
+}
+
+component_set = {
+	key = "IM_ANGEL_LASER_PD"
+	icon = "GFX_infinity_angel_laser_pd"
+}
+
+# Nonangelic
+component_set = {
+	key = "IM_INF_RECONBEAM" # PK
+	icon = "GFX_infinity_reconstitution_beam"
+}
+
+component_set = {
+	key = "IM_INF_STARBEAM"
+	icon = "GFX_infinity_starbeam"
+}
+
+component_set = {
+	key = "IM_INF_NOVALANCE"
+	icon = "GFX_infinity_energy_lance"
+}
+
+component_set = {
+	key = "IM_INF_PLATFORM"
+	icon = "GFX_infinity_laser_platform"
+}
+
+component_set = {
+	key = "IM_INF_HANGAR_H"
+	icon = "GFX_infinity_hangar_heavy"
+}
+
+component_set = {
+	key = "IM_INF_HANGAR_L"
+	icon = "GFX_infinity_hangar_light"
+}
+
+component_set = {
+	key = "IM_INF_LASER"
+	icon = "GFX_infinity_searing_laser"
+}
+
+component_set = {
+	key = "IM_INF_LASER_G"
+	icon = "GFX_infinity_searing_laser"
+}
+
+component_set = {
+	key = "IM_INF_DISINTEGRATOR"
+	icon = "GFX_infinity_disintegrator"
+}

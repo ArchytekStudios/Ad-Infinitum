@@ -1,0 +1,20 @@
+
+# funnel_1_2_joint
+# funnel_2_2_joint
+# funnel_3_2_joint
+# funnel_4_2_joint
+# funnel_5_2_joint
+# funnel_6_2_joint
+# core_hangar_1_joint
+# core_hangar_2_joint
+# core_hangar_3_joint
+# core_hangar_4_joint
+# core_hangar_5_joint
+# core_hangar_6_joint
+# origin (T, PK)
+#
+# slots: 1x T, 12x XL, 24x L, 12x H, 6x G, 6x M, 18x PD
+# Bowgun: T, 12x XLs
+# Bow: 24x L
+# Core: 12x H, 6x G
+# Stern: 6x M, 18x PD

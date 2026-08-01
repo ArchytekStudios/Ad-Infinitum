@@ -1,0 +1,300 @@
+# 42500 for L1
+# 85000 for L2
+# 170000 for L3
+# 340000 for L4
+# 680000 for L5
+
+tech_honorguard_l1 = {
+	cost = 42500
+	area = society
+	tier = 1
+	is_dangerous = yes
+	category = { psionics }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire 
+		has_country_flag = IM_INFINITE_EMPIRE_PROPHET
+	}
+	weight = 9999
+}
+tech_honorguard_l1_2 = { # Armor
+	cost = 42500
+	area = engineering
+	tier = 1
+	is_dangerous = yes
+	category = { materials }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire 
+		has_country_flag = IM_INFINITE_EMPIRE_PROPHET
+	}
+	weight = 9999
+}
+tech_honorguard_l1_3 = { # Shields
+	cost = 42500
+	area = physics
+	tier = 1
+	is_dangerous = yes
+	category = { field_manipulation }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire 
+		has_country_flag = IM_INFINITE_EMPIRE_PROPHET
+	}
+	weight = 9999
+}
+tech_honorguard_l1_4 = { # Thrust
+	cost = 42500
+	area = engineering
+	tier = 1
+	is_dangerous = yes
+	category = { voidcraft }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire 
+		has_country_flag = IM_INFINITE_EMPIRE_PROPHET
+	}
+	weight = 9999
+}
+tech_honorguard_l1_5 = { # Intel
+	cost = 42500
+	area = physics
+	tier = 1
+	is_dangerous = yes
+	category = { computing }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire 
+		has_country_flag = IM_INFINITE_EMPIRE_PROPHET
+	}
+	weight = 9999
+}
+
+tech_ophanim_ship = {
+	cost = 42500
+	area = engineering
+	tier = 5
+	is_rare = yes
+	category = { voidcraft }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire 
+		has_country_flag = IM_INFINITE_EMPIRE_PROPHET
+	}
+	weight = 9999
+}
+
+tech_cherubim_ship = {
+	cost = 170000
+	area = engineering
+	tier = 5
+	is_rare = yes
+	category = { voidcraft }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire 
+		has_country_flag = IM_INFINITE_EMPIRE_ACOLYTE
+	}
+	weight = 9999
+}
+
+tech_seraphim_ship = {
+	cost = 680000
+	area = engineering
+	tier = 5
+	is_rare = yes
+	category = { voidcraft }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire 
+		has_country_flag = IM_INFINITE_EMPIRE_DIVINE
+	}
+	weight = 9999
+}
+
+tech_hermes_gateway = {
+	cost = 85000
+	area = engineering
+	tier = 1
+	is_rare = yes
+	category = { voidcraft }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire 
+		has_country_flag = IM_INFINITE_EMPIRE_SAGE
+	}
+	weight = 9999
+}
+
+tech_honorguard_l2 = {
+	cost = 85000
+	area = physics
+	tier = 1
+	is_dangerous = yes
+	category = { particles }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire 
+		has_country_flag = IM_INFINITE_EMPIRE_SAGE
+	}
+	weight = 9999
+}
+
+tech_honorguard_l3 = {
+	cost = 170000
+	area = physics
+	tier = 1 # because need to roll it regardless of tier
+	is_dangerous = yes
+	category = { particles }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire 
+		has_country_flag = IM_INFINITE_EMPIRE_ACOLYTE
+	}
+	weight = 9999
+}
+
+tech_honorguard_l3_2 = { # L&G searing laser
+	cost = 170000
+	area = physics
+	tier = 1
+	is_dangerous = yes
+	category = { particles }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire 
+		has_country_flag = IM_INFINITE_EMPIRE_ACOLYTE
+	}
+	weight = 9999
+}
+
+tech_honorguard_l3_3 = { # Mixcoatl's Hunt
+	cost = 170000
+	area = physics
+	tier = 1
+	is_dangerous = yes
+	category = { particles }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire 
+		has_country_flag = IM_INFINITE_EMPIRE_ACOLYTE
+	}
+	weight = 9999
+}
+
+tech_honorguard_l3_4 = { # L&H hangars
+	cost = 170000
+	area = physics
+	tier = 1
+	is_dangerous = yes
+	category = { particles }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire 
+		has_country_flag = IM_INFINITE_EMPIRE_ACOLYTE
+	}
+	weight = 9999
+}
+
+tech_aresforge = {
+	cost = 170000
+	area = engineering
+	tier = 1
+	is_rare = yes
+	category = { industry }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire 
+		has_country_flag = IM_INFINITE_EMPIRE_ACOLYTE
+	}
+	weight = 9999
+}
+tech_star_searing = {
+	cost = 170000
+	area = physics
+	tier = 1
+	is_rare = yes
+	category = { field_manipulation }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire 
+		has_country_flag = IM_INFINITE_EMPIRE_ACOLYTE
+	}
+	weight = 9999
+}
+
+tech_searing_stabilize = {
+	cost = 170000
+	area = society
+	tier = 1
+	is_rare = yes
+	category = { new_worlds }
+	potential = { 
+		has_country_flag = im_made_a_searing_star
+	}
+	weight = 9999
+	prereqfor_desc = {
+		custom = {
+			title = ADINF_STABILIZE_BLEEDING_WORLD
+			desc = ADINF_STABILIZE_BLEEDING_WORLD_DESC
+		}
+	}
+}
+
+tech_im_armorhard = {
+	cost = 42500
+	area = engineering
+	tier = 5
+	category = { materials }
+	prerequisites = { tech_honorguard_l1 }
+	weight = 9999
+}
+
+tech_im_shieldhard = {
+	cost = 42500
+	area = physics
+	tier = 5
+	category = { particles }
+	prerequisites = { tech_honorguard_l1 }
+	weight = 9999
+}
+
+tech_im_engineamp = {
+	cost = 42500
+	area = physics
+	tier = 5
+	category = { field_manipulation }
+	prerequisites = { tech_honorguard_l1 }
+	weight = 9999
+}
+
+tech_im_wepenh = {
+	cost = 42500
+	area = physics
+	tier = 5
+	category = { particles }
+	prerequisites = { tech_honorguard_l1 }
+	weight = 9999
+}
+tech_honorguard_l4 = {
+	cost = 340000
+	area = physics
+	tier = 1 # because need to roll it regardless of tier
+	is_dangerous = yes
+	category = { particles }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire 
+		has_country_flag = IM_INFINITE_EMPIRE_DISCIPLE
+	}
+	weight = 9999
+}
+
+tech_forgehephaestos = {
+	cost = 170000
+	area = engineering
+	tier = 1
+	is_rare = yes
+	category = { industry }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire 
+		has_country_flag = IM_INFINITE_EMPIRE_DISCIPLE
+	}
+	weight = 9999
+}
+
+tech_daedalusbrain = {
+	cost = 170000
+	area = physics
+	tier = 1
+	is_rare = yes
+	category = { field_manipulation }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire 
+		has_country_flag = IM_INFINITE_EMPIRE_ACOLYTE
+	}
+	weight = 9999
+}

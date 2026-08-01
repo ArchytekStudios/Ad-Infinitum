@@ -1,0 +1,779 @@
+
+utility_component_template = {
+	key = "IM_INF_SENSOR"
+	icon = "GFX_infinity_sensor"
+	icon_frame = 1
+	size = small
+	power = -250
+	component_set = "sensor_components"
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 45
+			im_infinitymatter = 5
+		}
+		upkeep = {
+			im_infinityenergy = 0.2
+		}
+	}
+
+	sensor_range = 8
+	hyperlane_range = 8
+	prerequisites = { tech_honorguard_l1 }
+}
+
+utility_component_template = {
+	key = "IM_INF_CORE_S"
+	icon = "GFX_infinity_core"
+	icon_frame = 1
+	size = small
+	power = 2750
+	component_set = "power_core"
+	prerequisites = { tech_honorguard_l1 }
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 45
+			im_infinitymatter = 5
+		}
+		upkeep = {
+			im_infinityenergy = 0.2
+		}
+	}
+
+	potential = {
+		is_small_ship = yes
+	}
+}
+
+utility_component_template = {
+	key = "IM_INF_THRUSTER_S"
+	icon = "GFX_infinity_thruster"
+	icon_frame = 1
+	size = small
+	power = -125
+	component_set = "thruster_components"
+	prerequisites = { tech_honorguard_l1_4 }
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 45
+			im_infinitymatter = 5
+		}
+		upkeep = {
+			im_infinityenergy = 0.2
+		}
+	}
+
+	ftl = yes
+	modifier = {
+		ship_speed_mult = 1.75
+	}
+
+	potential = {
+		is_small_ship = yes
+	}
+}
+
+utility_component_template = {
+	key = "IM_INF_FTL_S"
+	icon = "GFX_infinity_ftl"
+	icon_frame = 1
+	size = small
+	power = -125
+	component_set = "ftl_components"
+	prerequisites = { tech_honorguard_l1_4 }
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 45
+			im_infinitymatter = 5
+		}
+		upkeep = {
+			im_infinityenergy = 0.2
+		}
+	}
+
+	jumpdrive = yes
+	ship_modifier = {
+		ship_jumpdrive_cooldown_mult = -0.4
+		ship_ftl_jumpdrive_range_mult = 1.2
+	}
+
+	potential = {
+		is_small_ship = yes
+	}
+}
+
+utility_component_template = {
+	key = "IM_INF_INTEL_S"
+	icon = "GFX_infinity_intel"
+	icon_frame = 1
+	size = small
+	power = -125
+	component_set = "combat_computers"
+	prerequisites = { tech_honorguard_l1_5 }
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 45
+			im_infinitymatter = 5
+		}
+		upkeep = {
+			im_infinityenergy = 0.2
+		}
+	}
+
+	ship_behavior = picket
+	potential = {
+		is_small_ship = yes
+	}
+}
+
+utility_component_template = {
+	key = "IM_INF_CORE_M"
+	icon = "GFX_infinity_core"
+	icon_frame = 1
+	size = small
+	power = 3250
+	component_set = "power_core"
+	prerequisites = { tech_honorguard_l1 }
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 90
+			im_infinitymatter = 10
+		}
+		upkeep = {
+			im_infinityenergy = 0.2
+		}
+	}
+
+	potential = {
+		is_medium_ship = yes
+	}
+}
+
+utility_component_template = {
+	key = "IM_INF_THRUSTER_M"
+	icon = "GFX_infinity_thruster"
+	icon_frame = 1
+	size = small
+	power = -325
+	component_set = "thruster_components"
+	prerequisites = { tech_honorguard_l1_4 }
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 45
+			im_infinitymatter = 5
+		}
+		upkeep = {
+			im_infinityenergy = 0.2
+		}
+	}
+
+	ftl = yes
+	modifier = {
+		ship_speed_mult = 1.8
+	}
+
+	potential = {
+		is_medium_ship = yes
+	}
+}
+
+utility_component_template = {
+	key = "IM_INF_FTL_M"
+	icon = "GFX_infinity_ftl"
+	icon_frame = 1
+	size = small
+	power = -325
+	component_set = "ftl_components"
+	prerequisites = { tech_honorguard_l1_4 }
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 45
+			im_infinitymatter = 5
+		}
+		upkeep = {
+			im_infinityenergy = 0.2
+		}
+	}
+
+	jumpdrive = yes
+	ship_modifier = {
+		ship_jumpdrive_cooldown_mult = -0.5
+		ship_ftl_jumpdrive_range_mult = 1.3
+	}
+
+	potential = {
+		is_medium_ship = yes
+	}
+}
+
+utility_component_template = {
+	key = "IM_INF_INTEL_M"
+	icon = "GFX_infinity_intel"
+	icon_frame = 1
+	size = small
+	power = -325
+	component_set = "combat_computers"
+	prerequisites = { tech_honorguard_l1_5 }
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 45
+			im_infinitymatter = 5
+		}
+		upkeep = {
+			im_infinityenergy = 0.2
+		}
+	}
+
+	ship_behavior = line
+	potential = {
+		is_medium_ship = yes
+	}
+}
+
+utility_component_template = {
+	key = "IM_INF_CORE_L"
+	icon = "GFX_infinity_core"
+	icon_frame = 1
+	size = small
+	power = 7500
+	component_set = "power_core"
+	prerequisites = { tech_honorguard_l1 }
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 135
+			im_infinitymatter = 15
+		}
+		upkeep = {
+			im_infinityenergy = 0.4
+		}
+	}
+
+	potential = {
+		is_large_ship = yes
+	}
+}
+
+utility_component_template = {
+	key = "IM_INF_THRUSTER_L"
+	icon = "GFX_infinity_thruster"
+	icon_frame = 1
+	size = small
+	power = -425
+	component_set = "thruster_components"
+	prerequisites = { tech_honorguard_l1_4 }
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 45
+			im_infinitymatter = 5
+		}
+		upkeep = {
+			im_infinityenergy = 0.2
+		}
+	}
+
+	ftl = yes
+	modifier = {
+		ship_speed_mult = 1.85
+	}
+
+	potential = {
+		is_large_ship = yes
+	}
+}
+
+utility_component_template = {
+	key = "IM_INF_FTL_L"
+	icon = "GFX_infinity_ftl"
+	icon_frame = 1
+	size = small
+	power = -425
+	component_set = "ftl_components"
+	prerequisites = { tech_honorguard_l1_4 }
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 45
+			im_infinitymatter = 5
+		}
+		upkeep = {
+			im_infinityenergy = 0.2
+		}
+	}
+
+	jumpdrive = yes
+	ship_modifier = {
+		ship_jumpdrive_cooldown_mult = -0.55
+		ship_ftl_jumpdrive_range_mult = 1.35
+	}
+
+	potential = {
+		is_large_ship = yes
+	}
+}
+
+utility_component_template = {
+	key = "IM_INF_INTEL_L"
+	icon = "GFX_infinity_intel"
+	icon_frame = 1
+	size = small
+	power = -425
+	component_set = "combat_computers"
+	prerequisites = { tech_honorguard_l1_5 }
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 45
+			im_infinitymatter = 5
+		}
+		upkeep = {
+			im_infinityenergy = 0.2
+		}
+	}
+
+	ship_behavior = artillery
+	potential = {
+		is_large_ship = yes
+	}
+}
+
+utility_component_template = {
+	key = "IM_INF_CORE_XL"
+	icon = "GFX_infinity_core"
+	icon_frame = 1
+	size = small
+	power = 7500
+	component_set = "power_core"
+	prerequisites = { tech_honorguard_l1 }
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 135
+			im_infinitymatter = 15
+		}
+		upkeep = {
+			im_infinityenergy = 0.4
+		}
+	}
+
+	potential = {
+		is_xl_ship = yes
+	}
+}
+
+utility_component_template = {
+	key = "IM_INF_THRUSTER_XL"
+	icon = "GFX_infinity_thruster"
+	icon_frame = 1
+	size = small
+	power = -425
+	component_set = "thruster_components"
+	prerequisites = { tech_honorguard_l1_4 }
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 45
+			im_infinitymatter = 5
+		}
+		upkeep = {
+			im_infinityenergy = 0.2
+		}
+	}
+
+	ftl = yes
+	modifier = {
+		ship_speed_mult = 2
+	}
+
+	potential = {
+		is_xl_ship = yes
+	}
+}
+
+utility_component_template = {
+	key = "IM_INF_FTL_XL"
+	icon = "GFX_infinity_ftl"
+	icon_frame = 1
+	size = small
+	power = -425
+	component_set = "ftl_components"
+	prerequisites = { tech_honorguard_l1_4 }
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 45
+			im_infinitymatter = 5
+		}
+		upkeep = {
+			im_infinityenergy = 0.2
+		}
+	}
+
+	jumpdrive = yes
+	ship_modifier = {
+		ship_jumpdrive_cooldown_mult = -0.6
+		ship_ftl_jumpdrive_range_mult = 1.45
+	}
+
+	potential = {
+		is_xl_ship = yes
+	}
+}
+
+utility_component_template = {
+	key = "IM_INF_INTEL_XL"
+	icon = "GFX_infinity_intel"
+	icon_frame = 1
+	size = small
+	power = -425
+	component_set = "combat_computers"
+	prerequisites = { tech_honorguard_l1_5 }
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 45
+			im_infinitymatter = 5
+		}
+		upkeep = {
+			im_infinityenergy = 0.2
+		}
+	}
+
+	ship_behavior = carrier
+	potential = {
+		is_xl_ship = yes
+	}
+}
+
+utility_component_template = {
+	key = "IM_INF_CORE_PT"
+	icon = "GFX_infinity_core"
+	icon_frame = 1
+	size = small
+	power = 10000
+	component_set = "power_core"
+	prerequisites = { tech_honorguard_l1 }
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 135
+			im_infinitymatter = 15
+		}
+		upkeep = {
+			im_infinityenergy = 0.4
+		}
+	}
+
+	potential = {
+		is_platform = yes
+	}
+}
+
+utility_component_template = {
+	key = "IM_INF_INTEL_PT"
+	icon = "GFX_infinity_intel"
+	icon_frame = 1
+	size = small
+	power = -500
+	component_set = "combat_computers"
+	prerequisites = { tech_honorguard_l1_5 }
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 45
+			im_infinitymatter = 5
+		}
+		upkeep = {
+			im_infinityenergy = 0.2
+		}
+	}
+
+	ship_behavior = platform
+	potential = {
+		is_platform = yes
+	}
+}
+
+ ####
+ ###
+ #####
+ ###
+ ####
+
+utility_component_template = {
+	key = "IM_INF_ARMOR_S"
+	size = small
+	icon = "GFX_infinity_armor"
+	power = -750
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 150
+			im_infinitymatter = 25
+		}
+		upkeep = {
+			im_infinityenergy = 0.5
+		}
+	}
+	component_set = "IM_INF_ARMOR"
+	prerequisites = { tech_honorguard_l1_2 }
+
+	modifier = {
+		ship_armor_add = 900
+		ship_hull_add = 450
+
+		ship_armor_regen_add_perc = 0.15
+		ship_hull_regen_add_perc = 0.05
+		ship_damage_reduction_mult = 0.15
+	}
+}
+
+utility_component_template = {
+	key = "IM_INF_ARMOR_M"
+	size = medium
+	icon = "GFX_infinity_armor"
+	power = -1250
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 200
+			im_infinitymatter = 30
+		}
+		upkeep = {
+			im_infinityenergy = 0.6
+		}
+	}
+	component_set = "IM_INF_ARMOR"
+	prerequisites = { tech_honorguard_l1_2 }
+
+	modifier = {
+		ship_armor_add = 1800
+		ship_hull_add = 900
+
+		ship_armor_regen_add_perc = 0.15
+		ship_hull_regen_add_perc = 0.05
+		ship_damage_reduction_mult = 0.3
+	}
+}
+
+utility_component_template = {
+	key = "IM_INF_ARMOR_L"
+	size = large
+	icon = "GFX_infinity_armor"
+	power = -2500
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 400
+			im_infinitymatter = 60
+		}
+		upkeep = {
+			im_infinityenergy = 0.8
+		}
+	}
+	component_set = "IM_INF_ARMOR"
+	prerequisites = { tech_honorguard_l1_2 }
+	
+	modifier = {
+		ship_armor_add = 3600
+		ship_hull_add = 1800
+
+		ship_armor_regen_add_perc = 0.15
+		ship_hull_regen_add_perc = 0.05
+		ship_damage_reduction_mult = 0.6
+	}
+}
+
+utility_component_template = {
+	key = "IM_INF_SHIELD_S"
+	size = small
+	icon = "GFX_infinity_shield"
+	power = -750
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 150
+			im_infinitymatter = 25
+		}
+		upkeep = {
+			im_infinityenergy = 0.5
+		}
+	}
+	component_set = "IM_INF_SHIELD"
+	prerequisites = { tech_honorguard_l1_3 }
+
+	modifier = {
+		ship_shield_add = 900
+		ship_hull_add = 450
+
+		ship_shield_regen_add_perc = 0.15
+		ship_hull_regen_add_perc = 0.05
+		ship_damage_reduction_mult = 0.15
+	}
+}
+
+utility_component_template = {
+	key = "IM_INF_SHIELD_M"
+	size = medium
+	icon = "GFX_infinity_shield"
+	power = -1250
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 200
+			im_infinitymatter = 30
+		}
+		upkeep = {
+			im_infinityenergy = 0.6
+		}
+	}
+	component_set = "IM_INF_SHIELD"
+	prerequisites = { tech_honorguard_l1_3 }
+
+	modifier = {
+		ship_shield_add = 1800
+		ship_hull_add = 900
+
+		ship_shield_regen_add_perc = 0.15
+		ship_hull_regen_add_perc = 0.05
+		ship_damage_reduction_mult = 0.3
+	}
+}
+
+utility_component_template = {
+	key = "IM_INF_SHIELD_L"
+	size = large
+	icon = "GFX_infinity_shield"
+	power = -2500
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 400
+			im_infinitymatter = 60
+		}
+		upkeep = {
+			im_infinityenergy = 0.8
+		}
+	}
+	component_set = "IM_INF_SHIELD"
+	prerequisites = { tech_honorguard_l1_3 }
+	
+	modifier = {
+		ship_shield_add = 3600
+		ship_hull_add = 1800
+
+		ship_shield_regen_add_perc = 0.15
+		ship_hull_regen_add_perc = 0.05
+		ship_damage_reduction_mult = 0.6
+	}
+}
+
+
+
+utility_component_template = {
+	key = "IM_ARMOR_HARDENER"
+	size = aux
+	icon = "GFX_infinity_armor_hardener"
+	power = -500
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 25
+			im_infinitymatter = 50
+		}
+		upkeep = {
+			im_infinityenergy = 0.2
+		}
+	}
+	component_set = "IM_ARMOR_HARDENER"
+	prerequisites = { tech_im_armorhard }
+	
+	modifier = {
+		ship_armor_hardening_add = 5
+		ship_damage_reduction_add = 2
+	}
+}
+
+utility_component_template = {
+	key = "IM_SHIELD_HARDENER"
+	size = aux
+	icon = "GFX_infinity_shield_hardener"
+	power = -500
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 50
+			im_infinitymatter = 25
+		}
+		upkeep = {
+			im_infinityenergy = 0.2
+		}
+	}
+	component_set = "IM_SHIELD_HARDENER"
+	prerequisites = { tech_im_shieldhard }
+	
+	modifier = {
+		ship_shield_hardening_add = 5
+		ship_damage_reduction_add = 2
+	}
+}
+
+utility_component_template = {
+	key = "IM_ENGINE_AMPLIFIER"
+	size = aux
+	icon = "GFX_infinity_engine_amplifier"
+	power = 2500
+	ship_limit = 1
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 150
+			im_infinitymatter = 25
+			im_infinitypoints = 2.5
+		}
+		upkeep = {
+			im_infinityenergy = 1.6
+		}
+	}
+	ship_modifier = {
+		ship_windup_mult = -0.50
+		ship_ftl_jumpdrive_range_mult = +0.25
+		ship_jumpdrive_cooldown_mult = -0.25
+	}
+	modifier = {
+		ship_speed_mult = 1.5
+	}
+	component_set = "IM_ENGINE_AMPLIFIER"
+	prerequisites = { tech_im_engineamp }
+}
+
+utility_component_template = {
+	key = "IM_WEAPON_ENHANCER"
+	size = aux
+	icon = "GFX_infinity_weapon_enhancer"
+	power = -500
+	ship_limit = 1
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 150
+			im_infinitymatter = 25
+			im_infinitypoints = 2.5
+		}
+		upkeep = {
+			im_infinityenergy = 1.6
+		}
+	}
+	component_set = "IM_WEAPON_ENHANCER"
+	prerequisites = { tech_im_wepenh }
+	ship_modifier = { ship_fire_rate_mult = 1.5 }
+}

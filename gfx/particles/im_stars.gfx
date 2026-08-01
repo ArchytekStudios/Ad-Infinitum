@@ -1,0 +1,9 @@
+objectTypes = {
+
+	pdxparticle = {
+		name = "im_searing_star_particle"
+		type = "im_searing_star_file"
+		scale = 1.0
+	}
+
+}

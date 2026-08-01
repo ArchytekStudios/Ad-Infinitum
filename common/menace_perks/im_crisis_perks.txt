@@ -1,0 +1,166 @@
+### T1
+menp_angelduties_l1 = {
+	portrait = "GFX_crisis_icon_fe_ship_1"
+	on_unlock = { 
+		# custom_tooltip = ANGELDUTIES_L1_UNLOCK 
+		add_research_option = tech_ophanim_ship
+	}
+}
+
+menp_honorguard_l1 = {
+	portrait = "GFX_crisis_icon_dark_matter_1"
+	on_unlock = { 
+		# custom_tooltip = HONORGUARD_L1_UNLOCK 
+		custom_tooltip = IM_ACCESS_TO_PD_S_M_ANGEL_WEPS
+		add_research_option = tech_honorguard_l1
+	}
+}
+
+menp_divinestructures = {
+	portrait = "GFX_crisis_icon_fe_building_2"
+	on_unlock = { 
+		# custom_tooltip = HONORGUARD_L2_UNLOCK 
+		add_research_option = tech_angel_bldg_capitol
+	}
+}
+
+menp_structural_mastery = {
+	portrait = "GFX_crisis_icon_wetware"
+	on_unlock = { 
+		custom_tooltip = STRUCTURAL_MASTERY_UNLOCK 
+		enable_special_project = { name = IM_INFINITYCRISIS_STRUCTMAST }
+	}
+	modifier = {
+		megastructure_build_speed_mult = 2
+		shipclass_military_build_speed_mult = 0.5
+	}
+}
+
+### T2
+menp_angelduties_l2 = {
+	portrait = "GFX_crisis_icon_fe_building_1"
+	on_unlock = { 
+		#custom_tooltip = ANGELDUTIES_L2_UNLOCK 
+		add_research_option = tech_hermes_gateway
+		add_research_option = tech_angel_bldg_manipulator
+		give_technology = { tech = tech_gateway_activation }
+		give_technology = { tech = tech_gateway_construction }
+	}
+}
+
+menp_shrouds_will_be_done = {
+	portrait = "GFX_crisis_icon_reality_theses"
+	modifier = {
+		damage_vs_country_type_fallen_empire_mult = 1.5
+		damage_vs_country_type_awakened_fallen_empire_mult = 1.5
+		damage_vs_player_crisis_mult = 1.5
+		damage_vs_country_type_synth_queen_mult = 1.5
+		damage_vs_country_type_swarm_mult = 1.5
+		damage_vs_country_type_gray_goo_mult = 1.5
+		damage_vs_country_type_ai_empire_mult = 1.5 # assuming this is contingency
+		damage_vs_country_type_extradimensional_mult = 1.5
+		damage_vs_country_type_extradimensional_2_mult = 1.5
+		damage_vs_country_type_extradimensional_3_mult = 1.5
+	}
+}
+
+menp_honorguard_l2 = {
+	portrait = "GFX_crisis_icon_dark_matter_2"
+	on_unlock = { 
+		#custom_tooltip = HONORGUARD_L2_UNLOCK 
+		add_research_option = tech_honorguard_l2
+	}
+}
+
+menp_biological_mastery = {
+	portrait = "GFX_crisis_icon_advanced_logic"
+	on_unlock = { 
+		custom_tooltip = BIO_MASTERY_UNLOCK 
+		enable_special_project = { name = IM_INFINITYCRISIS_BIOMAST } 
+	}
+}
+
+### T3
+menp_angelduties_l3 = {
+	portrait = "GFX_crisis_icon_fe_ship_3"
+	on_unlock = { 
+		#custom_tooltip = ANGELDUTIES_L3_UNLOCK 
+		add_research_option = tech_cherubim_ship
+	}
+}
+
+menp_honorguard_l3 = {
+	portrait = "GFX_crisis_icon_dark_matter_3"
+	on_unlock = { 
+		#custom_tooltip = HONORGUARD_L3_UNLOCK 
+		add_research_option = tech_honorguard_l3
+	}
+}
+
+menp_forgeofares = {
+	portrait = "GFX_crisis_icon_fe_building_5"
+	on_unlock = { 
+		#custom_tooltip = FORGEOFARES_UNLOCK 
+		add_research_option = tech_aresforge
+	}
+}
+
+menp_psionic_mastery = {
+	portrait = "GFX_crisis_icon_gravitational_tools"
+	on_unlock = { 
+		custom_tooltip = PSI_MASTERY_UNLOCK 
+		enable_special_project = { name = IM_INFINITYCRISIS_PSIMAST }
+	}
+}
+
+### T4
+menp_honorguard_l4 = {
+	portrait = "GFX_crisis_icon_nanotech"
+	on_unlock = { 
+		# custom_tooltip = HONORGUARD_L4_UNLOCK 
+		add_research_option = tech_honorguard_l4
+	}
+}
+
+menp_angelduties_l4 = {
+	portrait = "GFX_crisis_icon_fe_building_4"
+	on_unlock = { 
+		# custom_tooltip = ANGELDUTIES_L4_UNLOCK 
+		add_research_option = tech_forgehephaestos
+		# add_research_option = tech_eyeofshroud
+		# add_research_option = tech_gaia_hearthworld
+	}
+}
+
+menp_predivinity = {
+	portrait = "GFX_crisis_icon_eternal_expansion"
+	on_unlock = { 
+		custom_tooltip = PRE_DIVINITY_UNLOCK 
+		enable_special_project = { name = IM_INFINITYCRISIS_PREDIV }
+	}
+}
+
+### T5
+menp_honorguard_l5 = {
+	portrait = "GFX_crisis_icon_rare_components"
+	on_unlock = { 
+		custom_tooltip = HONORGUARD_L5_UNLOCK 
+	}
+}
+
+menp_the_seraph = {
+	portrait = "GFX_crisis_icon_void_voyagers"
+	on_unlock = { 
+		# custom_tooltip = THE_SERAPH_UNLOCK 
+		add_research_option = tech_seraphim_ship
+	}
+}
+
+menp_seat_of_divinity = {
+	portrait = "GFX_crisis_icon_fe_building_3"
+	on_unlock = { 
+		custom_tooltip = SEAT_OF_DIVINITY_UNLOCK 
+		# add_research_option = tech_divinity_seat
+		# add_research_option = tech_ ... other megas
+	}
+}
