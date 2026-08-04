@@ -1,20 +1,440 @@
 
-# funnel_1_2_joint
-# funnel_2_2_joint
-# funnel_3_2_joint
-# funnel_4_2_joint
-# funnel_5_2_joint
-# funnel_6_2_joint
-# core_hangar_1_joint
-# core_hangar_2_joint
-# core_hangar_3_joint
-# core_hangar_4_joint
-# core_hangar_5_joint
-# core_hangar_6_joint
+# funnel_1_1_joint (1x XL, 1x G)
+# funnel_2_1_joint (1x XL, 1x G)
+# funnel_3_1_joint (1x XL, 1x G)
+# funnel_4_1_joint (1x XL, 1x G)
+# funnel_5_1_joint (1x XL, 1x G)
+# funnel_6_1_joint (1x XL, 1x G)
+# funnel_1_2_joint (1x XL, 1x PD)
+# funnel_2_2_joint (1x XL, 1x PD)
+# funnel_3_2_joint (1x XL, 1x PD)
+# funnel_4_2_joint (1x XL, 1x PD)
+# funnel_5_2_joint (1x XL, 1x PD)
+# funnel_6_2_joint (1x XL, 1x PD)
+# core_hangar_1_joint (1x H, 1x L, 1x PD)
+# core_hangar_2_joint (1x H, 1x L, 1x PD)
+# core_hangar_3_joint (1x H, 1x L, 1x PD)
+# core_hangar_4_joint (1x H, 1x L, 1x PD)
+# core_hangar_5_joint (1x H, 1x L, 1x PD)
+# core_hangar_6_joint (1x H, 1x L, 1x PD)
 # origin (T, PK)
 #
-# slots: 1x T, 12x XL, 24x L, 12x H, 6x G, 6x M, 18x PD
-# Bowgun: T, 12x XLs
-# Bow: 24x L
-# Core: 12x H, 6x G
-# Stern: 6x M, 18x PD
+# slots: 1x T/PK, 12x XL, 12x H, 6x G, 6x L, 12x PD
+#
+# Starkiller Arkweapon: PK, 12x XL, 6x H, 6x G, 6x L, 12x PD
+# 			 Arkweapon: T, 12x XL, 6x H, 6x G, 6x L, 12x PD
+
+ship_section_template = {
+	key = "im_arkweapon_debug"
+	ship_size = im_arkweapon
+	fits_on_slot = core
+	entity = "im_angelic_arkweapon_hull_entity"
+
+	large_utility_slots = 1
+}
+
+ship_section_template = {
+	key = "im_arkweapon_starkiller"
+	ship_size = im_arkweapon
+	#ship_size = im_arkweapon_nomads
+	fits_on_slot = core
+	entity = "im_angelic_arkweapon_hull_entity"
+
+	component_slot = {
+		name = "STARKILLER"
+		template = "ANGEL_SUPERWEAPON_SK"
+		locatorname = "origin"
+	}
+	component_slot = {
+		name = "XL_01"
+		template = "invisible_extra_large_turret"
+		locatorname = "funnel_1_1_joint"
+	}
+	component_slot = {
+		name = "XL_02"
+		template = "invisible_extra_large_turret"
+		locatorname = "funnel_2_1_joint"
+	}
+	component_slot = {
+		name = "XL_03"
+		template = "invisible_extra_large_turret"
+		locatorname = "funnel_3_1_joint"
+	}
+	component_slot = {
+		name = "XL_04"
+		template = "invisible_extra_large_turret"
+		locatorname = "funnel_4_1_joint"
+	}
+	component_slot = {
+		name = "XL_05"
+		template = "invisible_extra_large_turret"
+		locatorname = "funnel_5_1_joint"
+	}
+	component_slot = {
+		name = "XL_06"
+		template = "invisible_extra_large_turret"
+		locatorname = "funnel_6_1_joint"
+	}
+	component_slot = {
+		name = "XL_07"
+		template = "invisible_extra_large_turret"
+		locatorname = "funnel_1_2_joint"
+	}
+	component_slot = {
+		name = "XL_08"
+		template = "invisible_extra_large_turret"
+		locatorname = "funnel_2_2_joint"
+	}
+	component_slot = {
+		name = "XL_09"
+		template = "invisible_extra_large_turret"
+		locatorname = "funnel_3_2_joint"
+	}
+	component_slot = {
+		name = "XL_10"
+		template = "invisible_extra_large_turret"
+		locatorname = "funnel_4_2_joint"
+	}
+	component_slot = {
+		name = "XL_11"
+		template = "invisible_extra_large_turret"
+		locatorname = "funnel_5_2_joint"
+	}
+	component_slot = {
+		name = "XL_12"
+		template = "invisible_extra_large_turret"
+		locatorname = "funnel_6_2_joint"
+	}
+	component_slot = {
+		name = "G_01"
+		template = "invisible_missile_turret"
+		locatorname = "funnel_1_1_joint"
+	}
+	component_slot = {
+		name = "G_02"
+		template = "invisible_missile_turret"
+		locatorname = "funnel_2_1_joint"
+	}
+	component_slot = {
+		name = "G_03"
+		template = "invisible_missile_turret"
+		locatorname = "funnel_3_1_joint"
+	}
+	component_slot = {
+		name = "G_04"
+		template = "invisible_missile_turret"
+		locatorname = "funnel_4_1_joint"
+	}
+	component_slot = {
+		name = "G_05"
+		template = "invisible_missile_turret"
+		locatorname = "funnel_5_1_joint"
+	}
+	component_slot = {
+		name = "G_06"
+		template = "invisible_missile_turret"
+		locatorname = "funnel_6_1_joint"
+	}
+	component_slot = {
+		name = "PD_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "funnel_1_2_joint"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "funnel_2_2_joint"
+	}
+	component_slot = {
+		name = "PD_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "funnel_3_2_joint"
+	}
+	component_slot = {
+		name = "PD_04"
+		template = "invisible_point_defence_turret"
+		locatorname = "funnel_4_2_joint"
+	}
+	component_slot = {
+		name = "PD_05"
+		template = "invisible_point_defence_turret"
+		locatorname = "funnel_5_2_joint"
+	}
+	component_slot = {
+		name = "PD_06"
+		template = "invisible_point_defence_turret"
+		locatorname = "funnel_6_2_joint"
+	}
+	component_slot = {
+		name = "L_01"
+		template = "invisible_large_turret"
+		locatorname = "core_hangar_1_joint"
+	}
+	component_slot = {
+		name = "L_02"
+		template = "invisible_large_turret"
+		locatorname = "core_hangar_2_joint"
+	}
+	component_slot = {
+		name = "L_03"
+		template = "invisible_large_turret"
+		locatorname = "core_hangar_3_joint"
+	}
+	component_slot = {
+		name = "L_04"
+		template = "invisible_large_turret"
+		locatorname = "core_hangar_4_joint"
+	}
+	component_slot = {
+		name = "L_05"
+		template = "invisible_large_turret"
+		locatorname = "core_hangar_5_joint"
+	}
+	component_slot = {
+		name = "L_06"
+		template = "invisible_large_turret"
+		locatorname = "core_hangar_6_joint"
+	}
+	component_slot = {
+		name = "H_01"
+		template = "large_strike_craft"
+		locatorname = "core_hangar_1_joint"
+	}
+	component_slot = {
+		name = "H_02"
+		template = "large_strike_craft"
+		locatorname = "core_hangar_2_joint"
+	}
+	component_slot = {
+		name = "H_03"
+		template = "large_strike_craft"
+		locatorname = "core_hangar_3_joint"
+	}
+	component_slot = {
+		name = "H_04"
+		template = "large_strike_craft"
+		locatorname = "core_hangar_4_joint"
+	}
+	component_slot = {
+		name = "H_05"
+		template = "large_strike_craft"
+		locatorname = "core_hangar_5_joint"
+	}
+	component_slot = {
+		name = "H_06"
+		template = "large_strike_craft"
+		locatorname = "core_hangar_6_joint"
+	}
+
+	large_utility_slots = 18
+	aux_utility_slots = 2
+
+	ship_modifier = {
+		ship_hull_add = 25500000
+		ship_armor_add = 25500000
+		ship_shield_add = 25500000
+	}
+}
+
+ship_section_template = {
+	key = "im_arkweapon_base"
+	ship_size = im_arkweapon
+	#ship_size = im_arkweapon_nomads
+	fits_on_slot = core
+	entity = "im_angelic_arkweapon_hull_entity"
+
+	component_slot = {
+		name = "TITAN"
+		template = "invisible_titanic_turret"
+		locatorname = "origin"
+	}
+	component_slot = {
+		name = "XL_01"
+		template = "invisible_extra_large_turret"
+		locatorname = "funnel_1_1_joint"
+	}
+	component_slot = {
+		name = "XL_02"
+		template = "invisible_extra_large_turret"
+		locatorname = "funnel_2_1_joint"
+	}
+	component_slot = {
+		name = "XL_03"
+		template = "invisible_extra_large_turret"
+		locatorname = "funnel_3_1_joint"
+	}
+	component_slot = {
+		name = "XL_04"
+		template = "invisible_extra_large_turret"
+		locatorname = "funnel_4_1_joint"
+	}
+	component_slot = {
+		name = "XL_05"
+		template = "invisible_extra_large_turret"
+		locatorname = "funnel_5_1_joint"
+	}
+	component_slot = {
+		name = "XL_06"
+		template = "invisible_extra_large_turret"
+		locatorname = "funnel_6_1_joint"
+	}
+	component_slot = {
+		name = "XL_07"
+		template = "invisible_extra_large_turret"
+		locatorname = "funnel_1_2_joint"
+	}
+	component_slot = {
+		name = "XL_08"
+		template = "invisible_extra_large_turret"
+		locatorname = "funnel_2_2_joint"
+	}
+	component_slot = {
+		name = "XL_09"
+		template = "invisible_extra_large_turret"
+		locatorname = "funnel_3_2_joint"
+	}
+	component_slot = {
+		name = "XL_10"
+		template = "invisible_extra_large_turret"
+		locatorname = "funnel_4_2_joint"
+	}
+	component_slot = {
+		name = "XL_11"
+		template = "invisible_extra_large_turret"
+		locatorname = "funnel_5_2_joint"
+	}
+	component_slot = {
+		name = "XL_12"
+		template = "invisible_extra_large_turret"
+		locatorname = "funnel_6_2_joint"
+	}
+	component_slot = {
+		name = "G_01"
+		template = "invisible_missile_turret"
+		locatorname = "funnel_1_1_joint"
+	}
+	component_slot = {
+		name = "G_02"
+		template = "invisible_missile_turret"
+		locatorname = "funnel_2_1_joint"
+	}
+	component_slot = {
+		name = "G_03"
+		template = "invisible_missile_turret"
+		locatorname = "funnel_3_1_joint"
+	}
+	component_slot = {
+		name = "G_04"
+		template = "invisible_missile_turret"
+		locatorname = "funnel_4_1_joint"
+	}
+	component_slot = {
+		name = "G_05"
+		template = "invisible_missile_turret"
+		locatorname = "funnel_5_1_joint"
+	}
+	component_slot = {
+		name = "G_06"
+		template = "invisible_missile_turret"
+		locatorname = "funnel_6_1_joint"
+	}
+	component_slot = {
+		name = "PD_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "funnel_1_2_joint"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "funnel_2_2_joint"
+	}
+	component_slot = {
+		name = "PD_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "funnel_3_2_joint"
+	}
+	component_slot = {
+		name = "PD_04"
+		template = "invisible_point_defence_turret"
+		locatorname = "funnel_4_2_joint"
+	}
+	component_slot = {
+		name = "PD_05"
+		template = "invisible_point_defence_turret"
+		locatorname = "funnel_5_2_joint"
+	}
+	component_slot = {
+		name = "PD_06"
+		template = "invisible_point_defence_turret"
+		locatorname = "funnel_6_2_joint"
+	}
+	component_slot = {
+		name = "L_01"
+		template = "invisible_large_turret"
+		locatorname = "core_hangar_1_joint"
+	}
+	component_slot = {
+		name = "L_02"
+		template = "invisible_large_turret"
+		locatorname = "core_hangar_2_joint"
+	}
+	component_slot = {
+		name = "L_03"
+		template = "invisible_large_turret"
+		locatorname = "core_hangar_3_joint"
+	}
+	component_slot = {
+		name = "L_04"
+		template = "invisible_large_turret"
+		locatorname = "core_hangar_4_joint"
+	}
+	component_slot = {
+		name = "L_05"
+		template = "invisible_large_turret"
+		locatorname = "core_hangar_5_joint"
+	}
+	component_slot = {
+		name = "L_06"
+		template = "invisible_large_turret"
+		locatorname = "core_hangar_6_joint"
+	}
+	component_slot = {
+		name = "H_01"
+		template = "large_strike_craft"
+		locatorname = "core_hangar_1_joint"
+	}
+	component_slot = {
+		name = "H_02"
+		template = "large_strike_craft"
+		locatorname = "core_hangar_2_joint"
+	}
+	component_slot = {
+		name = "H_03"
+		template = "large_strike_craft"
+		locatorname = "core_hangar_3_joint"
+	}
+	component_slot = {
+		name = "H_04"
+		template = "large_strike_craft"
+		locatorname = "core_hangar_4_joint"
+	}
+	component_slot = {
+		name = "H_05"
+		template = "large_strike_craft"
+		locatorname = "core_hangar_5_joint"
+	}
+	component_slot = {
+		name = "H_06"
+		template = "large_strike_craft"
+		locatorname = "core_hangar_6_joint"
+	}
+
+	large_utility_slots = 18
+	aux_utility_slots = 2
+
+	ship_modifier = {
+		ship_hull_add = 25500000
+		ship_armor_add = 25500000
+		ship_shield_add = 25500000
+	}
+}

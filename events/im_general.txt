@@ -188,3 +188,44 @@ planet_event = { # HEV, toxic
 	hide_window = yes
 #	immediate = { create_archaeological_site = site_hazardousenvironments_adinf }
 }
+
+#	country_event = {
+#		id = im_general.3
+#		is_triggered_only = yes
+#		picture = GFX_evt_searing_star #placeholder
+#		show_sound = event_default
+#	
+#		title = im_determine_arkweapon_arkship
+#		desc = im_determine_arkweapon_arkship_desc
+#	
+#		option = {
+#			name = im_nomads_arkweapon
+#			allow = { is_nomadic = yes }
+#		}
+#		option = {
+#			name = im_default_arkweapon
+#			default_hide_option = yes
+#		}
+#	}
+
+country_event = {
+	id = im_general.35
+	is_triggered_only = yes
+	picture = GFX_evt_searing_star #placeholder
+	show_sound = event_ringworld_build_complete
+
+	title = im_arkweapon_launched
+	desc = im_arkweapon_launched_desc
+
+	option = {
+		name = EXCELLENT
+		add_resource = {
+			influence = 500
+			unity = 1500
+		}
+	}
+
+	immediate = {
+		set_country_flag = im_has_created_arkweapon
+	}
+}

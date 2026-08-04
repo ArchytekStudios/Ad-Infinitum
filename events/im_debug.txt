@@ -16,36 +16,36 @@ country_event = {	# Toggle debug flag
 	}
 }
 
-country_event = {	# Debug event to check if the AP ticker is acting appropriately
-	id = im_debug.2
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		OR = {
-			has_nemesis = yes
-			has_biogenesis_dlc = yes
-			has_machine_age_dlc = yes
-		}
-		NOR = {
-			has_ascension_perk = ap_become_the_crisis
-			has_ascension_perk = ap_cosmogenesis
-			has_ascension_perk = ap_defender_of_the_galaxy
-			has_ascension_perk = ap_behemoths
-			has_origin = origin_slavers # No crisis for MSI
-			has_origin = origin_endbringers # No additional crisis for Endbringers
-		}
-		is_wilderness_empire = no
-
-		OR = {
-			has_technology = tech_psionic_theory
-			has_technology = tech_zero_point_power
-			has_technology = tech_positronic_implants
-			has_technology = tech_sapient_ai
-		}
-	}
-	immediate = {
-	}
-}
+#	country_event = {	# Debug event to check if the AP ticker is acting appropriately
+#		id = im_debug.2
+#		hide_window = yes
+#		is_triggered_only = yes
+#		trigger = {
+#			OR = {
+#				has_nemesis = yes
+#				has_biogenesis_dlc = yes
+#				has_machine_age_dlc = yes
+#			}
+#			NOR = {
+#				has_ascension_perk = ap_become_the_crisis
+#				has_ascension_perk = ap_cosmogenesis
+#				has_ascension_perk = ap_defender_of_the_galaxy
+#				has_ascension_perk = ap_behemoths
+#				has_origin = origin_slavers # No crisis for MSI
+#				has_origin = origin_endbringers # No additional crisis for Endbringers
+#			}
+#			is_wilderness_empire = no
+#	
+#			OR = {
+#				has_technology = tech_psionic_theory
+#				has_technology = tech_zero_point_power
+#				has_technology = tech_positronic_implants
+#				has_technology = tech_sapient_ai
+#			}
+#		}
+#		immediate = {
+#		}
+#	}
 
 system_event = {	# Turn star to Searing
 	id = im_debug.3
@@ -70,42 +70,76 @@ country_event = {	# Give all resources because fuck you that's why lol
 	}
 }
 
-#	country_event = {	# Give EVERYTHING
-#		id = im_debug.5
-#		hide_window = yes
-#		is_triggered_only = yes
-#		immediate = {
-#			set_country_flag = im_debug_flag
-#			add_resource = {
-#				im_infinityenergy = 10000000
-#				im_infinitymatter = 10000000
-#				im_infinitypoints = 10000000
-#			}
-#			add_ascension_perk = ap_im_infinityempire
-#			set_country_flag = IM_INFINITE_EMPIRE_PROPHET
-#			set_country_flag = IM_INFINITE_EMPIRE_SAGE
-#			set_country_flag = IM_INFINITE_EMPIRE_ACOLYTE
-#			set_country_flag = IM_INFINITE_EMPIRE_DISCIPLE
-#			set_country_flag = IM_INFINITE_EMPIRE_DIVINE
-#			give_technology = { tech = tech_honorguard_l1 }
-#			give_technology = { tech = tech_honorguard_l1_2 }
-#			give_technology = { tech = tech_honorguard_l1_3 }
-#			give_technology = { tech = tech_honorguard_l1_4 }
-#			give_technology = { tech = tech_honorguard_l1_5 }
-#			give_technology = { tech = tech_ophanim_ship }
-#			give_technology = { tech = tech_cherubim_ship }
-#			give_technology = { tech = tech_seraphim_ship }
-#			give_technology = { tech = tech_honorguard_l2 }
-#			give_technology = { tech = tech_honorguard_l3 }
-#			give_technology = { tech = tech_honorguard_l3_2 }
-#			give_technology = { tech = tech_honorguard_l3_3 }
-#			give_technology = { tech = tech_honorguard_l3_4 }
-#			give_technology = { tech = tech_honorguard_l4 }
-#			give_technology = { tech = tech_hermes_gateway }
-#			give_technology = { tech = tech_aresforge }
-#			give_technology = { tech = tech_forgehephaestos }
-#			give_technology = { tech = tech_angel_buildings }
-#			give_technology = { tech = tech_angel_buildings_2 }
-#			give_technology = { tech = tech_star_searing }
-#		}
-#	}
+country_event = {	# Give EVERYTHING
+	id = im_debug.5
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		set_country_flag = im_debug_flag
+		set_country_flag = im_debug_queue_events
+		add_resource = {
+			im_infinityenergy = 10000000
+			im_infinitymatter = 10000000
+			im_infinitypoints = 10000000
+		}
+		set_country_flag = IM_INFINITE_EMPIRE_PROPHET
+		set_country_flag = IM_INFINITE_EMPIRE_SAGE
+		set_country_flag = IM_INFINITE_EMPIRE_ACOLYTE
+		set_country_flag = IM_INFINITE_EMPIRE_DISCIPLE
+		set_country_flag = IM_INFINITE_EMPIRE_DIVINE
+		give_technology = { tech = tech_honorguard_l1 }
+		give_technology = { tech = tech_honorguard_l1_2 }
+		give_technology = { tech = tech_honorguard_l1_3 }
+		give_technology = { tech = tech_honorguard_l1_4 }
+		give_technology = { tech = tech_honorguard_l1_5 }
+		give_technology = { tech = tech_ophanim_ship }
+		give_technology = { tech = tech_cherubim_ship }
+		give_technology = { tech = tech_seraphim_ship }
+		give_technology = { tech = tech_honorguard_l2 }
+		give_technology = { tech = tech_honorguard_l3 }
+		give_technology = { tech = tech_honorguard_l3_2 }
+		give_technology = { tech = tech_honorguard_l3_3 }
+		give_technology = { tech = tech_honorguard_l3_4 }
+		give_technology = { tech = tech_honorguard_l4 }
+		give_technology = { tech = tech_hermes_gateway }
+		give_technology = { tech = tech_aresforge }
+		give_technology = { tech = tech_forgehephaestos }
+		give_technology = { tech = tech_angel_bldg_capitol }
+		give_technology = { tech = tech_angel_bldg_energyplant }
+		give_technology = { tech = tech_angel_bldg_entertainment_hall }
+		give_technology = { tech = tech_angel_bldg_fabricator }
+		give_technology = { tech = tech_angel_bldg_health_ward }
+		give_technology = { tech = tech_angel_bldg_labs }
+		give_technology = { tech = tech_angel_bldg_machination_complex }
+		give_technology = { tech = tech_angel_bldg_manipulator }
+		give_technology = { tech = tech_angel_bldg_sentry_station }
+		give_technology = { tech = tech_angel_bldg_shield }
+		give_technology = { tech = tech_angel_bldg_supercity }
+		give_technology = { tech = tech_angel_bldg_tetraforge }
+		give_technology = { tech = tech_star_searing }
+		give_technology = { tech = tech_searing_stabilize }
+		give_technology = { tech = tech_im_armorhard }
+		give_technology = { tech = tech_im_shieldhard }
+		give_technology = { tech = tech_im_engineamp }
+		give_technology = { tech = tech_im_wepenh }
+		give_technology = { tech = tech_daedalusbrain }
+	}
+}
+
+country_event = { # Queue the event
+	id = im_debug.61
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		set_country_flag = im_debug_queue_events
+	}
+}
+
+country_event = { # De-queue the event
+	id = im_debug.62
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		remove_country_flag = im_debug_queue_events
+	}
+}
