@@ -169,4 +169,7 @@
  pc_im_bleeding_world: "§CBleeding World§!"
  pc_im_bleeding_world_desc: "Baked in the light of a $pc_im_searing_star$, this world has effectively become obliterated, barely holding together under the immense heat and radiation of its' parent star. However, with the right technology, it can be transformed into a thriving ecumenopolis that harvests this power."
  pc_im_bleeding_ecu: "§CHestian Cityworld§!"
- pc_im_bleeding_ecu_desc: "A dead world given life, the Hestian Cityworld is a planet-scale ecumenopolis harvesting the violent heat of the star above the sky. Powered both by the heat of the star, of itself, and by the resilience of the people, this structure is enough to be the capitol of an empire."
+ pc_im_bleeding_ecu_desc: "A dead world given life, the $pc_im_bleeding_ecu$ is a planet-scale ecumenopolis harvesting the violent heat of the star above the sky. Powered both by the heat of the star, of itself, and by the resilience of the people, this structure is enough to be the capitol of an empire."
+
+ pc_im_obliterated_world: "§CObliterated World§!"
+ pc_im_obliterated_world_desc: "If a small planet/oid is caught in the creation of a Searing Star, then the planet/oid ends up obliterated entirely, exploding and cooking in the heat. Obliterated planets have no use and are often discarded or destroyed, though they are a quick source of Celestial Energy and Universal Matter."

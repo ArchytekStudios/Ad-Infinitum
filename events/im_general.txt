@@ -16,11 +16,19 @@ system_event = {
 				}
 				kill_all_pop = yes
 				destroy_colony = yes
-				IF = { limit = { is_moon = yes } change_pc = pc_shattered }
+				IF = { 
+					limit = {
+						OR = {
+							planet_size < 8
+							is_moon = yes 
+						}
+					} 
+					change_pc = pc_im_obliterated_world 
+				}
 				ELSE_IF = { limit = { is_asteroid = yes } remove_planet = yes }
 				ELSE = {
 					SWITCH = { # cheers to Exakan on the modding den discord for this optimization
-					trigger = is_planet_class
+						trigger = is_planet_class
 						pc_ringworld_habitable = { change_pc = pc_ringworld_habitable_damaged spawn_ringworld_cracker_effect = yes }
 						pc_ringworld_shielded = { change_pc = pc_ringworld_habitable_damaged spawn_ringworld_cracker_effect = yes }
 						pc_ringworld_seam = { change_pc = pc_ringworld_seam_damaged spawn_ringworld_cracker_effect = yes }
@@ -50,7 +58,8 @@ system_event = {
 country_event = {	# First Searing Star
 	id = im_general.2000
 	is_triggered_only = yes
-	trigger = { 
+	trigger = {
+		any_system_within_border = { star = { is_star_class = sc_im_searing_star } }
 		NOR = { 
 			has_country_flag = im_made_a_searing_star
 			has_country_flag = im_debug_queue_events

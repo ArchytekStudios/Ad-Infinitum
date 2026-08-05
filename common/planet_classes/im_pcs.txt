@@ -46,3 +46,24 @@ pc_im_bleeding_world = {
 	min_distance_from_sun = 0
 	max_distance_from_sun = 0
 }
+
+pc_im_obliterated_world = {
+	entity = "obliterated_world"
+	picture = "pc_im_bleeding_world"
+	entity_scale = @planet_standard_scale
+	icon = GFX_ico_bleeding_planet
+	icon_large = GFX_ico_bleeding_planet_big
+
+	atmosphere_color		= hsv { 0.66 0.7 1.0 }
+	atmosphere_intensity	= 0.8
+	atmosphere_width		= 1.4
+
+	spawn_odds = 0
+	chance_of_ring = 0
+	planet_size = { min = 20 max = 35 }
+	colonizable = no
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+}

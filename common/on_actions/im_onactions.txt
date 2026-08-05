@@ -16,3 +16,9 @@ on_yearly_pulse_country = {
 		#im_general.2005
 	}
 }
+
+on_monthly_pulse_country = {
+	events = {
+		im_general.2000 # if events are de-queue'd
+	}
+}
