@@ -50,4 +50,4 @@
 # total: 5x T, 16x XL, 2x L, 8x G, 8x M, 8x PD
 # Top: 1x T, 8x XL
 # Wings: 4x T, 8x XL
-# Center: 8x G, 8x M, 8x PD
+# Center: 2x L, 8x G, 8x M, 8x PD

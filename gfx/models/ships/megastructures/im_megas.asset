@@ -74,19 +74,3 @@ entity = {
 	attach = { "part2" = "im_angelic_ring_small_entity" }
 	attach = { "shield" = "planet_shield_effect_entity" }
 }
-
-entity = {
-	name = "im_planetminer_entity"
-
-	locator = { name = "zero" scale = 0.5 }
-	locator = { name = "ring" rotation = { 0 90 0 } scale = 0.95 }
-	locator = { name = "part1" rotation = { 0 0 0 } position = { 0 0 0 } scale = 0.75 }
-	locator = { name = "part2" rotation = { 0 0 0 } position = { 0 0 0 } scale = 0.75 }
-
-	attach = {
-		"zero" = "pulsar_outbursts_entity"
-		"ring" = "im_angelic_ring_small_entity"
-		"part1" = "im_angelic_escort_entity"
-		"part2" = "im_angelic_escort_entity"
-	}
-}

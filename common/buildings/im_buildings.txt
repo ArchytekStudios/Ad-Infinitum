@@ -228,8 +228,8 @@ building_im_manipulator = {
 			im_infinitypoints = 15
 		}
 		produces = {
-			im_infinityenergy = 25
-			im_infinitymatter = 25
+			im_infinityenergy = 125
+			im_infinitymatter = 125
 		}
 	}
 }
