@@ -168,6 +168,11 @@ utility_component_template = {
 	}
 
 	jumpdrive = yes
+	
+	ship_modifier = {
+		ship_jumpdrive_cooldown_mult = -0.95
+		ship_ftl_jumpdrive_range_mult = 3.00
+	}
 
 	potential = { is_angel_ship = yes }
 	component_set = "ftl_components"
@@ -261,4 +266,79 @@ utility_component_template = {
 		ship_shield_regen_add_perc = 0.15
 		ship_damage_reduction_mult = 0.6
 	}
+}
+
+utility_component_template = {
+	key = "ARKWEAPON_REACTOR"
+	size = small
+	icon = "GFX_infinity_angel_core"
+	icon_frame = 1
+	power = 8000000
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 6000
+			im_infinitymatter = 500
+		}
+		upkeep = {
+			im_infinityenergy = 10
+		}
+	}
+
+	potential = { is_angel_arkweapon = yes } # don't forget to add im_arkweapon_nomads
+	component_set = "power_core"
+}
+
+
+utility_component_template = {
+	key = "ARKWEAPON_THRUSTER"
+	size = small
+	icon = "GFX_infinity_angel_thruster"
+	power = -7500
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 1500
+			im_infinitymatter = 250
+		}
+		upkeep = {
+			im_infinityenergy = 5.0
+		}
+	}
+
+	ftl = yes
+
+	modifier = {
+		ship_speed_mult = 13.50 # base is 2.75
+		ship_evasion_add = 32 # base is 8
+	}
+	potential = { is_angel_arkweapon = yes }
+	component_set = "thruster_components"
+}
+
+utility_component_template = {
+	key = "ARKWEAPON_FTL"
+	size = small
+	icon = "GFX_infinity_angel_ftl"
+	power = -7500
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 1500
+			im_infinitymatter = 250
+		}
+		upkeep = {
+			im_infinityenergy = 5.0
+		}
+	}
+
+	jumpdrive = yes
+	
+	ship_modifier = {
+		ship_jumpdrive_cooldown_mult = -1.0
+		ship_ftl_jumpdrive_range_mult = 10.00
+	}
+
+	potential = { is_angel_arkweapon = yes }
+	component_set = "ftl_components"
 }

@@ -3,7 +3,9 @@
  ARKWEAPON_REACTOR: "§lTrue Divinity§!"
  ARKWEAPON_THRUSTER: "§lMafdettic Positional Overwrite§!"
  ARKWEAPON_FTL: "§lNikeic Superpositioning System§!"
- ARKWEAPON_SENSOR: "§lPrometheus All-seer§!"
+
+ im_arkweapon_launched: "$im_arkweapon$ Launched"
+ im_arkweapon_launched_desc: ""
 
  im_arkweapon: "Grand Arkweapon"
  im_arkweapon_cap: "$im_arkweapon$"

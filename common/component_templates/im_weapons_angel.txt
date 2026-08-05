@@ -13,8 +13,8 @@ weapon_component_template = {
 	projectile_gfx = "im_angel_laser_s"
 
 	damage = {
-		min = 12
-		max = 24
+		min = 120
+		max = 240
 	}
 	windup = {
 		min = 1
@@ -56,8 +56,8 @@ weapon_component_template = {
 	projectile_gfx = "im_angel_laser_s"
 
 	damage = {
-		min = 24
-		max = 48
+		min = 240
+		max = 480
 	}
 	windup = {
 		min = 1
@@ -97,8 +97,8 @@ weapon_component_template = {
 	projectile_gfx = "im_angel_laser_m"
 
 	damage = {
-		min = 94
-		max = 187
+		min = 940
+		max = 1870
 	}
 	windup = {
 		min = 2
@@ -139,8 +139,8 @@ weapon_component_template = {
 	projectile_gfx = "plasma_thrower_m"
 
 	damage = {
-		min = 60
-		max = 247
+		min = 600
+		max = 2470
 	}
 	windup = {
 		min = 2
@@ -181,8 +181,8 @@ weapon_component_template = {
 	projectile_gfx = "im_angel_laser_l"
 
 	damage = {
-		min = 375
-		max = 750
+		min = 3750
+		max = 7500
 	}
 	windup = {
 		min = 2
@@ -223,8 +223,8 @@ weapon_component_template = {
 	projectile_gfx = "im_angel_laser_l"
 
 	damage = {
-		min = 1250
-		max = 2500
+		min = 12500
+		max = 25000
 	}
 	windup = {
 		min = 2
@@ -265,8 +265,8 @@ weapon_component_template = {
 	projectile_gfx = "im_angel_laser_xl"
 
 	damage = {
-		min = 5000
-		max = 10000
+		min = 50000
+		max = 100000
 	}
 	windup = {
 		min = 2

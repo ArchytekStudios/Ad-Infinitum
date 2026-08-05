@@ -13,8 +13,8 @@ weapon_component_template = {
 	projectile_gfx = "im_angel_laser_s"
 
 	damage = {
-		min = 12
-		max = 20
+		min = 120
+		max = 200
 	}
 	windup = {
 		min = 1
@@ -56,8 +56,8 @@ weapon_component_template = {
 	projectile_gfx = "im_angel_laser_s"
 
 	damage = {
-		min = 24
-		max = 40
+		min = 240
+		max = 400
 	}
 	windup = {
 		min = 1
@@ -97,8 +97,8 @@ weapon_component_template = {
 	projectile_gfx = "im_angel_laser_m"
 
 	damage = {
-		min = 36
-		max = 80
+		min = 360
+		max = 800
 	}
 	windup = {
 		min = 2
@@ -138,8 +138,8 @@ weapon_component_template = {
 	projectile_gfx = "im_angel_laser_m"
 
 	damage = {
-		min = 36
-		max = 80
+		min = 360
+		max = 800
 	}
 	windup = {
 		min = 2
@@ -185,7 +185,7 @@ strike_craft_component_template = {
 	regeneration_per_day = 1
 	launch_time = 1.0
 
-	damage = { min = 76 max = 184 }
+	damage = { min = 760 max = 1840 }
 	cooldown = 2.3
 	range = 75
 	engagement_range = 100
@@ -238,7 +238,7 @@ strike_craft_component_template = {
 	regeneration_per_day = 1
 	launch_time = 1.0
 
-	damage = { min = 90 max = 200 }
+	damage = { min = 900 max = 2000 }
 	cooldown = 2.3
 	range = 75
 	engagement_range = 100
@@ -285,8 +285,8 @@ weapon_component_template = {
 	projectile_gfx = "im_angel_laser_l"
 
 	damage = {
-		min = 74
-		max = 192
+		min = 740
+		max = 1920
 	}
 	windup = {
 		min = 5
@@ -333,8 +333,8 @@ weapon_component_template = {
 	projectile_gfx = "im_angel_laser_l"
 
 	damage = {
-		min = 150
-		max = 600
+		min = 1500
+		max = 6000
 	}
 	windup = {
 		min = 5
@@ -381,8 +381,8 @@ weapon_component_template = {
 	projectile_gfx = "im_angel_laser_l"
 
 	damage = {
-		min = 425
-		max = 750
+		min = 4250
+		max = 7500
 	}
 	windup = {
 		min = 5
@@ -429,8 +429,8 @@ weapon_component_template = {
 	projectile_gfx = "im_angel_laser_xl"
 
 	damage = {
-		min = 1500
-		max = 3000
+		min = 15000
+		max = 30000
 	}
 	windup = {
 		min = 5
