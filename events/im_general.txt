@@ -11,7 +11,8 @@ system_event = {
 				limit = { 
 					NOR = { 
 						is_star = yes 
-						clib_is_standard_star_planet = yes 
+						clib_is_standard_star_planet = yes
+						im_is_seared_planet = yes # can't re-sear a planet
 					} 
 				}
 				kill_all_pop = yes
@@ -54,6 +55,11 @@ system_event = {
 		}
 		every_system_planet = { # remember to add more flags as necessary
 			remove_planet_flag = has_arc_furnace
+			SWITCH = {
+				trigger = is_planet_class
+				pc_im_obliterated_world = { add_deposit = d_im_obliterated_base }
+				pc_im_bleeding_world = { add_deposit = d_im_bleeding_base }
+			}
 		}
 	}
 }

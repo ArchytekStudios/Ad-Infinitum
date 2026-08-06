@@ -52,3 +52,11 @@ im_is_angelic_megastructure = {
 		is_megastructure_type = im_pylon_of_hearth
 	}
 }
+
+im_is_seared_planet = {
+	OR = {
+		is_planet_class = pc_im_bleeding_world
+		is_planet_class = pc_im_obliterated_world
+		#is_planet_class = pc_im_bleeding_ecu
+	}
+}

@@ -40,13 +40,28 @@ d_infinitypoints_50 = {
 	potential = { always = no }
 }
 
-d_obliterated_base = {
+d_im_obliterated_base = {
 	icon = d_mining_station
 	resources = {
 		category = orbital_mining_deposits
 		produces = {
 			im_infinityenergy = 15
 			im_infinitymatter = 15
+		}
+	}
+	station = shipclass_mining_station
+	is_for_colonizable = no
+
+	potential = { always = no }
+}
+
+d_im_bleeding_base = {
+	icon = d_mining_station
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			im_infinityenergy = 5
+			im_infinitymatter = 5
 		}
 	}
 	station = shipclass_mining_station
