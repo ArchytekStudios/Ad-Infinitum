@@ -27,3 +27,28 @@ im_has_daedalusbrain_any = {
 		has_megastructure = im_daedalusbrain_complete
 	}
 }
+
+im_is_angelic_megastructure = {
+	OR = {
+		is_megastructure_type = im_daedalusbrain_base
+		is_megastructure_type = im_daedalusbrain_hull
+		is_megastructure_type = im_daedalusbrain_complete
+		is_megastructure_type = im_aresforge_base
+		is_megastructure_type = im_aresforge_ring
+		is_megastructure_type = im_aresforge_shieldplus
+		is_megastructure_type = im_aresforge_complete
+		is_megastructure_type = im_forgehephaestos_base
+		is_megastructure_type = im_forgehephaestos_iris
+		is_megastructure_type = im_forgehephaestos_armature
+		is_megastructure_type = im_forgehephaestos_half1
+		is_megastructure_type = im_forgehephaestos_half2
+		is_megastructure_type = im_forgehephaestos_nearcomplete
+		is_megastructure_type = im_forgehephaestos_full
+		is_megastructure_type = im_hermes_gateway
+		is_megastructure_type = im_star_searer
+		is_megastructure_type = im_dysonsphere
+		is_megastructure_type = im_turn_to_black_hole
+		is_megastructure_type = im_athena_bow
+		is_megastructure_type = im_pylon_of_hearth
+	}
+}

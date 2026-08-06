@@ -44,6 +44,7 @@ system_event = {
 		set_asteroid_belt = { radius = 0 }
 		remove_star_flag = has_habitat
 		every_system_megastructure = {
+			limit = { NOT = { im_is_angelic_megastructure = yes } }
 			SWITCH = {
 				trigger = is_megastructure_type
 				orbital_arc_furnace_destroyed = { remove_megastructure = this }

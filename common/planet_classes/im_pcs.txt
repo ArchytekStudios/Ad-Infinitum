@@ -49,7 +49,7 @@ pc_im_bleeding_world = {
 
 pc_im_obliterated_world = {
 	entity = "obliterated_world"
-	picture = "pc_im_bleeding_world"
+	picture = "pc_im_obliterated"
 	entity_scale = @planet_standard_scale
 	icon = GFX_ico_bleeding_planet
 	icon_large = GFX_ico_bleeding_planet_big
