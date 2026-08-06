@@ -33,11 +33,26 @@ im_star_searer = {
 			}
 		}
 		custom_tooltip = {
-			fail_text = "requires_no_existing_megastructure"
-			has_no_non_gate_megastructure = yes
+			fail_text = "blocked_by_pre_ftl_policy"
+			if = {
+				limit = {
+					any_system_planet = {
+						exists = owner
+						owner = {
+							is_primitive = yes
+						}
+					}
+				}
+				from = {
+					has_policy_flag = interference_aggressive
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_habitable_planets"
 			NOT = {
 				any_system_planet = {
-					is_planet_class = pc_cosmogenesis_world
+					colonizable_planet = yes
 				}
 			}
 		}
@@ -134,6 +149,22 @@ im_turn_to_black_hole = {
 			}
 		}
 		custom_tooltip = {
+			fail_text = "blocked_by_pre_ftl_policy"
+			if = {
+				limit = {
+					any_system_planet = {
+						exists = owner
+						owner = {
+							is_primitive = yes
+						}
+					}
+				}
+				from = {
+					has_policy_flag = interference_aggressive
+				}
+			}
+		}
+		custom_tooltip = {
 			fail_text = "requires_no_existing_megastructure"
 			has_no_non_gate_megastructure = yes
 			NOT = {
@@ -152,7 +183,7 @@ im_turn_to_black_hole = {
 		}
 	}
 	prerequisites = { tech_star_searing }
-	show_prereqs = yes
+	show_prereqs = no
 	build_time = 720
 	resources = {
 		category = megastructures
@@ -210,6 +241,22 @@ im_dysonsphere = {
 			}
 		}
 		custom_tooltip = {
+			fail_text = "blocked_by_pre_ftl_policy"
+			if = {
+				limit = {
+					any_system_planet = {
+						exists = owner
+						owner = {
+							is_primitive = yes
+						}
+					}
+				}
+				from = {
+					has_policy_flag = interference_aggressive
+				}
+			}
+		}
+		custom_tooltip = {
 			fail_text = "requires_no_existing_megastructure"
 			has_no_non_gate_megastructure = yes
 			NOT = {
@@ -228,7 +275,7 @@ im_dysonsphere = {
 		}
 	}
 	prerequisites = { tech_star_searing }
-	show_prereqs = yes
+	show_prereqs = no
 	build_time = 720
 	resources = {
 		category = megastructures

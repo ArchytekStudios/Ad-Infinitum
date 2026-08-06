@@ -18,9 +18,10 @@ system_event = {
 				destroy_colony = yes
 				IF = { 
 					limit = {
+						NOT = { is_asteroid = yes }
 						OR = {
 							planet_size < 8
-							is_moon = yes 
+							is_moon = yes
 						}
 					} 
 					change_pc = pc_im_obliterated_world 
@@ -40,6 +41,7 @@ system_event = {
 				}
 			}
 		}
+		set_asteroid_belt = { radius = 0 }
 		remove_star_flag = has_habitat
 		every_system_megastructure = {
 			SWITCH = {

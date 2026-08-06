@@ -23,6 +23,22 @@ im_hermes_gateway = {
 			NOT = { has_megastructure = im_hermes_gateway }
 		}
 		custom_tooltip = {
+			fail_text = "blocked_by_pre_ftl_policy"
+			if = {
+				limit = {
+					any_system_planet = {
+						exists = owner
+						owner = {
+							is_primitive = yes
+						}
+					}
+				}
+				from = {
+					has_policy_flag = interference_aggressive
+				}
+			}
+		}
+		custom_tooltip = {
 			fail_text = "requires_surveyed_system"
 			NOT = {
 				any_system_planet = {
@@ -30,15 +46,6 @@ im_hermes_gateway = {
 						who = prev.from
 						status = no
 					}
-				}
-			}
-		}
-		custom_tooltip = {
-			fail_text = "requires_no_existing_megastructure"
-			has_no_non_gate_megastructure = yes
-			NOT = {
-				any_system_planet = {
-					is_planet_class = pc_cosmogenesis_world
 				}
 			}
 		}
@@ -132,6 +139,22 @@ im_athena_bow = {
 			NOT = { has_megastructure = im_athena_bow }
 		}
 		custom_tooltip = {
+			fail_text = "blocked_by_pre_ftl_policy"
+			if = {
+				limit = {
+					any_system_planet = {
+						exists = owner
+						owner = {
+							is_primitive = yes
+						}
+					}
+				}
+				from = {
+					has_policy_flag = interference_aggressive
+				}
+			}
+		}
+		custom_tooltip = {
 			fail_text = "requires_surveyed_system"
 			NOT = {
 				any_system_planet = {
@@ -142,15 +165,7 @@ im_athena_bow = {
 				}
 			}
 		}
-		custom_tooltip = {
-			fail_text = "requires_no_existing_megastructure"
-			has_no_non_gate_megastructure = yes
-			NOT = {
-				any_system_planet = {
-					is_planet_class = pc_cosmogenesis_world
-				}
-			}
-		}
+		
 	}
 	prerequisites = { tech_hermes_gateway }
 	show_prereqs = yes
@@ -244,6 +259,22 @@ im_pylon_of_hearth = {
 			is_inside_border = from
 		}
 		custom_tooltip = {
+			fail_text = "blocked_by_pre_ftl_policy"
+			if = {
+				limit = {
+					any_system_planet = {
+						exists = owner
+						owner = {
+							is_primitive = yes
+						}
+					}
+				}
+				from = {
+					has_policy_flag = interference_aggressive
+				}
+			}
+		}
+		custom_tooltip = {
 			fail_text = "requires_surveyed_system"
 			NOT = {
 				any_system_planet = {
@@ -251,15 +282,6 @@ im_pylon_of_hearth = {
 						who = prev.from
 						status = no
 					}
-				}
-			}
-		}
-		custom_tooltip = {
-			fail_text = "requires_no_existing_megastructure"
-			has_no_non_gate_megastructure = yes
-			NOT = {
-				any_system_planet = {
-					is_planet_class = pc_cosmogenesis_world
 				}
 			}
 		}

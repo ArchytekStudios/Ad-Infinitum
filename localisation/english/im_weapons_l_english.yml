@@ -6,7 +6,7 @@
  #?TODO: Replace all "$nodesc$" with descriptions
 
  IM_ANGEL_DEFENSES: "§CWill of Andrasta§!"
- IM_ANGEL_SK: "§CRagnarok§!" #Starkiller - turns to Searing Star and turns every planet in the system Bleeding, while wiping out gas giants, moons, and asteroids - erases all deposits, anoms, arcsites, colonies
+ IM_ANGEL_SK: "§CRagnarok§!" #Starkiller - turns to Searing Star and turns every planet in the system Bleeding, Obliterates every moon and planetoid, and destroys all asteroids - erases all deposits, anoms, arcsites, colonies
  IM_ANGEL_LANCE: "§CFenrir Beam§!"
  IM_ANGEL_LASER_XL: "§CLance of Tyr§!"
  IM_ANGEL_LASER_L: "§CSword of Ares§!"
@@ -87,7 +87,7 @@
  IM_ARMOR_HARDENER: "Singular Armor Hardener"
  IM_SHIELD_HARDENER: "Singular Shield Hardener"
  IM_ENGINE_AMPLIFIER: "Singular Engine Amplifier"
- IM_WEAPON_ENHANCER: "Singular Energy Multiplex"
+ IM_WEAPON_ENHANCER: "Singular Weapon Multiplex"
  IM_SEAR_DEFLECTOR: "Searing Damage Reflector"
  IM_ARMOR_HARDENER_DESC: "$no_desc$"
  IM_SHIELD_HARDENER_DESC: "$no_desc$"

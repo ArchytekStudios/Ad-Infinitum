@@ -1,8 +1,9 @@
 ﻿l_english:
 
  ###
- ### This YAML file is for all localisation re; the crisis path.
+ ### This YML file is for all localisation re; the crisis path.
  ### So things like events, the AP, the objectives, et al.
+ ### Also included: planets & stars related directly to Searing.
  ###
  
  IM_UNLOCK_SINGBUILDING: "Unlocks Building - §YInfinity Singularity§!"
@@ -22,7 +23,7 @@
  PSI_MASTERY_UNLOCK: "Advance to the next level.\n"
  HONORGUARD_L4_UNLOCK: "Unlock Weapons L -> T\n"
  ANGELDUTIES_L4_UNLOCK: "Unlock §CGaia Hearthworld§!, §CForge of Thanatos§!, & §CEye of The Shroud§! Megastructures\n"
- PRE_DIVINITY_UNLOCK: ""
+ PRE_DIVINITY_UNLOCK: "Advance to the final level.\n"
  HONORGUARD_L5_UNLOCK: "Unlock §CRagnarok§! Starkiller and §CReconstitution Beam§! Planetkiller\n"
  THE_SERAPH_UNLOCK: "Unlock Ship - §CSeraph§!\n"
  SEAT_OF_DIVINITY_UNLOCK: "Unlock §lThrone of Divinity§!\n"
@@ -132,7 +133,7 @@
  menp_angelduties_l3: "Angelic Duties - L3"
  menp_angelduties_l3_desc: "Generals and Commanders of fleets, §CCherubim§! are the purveyors of our Word, and thus are our Strong Right Hand."
  menp_honorguard_l3: "Honor Guard - L3"
- menp_honorguard_l3_desc: "We must break deeper and deeper into Eschatological weaponry; specifically, the use of thaumaturgics in flight-capable vessels. As such, strike crafts and guided missiles - as well as heavier laser platforms - shall be researched."
+ menp_honorguard_l3_desc: "We must break deeper and deeper into Eschatological weaponry; specifically, the use of thaumaturgics in flight-capable vessels. As such, heavier laser platforms shall be researched."
  menp_forgeofares: "§YForge of Ares§!"
  menp_forgeofares_desc: "Our alloy production will suffer if we do not step up the production of such. As thus, the §CForge of Ares§! shall be made in order to bolster our alloys, energy, and fleet production."
  menp_psionic_mastery: "§YPsionic Mastery§!"
@@ -164,7 +165,7 @@
  ### Planets/Stars
  pc_im_searing_star: "§CSearing Star§!"
  sc_im_searing_star: "$pc_im_searing_star$"
- pc_im_searing_star_desc: "A star of §Cunbelievable temperature§!, reaching §Ca couple billion Kelvin§!, only suited for §Cthe most divine of megastructures.§!"
+ pc_im_searing_star_desc: "A star of §Cunbelievable temperature§!, reaching §Ca couple trillion Kelvin§!, only suited for §Cthe most divine of megastructures.§!"
  
  pc_im_bleeding_world: "§CBleeding World§!"
  pc_im_bleeding_world_desc: "Baked in the light of a $pc_im_searing_star$, this world has effectively become obliterated, barely holding together under the immense heat and radiation of its' parent star. However, with the right technology, it can be transformed into a thriving ecumenopolis that harvests this power."
