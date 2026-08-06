@@ -53,6 +53,7 @@ im_star_searer = {
 			NOT = {
 				any_system_planet = {
 					colonizable_planet = yes
+					is_artificial = no
 				}
 			}
 		}
@@ -123,7 +124,6 @@ im_turn_to_black_hole = {
 	potential = { clib_is_infinite_empire = yes }
 	upgrade_from = {
 		im_dysonsphere
-		im_star_searer
 	}
 	possible = {
 		hidden_trigger = {
@@ -195,14 +195,41 @@ im_turn_to_black_hole = {
 			im_infinitypoints = 25
 		}
 		produces = {
-			im_infinityenergy = 1500
-			energy = 500
+			sr_dark_matter = 1500
+			physics_research = 500
 		}
 	}
 	construction_blocks_and_blocked_by = self_type
 	on_build_complete = {
 		set_star_class = sc_black_hole
-		remove_megastructure = fromfrom
+	}
+
+	dismantle_cost = {
+		category = megastructures
+		cost = {
+			im_infinitymatter = 125
+		}
+	}
+
+	dismantle_time = 360
+
+	dismantle_potential = {
+		always = yes
+	}
+
+	dismantle_possible = {
+		exists = owner
+		owner = { clib_is_infinite_empire = yes }
+	}
+
+	on_dismantle_complete = {
+		from = {
+			add_resource = {
+				im_infinityenergy = 1500
+				im_infinitymatter = 285
+				mult = modifier:megastructure_dismantle_refund_mult
+			}
+		}
 	}
 }
 

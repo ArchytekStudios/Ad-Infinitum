@@ -53,6 +53,8 @@ system_event = {
 			}
 			set_ruined_megastructure = yes
 		}
+	}
+	after = {
 		every_system_planet = { # remember to add more flags as necessary
 			remove_planet_flag = has_arc_furnace
 			SWITCH = {
