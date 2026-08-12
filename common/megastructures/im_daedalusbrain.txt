@@ -148,7 +148,7 @@ im_daedalusbrain_hull = {
 			energy = 250
 		}
 		produces = {
-			im_infinityenergy = 500
+			im_infinityenergy = 750
 			physics_research = 125
 			society_research = 125
 			engineering_research = 125
@@ -215,7 +215,7 @@ im_daedalusbrain_complete = {
 			energy = 300
 		}
 		produces = {
-			im_infinityenergy = 125
+			im_infinityenergy = 1500
 			physics_research = 1250
 			society_research = 1250
 			engineering_research = 1250

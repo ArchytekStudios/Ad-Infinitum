@@ -165,3 +165,17 @@ tech_angel_bldg_machination_complex = {
 	prerequisites = { tech_angel_bldg_capitol }
 	weight = 9999
 }
+
+tech_angel_bldg_tradehall = {
+	cost = 85000
+	area = engineering
+	tier = 1
+	is_rare = yes
+	category = { industry }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire 
+		has_country_flag = IM_INFINITE_EMPIRE_SAGE
+	}
+	prerequisites = { tech_angel_bldg_capitol }
+	weight = 9999
+}

@@ -17,6 +17,7 @@ system_event = {
 				}
 				kill_all_pop = yes
 				destroy_colony = yes
+				remove_deposit = yes
 				IF = { 
 					limit = {
 						NOT = { is_asteroid = yes }
@@ -35,7 +36,7 @@ system_event = {
 						pc_ringworld_shielded = { change_pc = pc_ringworld_habitable_damaged spawn_ringworld_cracker_effect = yes }
 						pc_ringworld_seam = { change_pc = pc_ringworld_seam_damaged spawn_ringworld_cracker_effect = yes }
 						pc_ringworld_tech = { change_pc = pc_ringworld_tech_damaged spawn_ringworld_cracker_effect = yes }
-						pc_gas_giant = { change_pc = pc_molten change_planet_size = 5 }
+						pc_gas_giant = { change_pc = pc_im_obliterated_world change_planet_size = 2 set_ring = no }
 						pc_habitat = { remove_planet = yes spawn_habitat_cracker_effect = yes }
 						default = { change_pc = pc_im_bleeding_world }
 					}
@@ -62,6 +63,46 @@ system_event = {
 				pc_im_obliterated_world = { add_deposit = d_im_obliterated_base }
 				pc_im_bleeding_world = { add_deposit = d_im_bleeding_base }
 			}
+		}
+	}
+}
+
+planet_event = {
+	id = im_general.19952
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		kill_all_pop = yes
+		destroy_colony = yes
+		remove_deposit = yes
+		IF = { 
+			limit = {
+				NOT = { is_asteroid = yes }
+				OR = {
+					planet_size < 8
+					is_moon = yes
+				}
+			} 
+			change_pc = pc_im_obliterated_world 
+		}
+		ELSE = {
+			SWITCH = {
+				trigger = is_planet_class
+				pc_ringworld_habitable = { change_pc = pc_ringworld_habitable_damaged spawn_ringworld_cracker_effect = yes }
+				pc_ringworld_shielded = { change_pc = pc_ringworld_habitable_damaged spawn_ringworld_cracker_effect = yes }
+				pc_ringworld_seam = { change_pc = pc_ringworld_seam_damaged spawn_ringworld_cracker_effect = yes }
+				pc_ringworld_tech = { change_pc = pc_ringworld_tech_damaged spawn_ringworld_cracker_effect = yes }
+				pc_gas_giant = { change_pc = pc_im_obliterated_world change_planet_size = 2 set_ring = no }
+				pc_habitat = { remove_planet = yes spawn_habitat_cracker_effect = yes }
+				default = { change_pc = pc_im_bleeding_world }
+			}
+		}
+	}
+	after = {
+		SWITCH = {
+			trigger = is_planet_class
+			pc_im_obliterated_world = { add_deposit = d_im_obliterated_base }
+			pc_im_bleeding_world = { add_deposit = d_im_bleeding_base }
 		}
 	}
 }

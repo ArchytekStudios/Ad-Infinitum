@@ -1,4 +1,4 @@
-
+### ?TODO: angelic jobs
 
 building_im_infinityengine = {
 	can_build = yes
@@ -22,6 +22,24 @@ building_im_infinityengine = {
 		}
 		produces = {
 			im_infinitymatter = 100
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { NOR = { is_machine_empire = yes is_hive_empire = yes } }
 		}
 	}
 	inline_script = {
@@ -228,8 +246,8 @@ building_im_manipulator = {
 			im_infinitypoints = 15
 		}
 		produces = {
-			im_infinityenergy = 125
-			im_infinitymatter = 125
+			im_infinityenergy = 325
+			im_infinitymatter = 325
 		}
 	}
 }
@@ -332,7 +350,7 @@ building_im_energyplant = {
 building_im_supercity = {
 	can_build = yes
 	base_buildtime = 180
-	category = amenities
+	category = government
 	building_sets = { urban entertainment society }
 	potential = {
 		exists = owner
@@ -384,7 +402,7 @@ building_im_points2 = {
 			im_infinityenergy = 20
 		}
 		produces = {
-			im_infinitypoints = 50
+			im_infinitypoints = 150
 		}
 	}
 	planet_modifier = {
@@ -397,4 +415,155 @@ building_im_points2 = {
 	prerequisites = { tech_angel_bldg_capitol }
 }
 
-# ?todo2: clinic, entertainment hub, security, trade hall, assembly
+building_im_security = {
+	base_buildtime = 180
+	category = government
+	building_sets = { urban government }
+	potential = {
+		exists = owner
+		owner = { has_ascension_perk = ap_im_infinityempire }
+	}
+	allow = { clib_has_enigmatic_capital = yes }
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = 75
+			energy = 125
+		}
+		upkeep = {
+			im_infinitymatter = 3.5
+		}
+	}
+	planet_modifier = {
+		planet_defense_armies_add = 15
+		planet_stability_add = 50
+	}
+	inline_script = {
+		script = jobs/enforcers_add
+		AMOUNT = 850
+	}
+	prerequisites = { tech_angel_bldg_sentry_station }
+}
+
+building_im_assembly = {
+	base_buildtime = 180
+	category = pop_assembly
+	building_sets = { urban }
+	potential = {
+		exists = owner
+		owner = { has_ascension_perk = ap_im_infinityempire }
+	}
+	allow = { clib_has_enigmatic_capital = yes }
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = 75
+			energy = 125
+		}
+		upkeep = {
+			im_infinitymatter = 3.5
+		}
+	}
+	planet_modifier = {
+		planet_pop_assembly_add = 5
+		planet_pop_assembly_mult = 3
+		auto_mod_monthly_add = 200
+	}
+	inline_script = {
+		script = jobs/roboticist_add
+		AMOUNT = 850
+	}
+	prerequisites = { tech_angel_bldg_machination_complex }
+}
+
+building_im_entertainment = {
+	base_buildtime = 180
+	category = amenity
+	building_sets = { urban trade } #?todo: add biotrophy shit
+	potential = {
+		exists = owner
+		owner = { has_ascension_perk = ap_im_infinityempire }
+	}
+	allow = { clib_has_enigmatic_capital = yes }
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = 75
+			energy = 125
+		}
+		upkeep = {
+			im_infinitymatter = 3.5
+		}
+	}
+	planet_modifier = {
+		planet_amenities_mult = 5
+		planet_pops_upkeep_mult = -0.5
+		planet_jobs_upkeep_mult = -0.25
+	}
+	inline_script = {
+		script = jobs/entertainers_add
+		AMOUNT = 850
+	}
+	prerequisites = { tech_angel_bldg_entertainment_hall }
+}
+
+building_im_clinic = {
+	base_buildtime = 180
+	category = amenity
+	building_sets = { urban } #?todo: add biotrophy shit
+	potential = {
+		exists = owner
+		owner = { has_ascension_perk = ap_im_infinityempire }
+	}
+	allow = { clib_has_enigmatic_capital = yes }
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = 75
+			energy = 125
+		}
+		upkeep = {
+			im_infinitymatter = 3.5
+		}
+	}
+	planet_modifier = {
+		pop_amenities_usage_mult = -0.75
+	}
+	inline_script = {
+		script = jobs/healthcare_add
+		AMOUNT = 850
+	}
+	prerequisites = { tech_angel_bldg_health_ward }
+}
+
+building_im_tradehall = {
+	base_buildtime = 180
+	category = trade
+	building_sets = { urban trade } #?todo: add biotrophy shit
+	potential = {
+		exists = owner
+		owner = { has_ascension_perk = ap_im_infinityempire }
+	}
+	allow = { clib_has_enigmatic_capital = yes }
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = 75
+			energy = 125
+		}
+		upkeep = {
+			im_infinitymatter = 3.5
+		}
+		produces = {
+			trade = 150
+		}
+	}
+	planet_modifier = {
+		pop_amenities_usage_mult = -0.75
+	}
+	inline_script = {
+		script = jobs/trader_add
+		AMOUNT = 850
+	}
+	prerequisites = { tech_angel_bldg_tradehall }
+}

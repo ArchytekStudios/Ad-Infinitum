@@ -291,3 +291,31 @@ weapon_component_template = {
 		}
 	}
 }
+
+weapon_component_template = {
+	key = "IM_ANGEL_SK"
+	component_set = "IM_ANGEL_SK"
+	icon = "GFX_infinity_angel_sk"
+	power = -5000
+	type = planet_killer
+	size = planet_killer
+	potential = { is_angel_ship = yes }
+	prerequisites = { tech_im_planetkillers }
+	planet_destruction_gfx = "neutron_planet_gfx"
+	windup = {
+		min = 60
+		max = 120
+	}
+	total_fire_time = 120 # give it time to cook and the enemies time to repel
+
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 50
+			im_infinitymatter = 25
+		}
+		upkeep = {
+			im_infinityenergy = 1
+		}
+	}
+}

@@ -2,11 +2,20 @@
 
  im_angel_weapon: "§CAngelic Weapon§!"
  im_infinity_weapon: "§YInfinity Weapon§!"
+
+ FLEETORDER_DESTROY_PLANET_WITH_IM_INF_RECONBEAM: "Preparing to §CObliterate§! $PLANET|Y$"
+ MESSAGE_DESC_FOR_IM_INF_RECONBEAM: "was obliterated by"
+ FLEETORDER_DESTROY_PLANET_WITH_IM_ANGEL_SK: "Preparing to §CSear§! $PLANET|Y|$"
+ MESSAGE_DESC_FOR_IM_ANGEL_SK: "and the system was seared by"
+ IM_INF_RECONBEAM_ACTION: "§CObliterate§!"
+ IM_ANGEL_SK_ACTION: "§CSear§!"
  
  #?TODO: Replace all "$nodesc$" with descriptions
 
  IM_ANGEL_DEFENSES: "§CWill of Andrasta§!"
- IM_ANGEL_SK: "§CRagnarok§!" #Starkiller - turns to Searing Star and turns every planet in the system Bleeding, Obliterates every moon and planetoid, and destroys all asteroids - erases all deposits, anoms, arcsites, colonies
+ IM_ANGEL_SK: "§CRagnarok§!" 
+    #Starkiller - turns to Searing Star and turns every planet in the system Bleeding, Obliterates every moon and planetoid, and destroys all asteroids - erases all deposits, anoms, arcsites, colonies
+
  IM_ANGEL_LANCE: "§CFenrir Beam§!"
  IM_ANGEL_LASER_XL: "§CLance of Tyr§!"
  IM_ANGEL_LASER_L: "§CSword of Ares§!"
@@ -17,7 +26,9 @@
  
  IM_INF_ARMOR: "Palladin Armor"
  IM_INF_SHIELD: "Palladin Shield"
- IM_INF_RECONBEAM: "Reconstitution Beam" #Planetkiller - turns to Bleeding World without bombardment
+ IM_INF_RECONBEAM: "Reconstitution Beam" 
+    #Planetkiller - turns to Bleeding World without bombardment
+
  IM_INF_STARBEAM: "Stellar Overture Beam"
  IM_INF_NOVALANCE: "Supernova Lance"
  IM_INF_PLATFORM: "Sunburn Platform"
@@ -97,7 +108,7 @@
  
  
  IM_ANGEL_DEFENSES_DESC: "$no_desc$"
- IM_ANGEL_PK_DESC: "$no_desc$"
+ IM_ANGEL_SK_DESC: "$no_desc$"
  IM_ANGEL_LANCE_DESC: "$no_desc$"
  IM_ANGEL_LASER_XL_DESC: "$no_desc$"
  IM_ANGEL_LASER_L_DESC: "$no_desc$"

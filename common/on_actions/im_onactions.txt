@@ -22,3 +22,15 @@ on_monthly_pulse_country = {
 		im_general.2000 # if events are de-queue'd
 	}
 }
+
+on_destroy_planet_with_IM_ANGEL_SK = {
+	events = {
+		im_general.1995
+	}
+}
+
+on_destroy_planet_with_IM_INF_RECONBEAM = {
+	events = {
+		im_general.19952
+	}
+}

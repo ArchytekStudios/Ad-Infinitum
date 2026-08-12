@@ -7,9 +7,7 @@ im_hermes_gateway = {
 	build_type = outside_gravity_well
 	show_galactic_map_icon = yes
 	show_in_outliner = yes
-	potential = {
-		clib_is_infinite_empire = yes
-	}
+	potential = { clib_is_infinite_empire = yes }
 	possible = {
 		hidden_trigger = {
 			exists = starbase

@@ -49,6 +49,9 @@
     ADINF_STABILIZE_BLEEDING_WORLD: "§HUnlocks Feature:§! Stabilize $pc_im_bleeding_world$s"
     ADINF_STABILIZE_BLEEDING_WORLD_DESC: "With the presence of one or more $pc_im_bleeding_world$s, we are certain we can make some use of them. Instead of leaving them as wreckage, and §Yif we have Dominion technology§!, we can turn one into a $pc_im_bleeding_ecu$."
 
+    tech_im_planetkillers: "Strategic Angelic Weapons"
+    tech_im_planetkillers_desc: "These weapons aboard our ships will do well to project our power across the void utterly."
+
     tech_honorguard_l4: "Honor Guard - L4"
     tech_honorguard_l4_desc: "$menp_honorguard_l4_desc$"
     tech_forgehephaestos: "$im_forgehephaestos_base$"

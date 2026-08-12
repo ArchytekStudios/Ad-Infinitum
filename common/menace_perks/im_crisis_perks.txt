@@ -144,7 +144,8 @@ menp_predivinity = {
 menp_honorguard_l5 = {
 	portrait = "GFX_crisis_icon_rare_components"
 	on_unlock = { 
-		custom_tooltip = HONORGUARD_L5_UNLOCK 
+		#custom_tooltip = HONORGUARD_L5_UNLOCK 
+		add_research_option = tech_im_planetkillers
 	}
 }
 
@@ -160,7 +161,6 @@ menp_seat_of_divinity = {
 	portrait = "GFX_crisis_icon_fe_building_3"
 	on_unlock = { 
 		custom_tooltip = SEAT_OF_DIVINITY_UNLOCK 
-		# add_research_option = tech_divinity_seat
-		# add_research_option = tech_ ... other megas
+		# add_research_option = tech_im_throne
 	}
 }

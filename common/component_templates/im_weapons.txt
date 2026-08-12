@@ -455,3 +455,30 @@ weapon_component_template = {
 		}
 	}
 }
+
+weapon_component_template = {
+	key = "IM_INF_RECONBEAM"
+	component_set = "IM_INF_RECONBEAM"
+	icon = "GFX_infinity_reconstitution_beam"
+	power = -5000
+	type = planet_killer
+	size = planet_killer
+	prerequisites = { tech_im_planetkillers }
+	planet_destruction_gfx = "neutron_planet_gfx"
+	windup = {
+		min = 60
+		max = 120
+	}
+	total_fire_time = 120 # give it time to cook and the enemies time to repel
+
+	resources = {
+		category = ship_components
+		cost = {
+			im_infinityenergy = 50
+			im_infinitymatter = 25
+		}
+		upkeep = {
+			im_infinityenergy = 1
+		}
+	}
+}

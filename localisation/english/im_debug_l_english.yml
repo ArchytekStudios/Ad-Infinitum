@@ -19,3 +19,5 @@
  requires_searing_star: "£trigger_no£ Requires a §CSearing Star§!."
  IM_GATEWAY_ANGELIC: "§CAngelic§! Gateway"
  IM_GATEWAY_ANGELIC_DESC: "Transport between multiple Hermes Gates will cut down on response time, but is extremely vulnerable to intrusion."
+ not_special_planets: "£trigger_no£ Can't be already Obliterated, Seared, or a Lathe."
+ not_hostile_obliterate: "£trigger_no£ This planet's owner is not hostile."

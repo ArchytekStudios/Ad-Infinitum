@@ -182,6 +182,19 @@ tech_honorguard_l3_4 = { # L&H hangars
 	weight = 9999
 }
 
+tech_im_planetkillers = {
+	cost = 170000
+	area = physics
+	tier = 1
+	is_dangerous = yes
+	category = { particles }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire 
+		has_country_flag = IM_INFINITE_EMPIRE_DIVINE
+	}
+	weight = 9999
+}
+
 tech_aresforge = {
 	cost = 170000
 	area = engineering

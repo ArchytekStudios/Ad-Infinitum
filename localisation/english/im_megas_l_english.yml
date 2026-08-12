@@ -46,10 +46,10 @@
  im_forgehephaestos_full_DESC: "§CAnd now, the encore.§! We no longer have to worry about most of our economy, if we're keeping up with transmutation pylons and the §CForge of Ares.§!"
 
  im_daedalusbrain_base: "§CBrain of Daedalus§! - Base"
- im_daedalusbrain_base_DESC: "§YSTRATEGIC MEGASTRUCTURE§! -- §RREMOVES SYSTEM PLANETS§!\nThe §CBrain of Daedalus§! is a massive matrioshka brain, bordering on §Pcompletely insane§!. Theoretically, it will give us a good chunk of research across the board.\n§YUpgrades from the Stellar Cage.§!"
+ im_daedalusbrain_base_DESC: "§YSTRATEGIC MEGASTRUCTURE§! -- §RREMOVES SYSTEM PLANETS§!\nThe $im_daedalusbrain_complete$ is a massive matrioshka brain, bordering on §Pcompletely insane§!. Theoretically, it will give us a good chunk of research across the board.\n§YUpgrades from the Stellar Cage.§!"
  im_daedalusbrain_base_MEGASTRUCTURE_DETAILS: "$im_daedalusbrain_base_DESC$"
  im_daedalusbrain_hull: "§CBrain of Daedalus§! - Hull"
- im_daedalusbrain_hull_DESC: "Partially operational already, with more additions, the §CBrain of Daedalus§! is somewhat complete. It already produces quite a sizeable amount of research."
+ im_daedalusbrain_hull_DESC: "The $im_daedalusbrain_complete$, with its' new hull, now has the ability to provide us basic research capabilities. It isn't done, but it is more than valuable to us even now."
  im_daedalusbrain_hull_MEGASTRUCTURE_DETAILS: "$im_daedalusbrain_hull_DESC$"
  im_daedalusbrain_complete: "§CBrain of Daedalus§!"
  im_daedalusbrain_complete_DESC: "Fully operational Matrioshka Brain, complete with multiple rings and a hull fit for multiple research divisions, producing untold secrets and technologies for our empire."

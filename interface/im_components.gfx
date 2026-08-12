@@ -27,7 +27,7 @@ spriteTypes = {
 
     spriteType = {
         name = "GFX_infinity_angel_sk" # Ragnarok starkiller
-        textureFile = "gfx/interface/icons/ship_parts/infinity_angel_sk.dds"
+        textureFile = "gfx/interface/icons/ship_parts/infinity_angel_starkiller.dds"
     }
 
     spriteType = {
