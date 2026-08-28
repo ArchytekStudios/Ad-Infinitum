@@ -347,12 +347,11 @@ im_thothcomplex = {
 	construction_entity = "im_thothcomplex_entity"
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
-	build_type = outside_gravity_well
+	build_type = inside_gravity_well
 	show_galactic_map_icon = yes
 	show_in_outliner = yes
 	potential = {
 		clib_is_infinite_empire = yes
-		has_country_flag = im_debug_flag
 	}
 	possible = {
 		hidden_trigger = {
@@ -394,8 +393,8 @@ im_thothcomplex = {
 			}
 		}
 	}
-	#prerequisites = { tech_thoth_complex }
-	#show_prereqs = yes
+	prerequisites = { tech_thothcomplex }
+	show_prereqs = yes
 	build_time = 1800
 	resources = {
 		category = megastructures

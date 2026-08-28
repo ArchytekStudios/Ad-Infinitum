@@ -58,3 +58,7 @@
  im_eyeshroud:0 "§CEye of the Shroud§!"
  im_eyeshroud_DESC:0 "For our borders to be secure, we must maintain an undying Eye over everything that dares to harm us."
  im_eyeshroud_MEGASTRUCTURE_DETAILS:0 "§YSTRATEGIC MEGASTRUCTURE§!\n$im_eyeshroud_DESC$"
+
+ im_thothcomplex:0 "§CThothian Archive Complex§!"
+ im_thothcomplex_DESC:0 "The research and acquisition of ancient artifacts need not to be planetbound or one-offs; with our power, we can simply conjure artefacts and science at-will."
+ im_thothcomplex_MEGASTRUCTURE_DETAILS:0 "$im_thothcomplex_DESC$"

@@ -221,6 +221,19 @@ tech_aresforge = {
 #		weight = 9999
 #	}
 
+tech_thothcomplex = {
+	cost = 170000
+	area = physics
+	tier = 1
+	is_rare = yes
+	category = { computing }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire 
+		has_specimen = lotd_angelic_writings_1
+	}
+	weight = 9999
+}
+
 tech_star_searing = {
 	cost = 170000
 	area = physics

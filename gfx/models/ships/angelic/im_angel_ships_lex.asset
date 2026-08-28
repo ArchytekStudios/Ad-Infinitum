@@ -87,6 +87,28 @@ entity = {
 }
 
 entity = {
+	name = "im_archon_entity"
+	pdxmesh = "im_archon_mesh"
+
+	default_state = "idle"
+	
+	state = { name = "idle"
+        start_event = { trigger_once = yes sound = { soundeffect = "amb_fallen_empire_station_01" }}		
+	}
+}
+
+entity = {
+	name = "im_architect_entity"
+	pdxmesh = "im_architect_mesh"
+
+	default_state = "idle"
+	
+	state = { name = "idle"
+        start_event = { trigger_once = yes sound = { soundeffect = "amb_fallen_empire_station_01" }}		
+	}
+}
+
+entity = {
 	name = "im_ophan_frame_entity"
 	pdxmesh = "im_angelic_ophan_frame_mesh"
 	scale = 1
@@ -107,5 +129,17 @@ entity = {
 entity = {
 	name = "im_starfire_frame_entity"
 	pdxmesh = "im_angelic_starfire_frame_mesh"
+	scale = 1
+}
+
+entity = {
+	name = "im_archon_frame_entity"
+	pdxmesh = "im_archon_frame_mesh"
+	scale = 1
+}
+
+entity = {
+	name = "im_architect_frame_entity"
+	pdxmesh = "im_architect_frame_mesh"
 	scale = 1
 }

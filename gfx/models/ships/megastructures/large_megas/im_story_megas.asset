@@ -1,11 +1,24 @@
+
 entity = {
 	name = "im_thothcomplex_entity"
 	#										L U F				 Y P R
-	locator = { name = "part1" position = { 0 20 0 } rotation = { 0 90 0 } scale = 2.0 }
-	locator = { name = "part2" position = { 0 -20 0 } rotation = { 0 -90 0 } scale = 2.0 }
+	locator = { name = "part1" position = { 0 8 0 } rotation = { 0 90 0 } scale = 2.0 }
+	locator = { name = "part2" position = { 0 -8 0 } rotation = { 0 -90 0 } scale = 2.0 }
 
 	attach = {
 		"part1" = "im_angelic_battlecruiser_entity"
 		"part2" = "im_angelic_battlecruiser_entity"
+	}
+}
+
+entity = {
+	name = "im_eyeshroud_entity"
+
+	locator = { name = "part1" scale = 1.0 }
+	locator = { name = "part2" position = { 0 25 0 } rotation = { 0 -180 0 } scale = 1.0 }
+
+	attach = {
+		"part1" = "im_angelic_starfire_entity"
+		"part2" = "im_angelic_starfire_entity"
 	}
 }

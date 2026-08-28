@@ -1,0 +1,115 @@
+
+im_archon = {
+
+	entity = "im_archon_entity"
+
+	max_speed = @speed_very_fast
+	acceleration = 0.6
+	rotation_speed = 0.4
+	max_hitpoints = @science_hp
+	modifier = {
+		ship_evasion_add = @science_evasion
+	}
+	ship_modifier = {
+		ship_hyperlane_range_add = 2
+	}
+	size_multiplier = 1
+	map_counter_icon = ship_counter_4
+	icon = ship_size_science
+	fleet_slot_size = 1
+	section_slots = { "mid" = { locator = "part1" } }
+	num_target_locators = 0
+	is_space_station = no
+	base_buildtime = @science_build_time
+
+	combat_disengage_chance = 2.0
+
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
+	is_designable = yes
+	components_add_to_cost = yes
+	#prerequisites = { "tech_im_archon" }
+	class = shipclass_science_ship
+	construction_type = { starbase_shipyard starbase_beastport }
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	potential_country = {
+		clib_is_infinite_empire = yes
+		has_country_flag = im_debug_flag
+	}
+
+	resources = {
+		category = ships
+		cost = {
+			im_infinityenergy = 50
+			im_infinitymatter = 250
+		}
+		upkeep = {
+			energy = @science_upkeep_energy
+			alloys = @science_upkeep_alloys
+		}
+	}
+}
+
+im_architect = {
+
+	entity = "im_architect_entity"
+
+	max_speed = @speed_very_fast
+	acceleration = 0.6
+	rotation_speed = 0.4
+	max_hitpoints = @construction_hp
+	modifier = {
+		ship_evasion_add = @construction_evasion
+	}
+	ship_modifier = {
+		ship_hyperlane_range_add = 2
+	}
+	size_multiplier = 1
+	map_counter_icon = ship_counter_4
+	icon = ship_size_constructor
+	fleet_slot_size = 1
+	section_slots = { "mid" = { locator = "part1" } }
+	num_target_locators = 0
+	is_space_station = no
+	base_buildtime = @science_build_time
+
+	combat_disengage_chance = 2.0
+
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
+	is_designable = yes
+	components_add_to_cost = yes
+	#prerequisites = { "tech_im_architect" }
+	class = shipclass_constructor
+	construction_type = { starbase_shipyard starbase_beastport }
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	potential_country = {
+		clib_is_infinite_empire = yes
+		has_country_flag = im_debug_flag
+	}
+	construction_capabilities = {
+		starbase
+		mining_station
+		research_station
+		observation_station
+		automated_construction
+		megastructure
+	}
+	resources = {
+		category = ships
+		cost = {
+			im_infinityenergy = 50
+			im_infinitymatter = 250
+		}
+		upkeep = {
+			energy = @science_upkeep_energy
+			alloys = @science_upkeep_alloys
+		}
+	}
+}

@@ -21,7 +21,7 @@ fleet_event = {
 	option = { 
 		name = INTERESTING 
 		this.owner = {
-			#add_research_option = tech_thothcomplex
+			add_research_option = tech_thothcomplex
 			IF = {
 				limit = { has_grand_archive_dlc = yes }
 				give_specimen = { key = lotd_angelic_writings_1 }
@@ -145,7 +145,6 @@ fleet_event = {
 		name = INTERESTING 
 		this.owner = { 
 			add_research_option = tech_daedalusbrain
-			#add_research_option = tech_micro_daedalusbrain
 			IF = {
 				limit = { has_grand_archive_dlc = yes }
 				give_specimen = { key = lotd_angelic_writings_3 }

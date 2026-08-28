@@ -339,4 +339,14 @@ objectTypes = {
 		file = "gfx/models/ships/angelic/im_angelic_starfire_frame.mesh"
 		scale = 1.0
 	}
+	pdxmesh = {
+		name = "im_archon_frame_mesh"
+		file = "gfx/models/ships/angelic/im_angelic_control_drone_frame.mesh"
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "im_architect_frame_mesh"
+		file = "gfx/models/ships/angelic/im_angelic_transport_frame.mesh"
+		scale = 1.0
+	}
 }

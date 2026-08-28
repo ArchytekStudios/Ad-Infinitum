@@ -108,12 +108,21 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/megastructures/spy_orb.dds"
 	}
 
-	#spriteType = {
-	#	name = "GFX_im_eyeshroud_build_icon"
-	#	textureFile = "gfx/interface/icons/megastructures/build_menu/build_option_im_eyeshroud.dds"
-	#}
 	spriteType = {
+		name = "GFX_im_eyeshroud_build_icon"
+		textureFile = "gfx/interface/icons/megastructures/build_menu/build_option_im_eyeshroud.dds"
+	}
+	priteType = {
 		name = "GFX_im_eyeshroud_outliner_icon"
 		textureFile = "gfx/interface/icons/megastructures/dyson_gun_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_im_thothcomplex_build_icon"
+		textureFile = "gfx/interface/icons/megastructures/build_menu/build_option_im_eyeshroud.dds"
+	}
+	priteType = {
+		name = "GFX_im_thothcomplex_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/gateway.dds"
 	}
 }

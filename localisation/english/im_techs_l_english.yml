@@ -58,3 +58,6 @@
     tech_forgehephaestos_desc: "$im_forgehephaestos_base_DESC$"
     tech_daedalusbrain: "$im_daedalusbrain_base$"
     tech_daedalusbrain_desc: "$im_daedalusbrain_base_DESC$"
+
+    tech_thothcomplex: "$im_thothcomplex$"
+    tech_thothcomplex_desc: "$im_thothcomplex_DESC$"
