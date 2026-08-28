@@ -207,6 +207,20 @@ tech_aresforge = {
 	}
 	weight = 9999
 }
+
+#	tech_eyeshroud = {
+#		cost = 170000
+#		area = engineering
+#		tier = 1
+#		is_rare = yes
+#		category = { voidcraft }
+#		potential = { 
+#			has_ascension_perk = ap_im_infinityempire 
+#			has_specimen = hev_angelic_writings_2
+#		}
+#		weight = 9999
+#	}
+
 tech_star_searing = {
 	cost = 170000
 	area = physics

@@ -49,6 +49,7 @@ im_is_angelic_megastructure = {
 		is_megastructure_type = im_dysonsphere
 		is_megastructure_type = im_athena_bow
 		is_megastructure_type = im_pylon_of_hearth
+		is_megastructure_type = im_eyeshroud
 	}
 }
 

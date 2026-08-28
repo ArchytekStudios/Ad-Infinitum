@@ -127,7 +127,6 @@ menp_angelduties_l4 = {
 	on_unlock = { 
 		# custom_tooltip = ANGELDUTIES_L4_UNLOCK 
 		add_research_option = tech_forgehephaestos
-		# add_research_option = tech_eyeofshroud
 		# add_research_option = tech_gaia_hearthworld
 	}
 }

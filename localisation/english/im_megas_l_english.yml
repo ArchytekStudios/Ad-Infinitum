@@ -54,3 +54,7 @@
  im_daedalusbrain_complete: "§CBrain of Daedalus§!"
  im_daedalusbrain_complete_DESC: "Fully operational Matrioshka Brain, complete with multiple rings and a hull fit for multiple research divisions, producing untold secrets and technologies for our empire."
  im_daedalusbrain_complete_MEGASTRUCTURE_DETAILS: "$im_daedalusbrain_complete_DESC$"
+ 
+ im_eyeshroud:0 "§CEye of the Shroud§!"
+ im_eyeshroud_DESC:0 "For our borders to be secure, we must maintain an undying Eye over everything that dares to harm us."
+ im_eyeshroud_MEGASTRUCTURE_DETAILS:0 "§YSTRATEGIC MEGASTRUCTURE§!\n$im_eyeshroud_DESC$"

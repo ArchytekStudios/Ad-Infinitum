@@ -42,7 +42,7 @@
  building_im_clinic:0 "§CHealth Ward§!"
  building_im_clinic_desc:0 "§COur people will still require upkeep and healthcare, as well as Outsiders who may visit us.§!"
  building_im_tradehall:0 "§CCommercial Hub§!"
- building_im_tradehall_desc:0 "REPLACE_ME"
+ building_im_tradehall_desc:0 "§CTrade and goods pass through this structure at a feverish pace unseen elsewhere.§!"
 
  ### Techs
  tech_angel_bldg_capitol: "$building_im_capitol$"

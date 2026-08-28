@@ -40,3 +40,45 @@ lotd_angelic_writings_3 = {
 		species_leader_exp_gain = 0.15
 	}
 }
+
+lath_angelic_writings_1 = {
+	icon = "GFX_specimen_alien_writing"
+	type = historical_item
+	inline_script = {
+		script = "grand_archive/set_specimen_rarity"
+		RARITY = epic
+	}
+
+	triggered_country_modifier = {
+		mult = value:historical_item_specimens_modifiers_mult
+		species_leader_exp_gain = 0.15
+	}
+}
+
+lath_angelic_writings_2 = {
+	icon = "GFX_specimen_alien_writing"
+	type = historical_item
+	inline_script = {
+		script = "grand_archive/set_specimen_rarity"
+		RARITY = epic
+	}
+
+	triggered_country_modifier = {
+		mult = value:historical_item_specimens_modifiers_mult
+		species_leader_exp_gain = 0.15
+	}
+}
+
+lath_angelic_writings_3 = {
+	icon = "GFX_specimen_alien_writing"
+	type = historical_item
+	inline_script = {
+		script = "grand_archive/set_specimen_rarity"
+		RARITY = epic
+	}
+
+	triggered_country_modifier = {
+		mult = value:historical_item_specimens_modifiers_mult
+		species_leader_exp_gain = 0.15
+	}
+}

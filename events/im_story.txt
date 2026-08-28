@@ -57,11 +57,7 @@ fleet_event = {
 	}
 	
 	immediate = { from = { set_site_progress_locked = yes } }
-	after = { 
-		from = { set_site_progress_locked = no } 
-		this.owner = {
-		}
-	}
+	after = { from = { set_site_progress_locked = no } }
 }
 
 fleet_event = {
@@ -138,7 +134,7 @@ fleet_event = {
 	id = im_story_lotd.6
 
 	picture = GFX_evt_endbringers
-	show_sound = event_bad_omen #?changme
+	show_sound = event_bad_omen #?changeme
 
 	archaeology = yes
 	is_triggered_only = yes
@@ -165,6 +161,110 @@ namespace = im_story_gig
 
 
 namespace = im_story_lath
+
+fleet_event = {
+	id = im_story_lath.1
+
+	picture = GFX_evt_barren_dig_site
+	show_sound = event_ship_thrusters
+
+	archaeology = yes
+	is_triggered_only = yes
+
+	title = lath_1_title
+	desc = lath_1_desc
+	option = { 
+		name = KEEP_SEARCHING 
+		this.owner = {
+			add_resource = {
+				im_infinitypoints = 125
+				sr_dark_matter = 150
+				im_infinitymatter = 125
+				im_infinityenergy = 125
+			}
+		}
+	}
+	
+	immediate = { from = { set_site_progress_locked = yes } }
+	after = { from = { set_site_progress_locked = no } }
+}
+
+fleet_event = {
+	id = im_story_lath.2
+
+	picture = GFX_evt_shocking_developments
+	show_sound = event_wind_ruins
+
+	archaeology = yes
+	is_triggered_only = yes
+
+	title = lath_2_title
+	desc = lath_2_desc
+	option = { 
+		name = INTERESTING 
+		this.owner = { 
+			IF = {
+				limit = { has_grand_archive_dlc = yes }
+				give_specimen = { key = lath_angelic_writings_2 }
+			}
+		}
+	}
+	
+	immediate = { from = { set_site_progress_locked = yes } }
+	after = { from = { set_site_progress_locked = no } }
+}
+
+fleet_event = {
+	id = im_story_lath.3
+
+	picture = GFX_evt_derelict_interior
+	show_sound = event_metal_fatigue
+
+	archaeology = yes
+	is_triggered_only = yes
+
+	title = lath_3_title
+	desc = lath_3_desc
+	option = { 
+		name = INTERESTING 
+		this.owner = { 
+			#add_research_option = tech_starfire
+			IF = {
+				limit = { has_grand_archive_dlc = yes }
+				give_specimen = { key = lath_angelic_writings_3 }
+			}
+		}
+	}
+	
+	immediate = { from = { set_site_progress_locked = yes } }
+	after = { from = { set_site_progress_locked = no } }
+}
+
+fleet_event = {
+	id = im_story_lath.4
+
+	picture = GFX_evt_shimmering_structure
+	show_sound = event_ghost_town
+
+	archaeology = yes
+	is_triggered_only = yes
+
+	title = lath_4_title
+	desc = lath_4_desc
+	option = { 
+		name = INTERESTING 
+		this.owner = { 
+			#add_research_option = tech_arkweapon
+			IF = {
+				limit = { has_grand_archive_dlc = yes }
+				give_specimen = { key = lath_angelic_writings_1 }
+			}
+		}
+	}
+	
+	immediate = { from = { set_site_progress_locked = yes } }
+	after = { from = { set_site_progress_locked = no } }
+}
 
 
 namespace = im_story_hazenv

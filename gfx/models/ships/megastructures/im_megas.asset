@@ -21,7 +21,7 @@ entity = {
 
 entity = {
 	name = "im_bow_of_athena_entity"
-	#										L  U  F
+	#										L  U  F					Y P R
 	locator = { name = "part1" position = { 50 0 175 } rotation = { 0 0 0 } scale = 1.5 }
 	locator = { name = "part2" position = { -50 0 175 } rotation = { 0 0 0 } scale = 1.5 }
 	locator = { name = "part3" position = { -50 0 100 } rotation = { 0 0 0 } scale = 1.5 }
@@ -73,4 +73,16 @@ entity = {
 	attach = { "part1" = "im_angelic_ring_small_entity" }
 	attach = { "part2" = "im_angelic_ring_small_entity" }
 	attach = { "shield" = "planet_shield_effect_entity" }
+}
+
+entity = {
+	name = "im_eyeshroud_entity"
+
+	locator = { name = "part1" scale = 1.0 }
+	locator = { name = "part2" position = { 0 25 0 } rotation = { 0 -180 0 } scale = 1.0 }
+
+	attach = {
+		"part1" = "im_angelic_starfire_entity"
+		"part2" = "im_angelic_starfire_entity"
+	}
 }

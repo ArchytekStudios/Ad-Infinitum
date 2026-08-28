@@ -128,22 +128,22 @@ country_event = {	# First Searing Star
 	immediate = {
 		set_country_flag = im_made_a_searing_star
 		country_event = {
-			id = im_general.2005
+			id = im_general.2005 #LOTD
 			days = 300
 			random = 60
 		}
 		country_event = {
-			id = im_general.2010
+			id = im_general.2010 #GIG
 			days = 170
 			random = 30
 		}
 		country_event = {
-			id = im_general.2015
+			id = im_general.2015 #LATH
 			days = 240
 			random = 90
 		}
 		country_event = {
-			id = im_general.2020
+			id = im_general.2020 #HEV
 			days = 90
 			random = 30
 		}
@@ -203,7 +203,7 @@ planet_event = { # GIG, cold barren
 	id = im_general.2012
 	is_triggered_only = yes
 	hide_window = yes
-#	immediate = { create_archaeological_site = site_grandimpossiblygrand_adinf }
+	immediate = { create_archaeological_site = site_grandimpossiblygrand_adinf }
 }
 
 country_event = {
@@ -220,10 +220,7 @@ country_event = {
 		random_planet_within_border = { 
 			limit = { 
 				clib_is_tiny_planet = no
-				OR = {
-					is_planet_class = pc_molten
-					is_planet_class = pc_barren
-				}
+				is_planet_class = pc_barren
 			} 
 			planet_event = { id = im_general.2017 } 
 		} 
@@ -234,7 +231,7 @@ planet_event = { # LATH, molten or barren
 	id = im_general.2017
 	is_triggered_only = yes
 	hide_window = yes
-#	immediate = { create_archaeological_site = site_likeantennastoheaven_adinf }
+	immediate = { create_archaeological_site = site_likeantennastoheaven_adinf }
 }
 
 
@@ -262,7 +259,7 @@ planet_event = { # HEV, toxic
 	id = im_general.2022
 	is_triggered_only = yes
 	hide_window = yes
-#	immediate = { create_archaeological_site = site_hazardousenvironments_adinf }
+	immediate = { create_archaeological_site = site_hazardousenvironments_adinf }
 }
 
 #	country_event = {

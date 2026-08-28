@@ -223,3 +223,241 @@ im_dysonsphere = {
 		}
 	}
 }
+
+
+im_eyeshroud = {
+	entity = "im_eyeshroud_entity"
+	construction_entity = "im_eyeshroud_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	build_type = inside_gravity_well
+	show_galactic_map_icon = yes
+	show_in_outliner = yes
+	potential = {
+		clib_is_infinite_empire = yes
+		has_country_flag = im_debug_flag
+	}
+	possible = {
+		hidden_trigger = {
+			exists = starbase
+		}
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "only_one_per_system"
+			NOT = { has_megastructure = im_eyeshroud }
+		}
+		custom_tooltip = {
+			fail_text = "blocked_by_pre_ftl_policy"
+			if = {
+				limit = {
+					any_system_planet = {
+						exists = owner
+						owner = {
+							is_primitive = yes
+						}
+					}
+				}
+				from = {
+					has_policy_flag = interference_aggressive
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+		
+	}
+	#prerequisites = { tech_eyeshroud }
+	#show_prereqs = yes
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = {
+			im_infinityenergy = 150
+			im_infinitymatter = 2850
+		}
+		upkeep = {
+			im_infinitypoints = 10
+			im_infinityenergy = 15
+		}
+	}
+	construction_blocks_and_blocked_by = self_type
+
+	placement_rules = {
+	 	NOR = {
+			star = {
+				has_planet_flag = im_has_eyeshroud
+			}
+			has_star_flag = im_has_eyeshroud
+	 	}
+	}
+
+	dismantle_cost = {
+		category = megastructures
+		cost = {
+			im_infinitymatter = 125
+		}
+	}
+
+	dismantle_time = 360
+
+	dismantle_potential = {
+		always = yes
+	}
+
+	dismantle_possible = {
+		exists = owner
+		owner = { clib_is_infinite_empire = yes }
+	}
+
+	on_dismantle_complete = {
+		from = {
+			add_resource = {
+				im_infinityenergy = 1500
+				im_infinitymatter = 285
+				mult = modifier:megastructure_dismantle_refund_mult
+			}
+		}
+	}
+
+	sensor_range = 70
+	hyperlane_range = 140
+
+	on_build_complete = {
+		star = {
+			set_planet_flag = im_has_eyeshroud
+		}
+		set_star_flag = im_has_eyeshroud
+	}
+}
+
+im_thothcomplex = {
+	entity = "im_thothcomplex_entity"
+	construction_entity = "im_thothcomplex_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	build_type = outside_gravity_well
+	show_galactic_map_icon = yes
+	show_in_outliner = yes
+	potential = {
+		clib_is_infinite_empire = yes
+		has_country_flag = im_debug_flag
+	}
+	possible = {
+		hidden_trigger = {
+			exists = starbase
+		}
+		custom_tooltip = {
+			fail_text = "only_one_per_system"
+			NOT = { has_megastructure = im_thothcomplex }
+		}
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "blocked_by_pre_ftl_policy"
+			if = {
+				limit = {
+					any_system_planet = {
+						exists = owner
+						owner = {
+							is_primitive = yes
+						}
+					}
+				}
+				from = {
+					has_policy_flag = interference_aggressive
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+	}
+	#prerequisites = { tech_thoth_complex }
+	#show_prereqs = yes
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = {
+			im_infinityenergy = 150
+			im_infinitymatter = 2850
+		}
+		upkeep = {
+			im_infinitymatter = 35
+			im_infinityenergy = 25
+		}
+		produces = {
+			im_infinitypoints = 80
+			society_research = 485
+			physics_research = 485
+			engineering_research = 485
+			minor_artifacts = 15
+		}
+	}
+	construction_blocks_and_blocked_by = self_type
+
+	placement_rules = {
+	 	NOR = {
+			star = {
+				has_planet_flag = im_has_thothcomplex
+			}
+			has_star_flag = im_has_thothcomplex
+	 	}
+	}
+
+	dismantle_cost = {
+		category = megastructures
+		cost = {
+			im_infinitymatter = 125
+		}
+	}
+
+	dismantle_time = 360
+
+	dismantle_potential = {
+		always = yes
+	}
+
+	dismantle_possible = {
+		exists = owner
+		owner = { clib_is_infinite_empire = yes }
+	}
+
+	on_dismantle_complete = {
+		from = {
+			add_resource = {
+				im_infinityenergy = 1500
+				im_infinitymatter = 285
+				mult = modifier:megastructure_dismantle_refund_mult
+			}
+		}
+	}
+
+	on_build_complete = {
+		star = {
+			set_planet_flag = im_has_thothcomplex
+		}
+		set_star_flag = im_has_thothcomplex
+	}
+}

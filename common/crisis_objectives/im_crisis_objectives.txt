@@ -11,9 +11,12 @@ im_crisobj_holdstructs = { # Maintain hold on structures -- Strategic Grip
 		modifier = {
 			add = 150
 			OR = {
-				im_has_forgeares_any = yes
-				im_has_forgehephaestos_any = yes
-				im_has_daedalusbrain_any = yes
+				any_system_within_border = {
+					has_megastructure = im_eyeshroud					
+					im_has_forgeares_any = yes
+					im_has_forgehephaestos_any = yes
+					im_has_daedalusbrain_any = yes
+				}
 			}
 		}
 	}

@@ -1,0 +1,11 @@
+entity = {
+	name = "im_thothcomplex_entity"
+	#										L U F				 Y P R
+	locator = { name = "part1" position = { 0 20 0 } rotation = { 0 90 0 } scale = 2.0 }
+	locator = { name = "part2" position = { 0 -20 0 } rotation = { 0 -90 0 } scale = 2.0 }
+
+	attach = {
+		"part1" = "im_angelic_battlecruiser_entity"
+		"part2" = "im_angelic_battlecruiser_entity"
+	}
+}
