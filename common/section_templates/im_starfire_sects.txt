@@ -1,53 +1,196 @@
 
-# assault_wing_large_weapon_1
-# assault_wing_large_weapon_2
-# assault_wing_medium_weapon_1
-# assault_wing_medium_weapon_2
-# assault_wing_medium_weapon_3
-# assault_wing_medium_weapon_4
-# assault_wing_medium_weapon_5
-# assault_wing_medium_weapon_6
-# assault_wing_medium_weapon_7
-# assault_wing_medium_weapon_8
-# assault_wing_small_weapon_1 (PD)
-# assault_wing_small_weapon_2 (PD)
-# assault_wing_small_weapon_3 (PD)
-# assault_wing_small_weapon_4 (PD)
-# assault_wing_small_weapon_5 (PD)
-# assault_wing_small_weapon_6 (PD)
-# assault_wing_small_weapon_7 (PD)
-# assault_wing_small_weapon_8 (PD)
-# assault_wing_xl_weapon_1
-# assault_wing_xl_weapon_2
-# assault_wing_xl_weapon_3
-# assault_wing_xl_weapon_4
-# assault_wing_xl_weapon_5
-# assault_wing_xl_weapon_6
-# assault_wing_xl_weapon_7
-# assault_wing_xl_weapon_8
-# top_sphere_1 (XL)
-# top_sphere_2 (XL)
-# top_sphere_3 (XL)
-# top_sphere_4 (XL)
-# top_sphere_5 (XL)
-# top_sphere_6 (XL)
-# top_sphere_7 (XL)
-# top_sphere_8 (XL)
-# top_wing_center_1_weapon_1 (G)
-# top_wing_center_1_weapon_2 (G)
-# top_wing_center_1_weapon_3 (G)
-# top_wing_center_1_weapon_4 (G)
-# top_wing_center_2_weapon_1 (G)
-# top_wing_center_2_weapon_2 (G)
-# top_wing_center_2_weapon_3 (G)
-# top_wing_center_2_weapon_4 (G)
-# top_wing_weapon_1 (T)
-# top_wing_weapon_2 (T)
-# top_wing_weapon_3 (T)
-# top_wing_weapon_4 (T)
-# top_center_weapon (T)
+# top_center_weapon 						(T)
+# top_wing_weapon_1 						(T)
+# top_wing_weapon_2 						(T)
+# top_wing_weapon_3 						(T)
+# top_wing_weapon_4 						(T)
+# top_sphere_1 								(XL)
+# top_sphere_2 								(XL)
+# top_sphere_3 								(XL)
+# top_sphere_4 								(XL)
+# top_sphere_5 								(XL)
+# top_sphere_6 								(XL)
+# top_sphere_7 								(XL)
+# top_sphere_8 								(XL)
+# assault_wing_xl_weapon_1					(XL)
+# assault_wing_xl_weapon_2					(XL)
+# assault_wing_xl_weapon_3					(XL)
+# assault_wing_xl_weapon_4					(XL)
+# assault_wing_xl_weapon_5					(XL)
+# assault_wing_xl_weapon_6					(XL)
+# assault_wing_xl_weapon_7					(XL)
+# assault_wing_xl_weapon_8					(XL)
+# assault_wing_large_weapon_1 				(L)
+# assault_wing_large_weapon_2 				(L)
+# assault_wing_medium_weapon_1				(M)
+# assault_wing_medium_weapon_2				(M)
+# assault_wing_medium_weapon_3				(M)
+# assault_wing_medium_weapon_4				(M)
+# assault_wing_medium_weapon_5				(M)
+# assault_wing_medium_weapon_6				(M)
+# assault_wing_medium_weapon_7				(M)
+# assault_wing_medium_weapon_8				(M)
+# top_wing_center_1_weapon_1 				(G)
+# top_wing_center_1_weapon_2 				(G)
+# top_wing_center_1_weapon_3 				(G)
+# top_wing_center_1_weapon_4 				(G)
+# top_wing_center_2_weapon_1 				(G)
+# top_wing_center_2_weapon_2 				(G)
+# top_wing_center_2_weapon_3 				(G)
+# top_wing_center_2_weapon_4 				(G)
+# assault_wing_small_weapon_1 				(PD)
+# assault_wing_small_weapon_2 				(PD)
+# assault_wing_small_weapon_3 				(PD)
+# assault_wing_small_weapon_4 				(PD)
+# assault_wing_small_weapon_5 				(PD)
+# assault_wing_small_weapon_6 				(PD)
+# assault_wing_small_weapon_7 				(PD)
+# assault_wing_small_weapon_8 				(PD)
 #
 # total: 5x T, 16x XL, 2x L, 8x G, 8x M, 8x PD
 # Top: 1x T, 8x XL
 # Wings: 4x T, 8x XL
 # Center: 2x L, 8x G, 8x M, 8x PD
+
+
+ship_section_template = {
+	key = "im_angelic_starfire_helm"
+	ship_size = im_angelic_starfire
+	fits_on_slot = helm
+	entity = "im_starfire_frame_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name = "T_01"
+		template = "invisible_titanic_turret"
+		locatorname = "top_center_weapon"
+	}
+	component_slot = {
+		name = "XL_01"
+		template = "invisible_extra_large_turret"
+		locatorname = "top_sphere_1"
+	}
+	component_slot = {
+		name = "XL_02"
+		template = "invisible_extra_large_turret"
+		locatorname = "top_sphere_2"
+	}
+	component_slot = {
+		name = "XL_03"
+		template = "invisible_extra_large_turret"
+		locatorname = "top_sphere_3"
+	}
+	component_slot = {
+		name = "XL_04"
+		template = "invisible_extra_large_turret"
+		locatorname = "top_sphere_4"
+	}
+	component_slot = {
+		name = "XL_05"
+		template = "invisible_extra_large_turret"
+		locatorname = "top_sphere_5"
+	}
+	component_slot = {
+		name = "XL_06"
+		template = "invisible_extra_large_turret"
+		locatorname = "top_sphere_6"
+	}
+	component_slot = {
+		name = "XL_07"
+		template = "invisible_extra_large_turret"
+		locatorname = "top_sphere_7"
+	}
+	component_slot = {
+		name = "XL_08"
+		template = "invisible_extra_large_turret"
+		locatorname = "top_sphere_8"
+	}
+
+	large_utility_slots = 16
+	aux_utility_slots = 2
+}
+
+ship_section_template = {
+	key = "im_angelic_starfire_wings"
+	ship_size = im_angelic_starfire
+	fits_on_slot = wings
+	entity = "im_starfire_frame_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name = "T_01"
+		template = "invisible_titanic_turret"
+		locatorname = "top_wing_weapon_1"
+	}
+	component_slot = {
+		name = "T_02"
+		template = "invisible_titanic_turret"
+		locatorname = "top_wing_weapon_2"
+	}
+	component_slot = {
+		name = "T_03"
+		template = "invisible_titanic_turret"
+		locatorname = "top_wing_weapon_3"
+	}
+	component_slot = {
+		name = "T_04"
+		template = "invisible_titanic_turret"
+		locatorname = "top_wing_weapon_4"
+	}
+	component_slot = {
+		name = "XL_01"
+		template = "invisible_extra_large_turret"
+		locatorname = "assault_wing_xl_weapon_1"
+	}
+	component_slot = {
+		name = "XL_02"
+		template = "invisible_extra_large_turret"
+		locatorname = "assault_wing_xl_weapon_2"
+	}
+	component_slot = {
+		name = "XL_03"
+		template = "invisible_extra_large_turret"
+		locatorname = "assault_wing_xl_weapon_3"
+	}
+	component_slot = {
+		name = "XL_04"
+		template = "invisible_extra_large_turret"
+		locatorname = "assault_wing_xl_weapon_4"
+	}
+	component_slot = {
+		name = "XL_05"
+		template = "invisible_extra_large_turret"
+		locatorname = "assault_wing_xl_weapon_5"
+	}
+	component_slot = {
+		name = "XL_06"
+		template = "invisible_extra_large_turret"
+		locatorname = "assault_wing_xl_weapon_6"
+	}
+	component_slot = {
+		name = "XL_07"
+		template = "invisible_extra_large_turret"
+		locatorname = "assault_wing_xl_weapon_7"
+	}
+	component_slot = {
+		name = "XL_08"
+		template = "invisible_extra_large_turret"
+		locatorname = "assault_wing_xl_weapon_8"
+	}
+
+	large_utility_slots = 16
+	aux_utility_slots = 2
+}
+
+ship_section_template = {
+	key = "im_angelic_starfire_core"
+	ship_size = im_angelic_starfire
+	fits_on_slot = core
+	entity = "im_starfire_frame_entity"
+	icon = "GFX_ship_part_core_mid"
+
+
+
+	large_utility_slots = 16
+	aux_utility_slots = 2
+}

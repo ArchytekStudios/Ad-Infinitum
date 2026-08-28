@@ -12,6 +12,7 @@ im_archon = {
 	}
 	ship_modifier = {
 		ship_hyperlane_range_add = 2
+		ship_reactor_power_mult = 4.0
 	}
 	size_multiplier = 1
 	map_counter_icon = ship_counter_4
@@ -66,6 +67,7 @@ im_architect = {
 	}
 	ship_modifier = {
 		ship_hyperlane_range_add = 2
+		ship_reactor_power_mult = 4.0
 	}
 	size_multiplier = 1
 	map_counter_icon = ship_counter_4

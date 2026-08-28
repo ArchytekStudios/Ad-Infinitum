@@ -221,6 +221,21 @@ tech_aresforge = {
 #		weight = 9999
 #	}
 
+
+tech_im_archon = {
+	cost = 170000
+	area = engineering
+	tier = 5
+	is_rare = yes
+	category = { voidcraft }
+	potential = { 
+		has_ascension_perk = ap_im_infinityempire
+		has_specimen = lotd_angelic_writings_2
+		has_country_flag = IM_INFINITE_EMPIRE_ACOLYTE
+	}
+	weight = 9999
+}
+
 tech_thothcomplex = {
 	cost = 170000
 	area = physics
@@ -334,6 +349,7 @@ tech_daedalusbrain = {
 	category = { field_manipulation }
 	potential = { 
 		has_ascension_perk = ap_im_infinityempire 
+		has_specimen = lotd_angelic_writings_2
 		has_country_flag = IM_INFINITE_EMPIRE_ACOLYTE
 	}
 	weight = 9999

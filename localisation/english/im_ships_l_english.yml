@@ -16,11 +16,16 @@
  im_archon: "Archon"
  im_archon_cap: "$im_archon$"
  im_archon_plural: "$im_archon$s"
- SHIP_GRAPHICS_IM_ARCHON_DESC: "REPLACE_ME"
+ SHIP_GRAPHICS_IM_ARCHON_DESC: "The brains of angelic empires. As much as it can research, it can defend itself."
  im_architect: "Architect"
  im_architect_cap: "$im_architect$"
  im_architect_plural: "$im_architect$s"
- SHIP_GRAPHICS_IM_ARCHITECT_DESC: "REPLACE_ME"
+ SHIP_GRAPHICS_IM_ARCHITECT_DESC: "The arms of angelic empires. As much as it can build, it can defend itself."
+ im_angelic_starfire: "Starfire Mechanism"
+ im_angelic_starfire_cap: "$im_angelic_starfire$"
+ im_angelic_starfire_plural: "$im_angelic_starfire$s"
+ SHIP_GRAPHICS_IM_ANGELIC_STARFIRE_DESC: "REPLACE_ME"
+
 
  ### Sections
  im_angelic_ophanim_6m2p: "Gunship"
@@ -41,3 +46,7 @@
 
  im_archon_main: "Core"
  im_architect_main: "Core"
+
+ im_angelic_starfire_helm: "Shipcracker Helm"
+ im_angelic_starfire_wings: "Siegebreaker Wings"
+ im_angelic_starfire_core: "Defender Core"

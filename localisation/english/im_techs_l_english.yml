@@ -61,3 +61,6 @@
 
     tech_thothcomplex: "$im_thothcomplex$"
     tech_thothcomplex_desc: "$im_thothcomplex_DESC$"
+
+    tech_im_archon:0 "$im_archon$"
+    tech_im_archon_desc:0 "$SHIP_GRAPHICS_IM_ARCHON_DESC$"

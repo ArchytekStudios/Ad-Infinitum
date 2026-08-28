@@ -91,7 +91,7 @@ fleet_event = {
 	option = { 
 		name = EXCELLENT 
 		this.owner = {
-			#add_research_option = tech_archon_ship
+			add_research_option = tech_im_archon
 			IF = {
 				limit = { has_grand_archive_dlc = yes }
 				give_specimen = { key = lotd_angelic_writings_2 }
@@ -118,8 +118,8 @@ fleet_event = {
 		name = KEEP_SEARCHING 
 		this.owner = {
 			add_resource = {
-				im_infinitypoints = 125
 				sr_dark_matter = 150
+				im_infinitypoints = 125
 				im_infinitymatter = 125
 				im_infinityenergy = 125
 			}
@@ -176,8 +176,8 @@ fleet_event = {
 		name = KEEP_SEARCHING 
 		this.owner = {
 			add_resource = {
-				im_infinitypoints = 125
 				sr_dark_matter = 150
+				im_infinitypoints = 125
 				im_infinitymatter = 125
 				im_infinityenergy = 125
 			}
@@ -266,4 +266,4 @@ fleet_event = {
 }
 
 
-namespace = im_story_hazenv
+namespace = im_story_hev

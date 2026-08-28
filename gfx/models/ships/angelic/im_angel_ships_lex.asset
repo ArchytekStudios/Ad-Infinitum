@@ -78,6 +78,8 @@ entity = {
 	name = "im_angelic_starfire_entity"
 	pdxmesh = "im_angelic_starfire_mesh"
 	scale = 2.25
+
+	locator = { name = "root" position = { 0 0 0 } }
 	
 	default_state = "idle"
 	

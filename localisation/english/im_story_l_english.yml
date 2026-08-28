@@ -4,6 +4,7 @@
 
  cachelocated: "§YA Cache was located in the rubble.§!"
  notelocated: "§YA Page was found in the rubble.§!"
+ digsitecreated: "\n\n§YAn archaeological dig-site has been established.§!"
 
  im_angel_bio_mastery: "Mastery of Biology"
  im_angel_bio_mastery_desc: "We have mastered everything related to Biology on our path to becoming divine. Our reach in the organic realm means we can modify our species at will."
@@ -20,10 +21,10 @@
 
 ### Legacy of the Dead -- LOTD
  im_legacyofthedead: "The Dead, Revisited"
- im_legacydead_evt_desc: "After awakening a Searing Star, our sensors have detected structures beneath the surface of one of our planets. Across the world, there are structures mimicking §CDivine§! designs, which point to a very prominent and advanced Precursor ruin found nowhere else in the galaxy. Knowing what we know now, we can only presume this is related to the §CSearing Stars§!.\n\n§YAn archaeological dig-site has been established.§!"
+ im_legacydead_evt_desc: "After awakening a Searing Star, our sensors have detected structures beneath the surface of one of our planets. Across the world, there are structures mimicking §CDivine§! designs, which point to a very prominent and advanced Precursor ruin found nowhere else in the galaxy. Knowing what we know now, we can only presume this is related to the §CSearing Stars§!.$digsitecreated$"
 
  site_legacyofthedead_adinf: "Legacy of the Dead"
- legacyofthedead_adinf_desc: "This relic world has more questions than answers, but more importantly, it houses very advanced structures on-site - some of which may hold answers to the occupants of this ruin."
+ legacyofthedead_adinf_desc: "This barren, dead world has more questions than answers, but more importantly, it houses very advanced structures on-site - some of which may hold answers to the occupants of this ruin."
  
  lotd_1_title: "Echoes of the Damned"
  lotd_1_desc: "Upon touchdown, our scientists made quick work of establishing an outpost. Before anything could happen, though, the planet itself seemed to react to our presence; doors opening and closing, the wind picking up with whispers of forgotten languages beyond words and common comprehension. Our lead scientist urges on, though makes note of an interesting structure in the distance. $notelocated$"
@@ -51,19 +52,19 @@
  lotd_angelic_writings_3_desc_details: "\n§YA CONSTRUCT TO BEFIT ANGELS. THE MACHINATIONS OF MORTALS TO IMPRESS THE DIVINE. THE §CBRAIN OF DAEDALUS§!, MECHANIZED INTO A FORM OF BEAUTY, CONTAINING ALL THE THEORIES THAT CAN EXIST AND MANY THAT CANNOT.\nBY THE KING, WE WILL ASCEND.§!"
 
 ### Like Antennas To Heaven -- LATH
- im_antennas_evt: ""
- im_antennas_evt_desc: ""
+ im_antennas_evt: "In Pieces Unaligned"
+ im_antennas_evt_desc: "$likeantennastoheaven_adinf_desc$$digsitecreated$"
  site_likeantennastoheaven_adinf: "Like Antennas To Heaven"
- likeantennastoheaven_adinf_desc: ""
+ likeantennastoheaven_adinf_desc: "On one of our barren worlds, long after we had created a Searing Star, we picked up disturbances related to Angelic technologies. It seems like a databank of military crafts and constructs are sat here."
  
- lath_1_title: ""
- lath_1_desc: ""
- lath_2_title: ""
- lath_2_desc: ""
- lath_3_title: ""
- lath_3_desc: ""
- lath_4_title: ""
- lath_4_desc: ""
+ lath_1_title: "Into The Fire"
+ lath_1_desc: "We have made landfall on the planet in question. So far, what we've seen beats all possible explanation; ruins buried under ash, warmachines of aeons past derelict or destroyed, unrecognizable fossils of species before our own. $cachelocated$"
+ lath_2_title: "Through The Mirror"
+ lath_2_desc: "Our researchers have found an entry into what can only be presumed as a derelict bunker. As far as they can tell, it was ransacked and sieged for likely an unfathomable amount of time, before ultimately falling. $notelocated$"
+ lath_3_title: "Garden of Forking Paths"
+ lath_3_desc: "Exploring the derelict ruins is proving exceptionally difficult. The expeditionary scientists; rather, those that are willing; have found themselves oft' going in entire circles around the structure's internals, having to avoid the same tripmines over and over.\n\nNot all hope is lost, however. The scientist in charge has reportedly found a way forward, though not before stopping to pick up schematics related to a §Cfloating counter-invasion defense megastructure.§!\n$notelocated$"
+ lath_4_title: "War Without Reason"
+ lath_4_desc: "Exploration of the ruined bunker has brought about the discovery of the schematics regarding a supposed §Csupership§! that could theoretically wipe out entire empires. With the site fully excavated, our scientists have opted to return to the ship. $notelocated$"
 
  lath_angelic_writings_1: "Writings of War, Pg.1" #Grand Arkweapon
  lath_angelic_writings_1_desc_short: "A scrap paper recovered from the §C...Like Antennas To Heaven§! digsite. Date, unknown."
