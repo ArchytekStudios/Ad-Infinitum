@@ -227,7 +227,7 @@ fleet_event = {
 	option = { 
 		name = INTERESTING 
 		this.owner = { 
-			#add_research_option = tech_starfire
+			add_research_option = tech_im_starfire
 			IF = {
 				limit = { has_grand_archive_dlc = yes }
 				give_specimen = { key = lath_angelic_writings_3 }
@@ -253,7 +253,7 @@ fleet_event = {
 	option = { 
 		name = INTERESTING 
 		this.owner = { 
-			#add_research_option = tech_arkweapon
+			add_research_option = tech_im_grand_arkweapon
 			IF = {
 				limit = { has_grand_archive_dlc = yes }
 				give_specimen = { key = lath_angelic_writings_1 }

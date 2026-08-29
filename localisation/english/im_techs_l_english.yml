@@ -64,3 +64,10 @@
 
     tech_im_archon:0 "$im_archon$"
     tech_im_archon_desc:0 "$SHIP_GRAPHICS_IM_ARCHON_DESC$"
+    tech_im_architect:0 "$im_architect$"
+    tech_im_architect_desc:0 "$SHIP_GRAPHICS_IM_ARCHITECT_DESC$"
+
+    tech_im_starfire:0 "$im_angelic_starfire$"
+    tech_im_starfire_desc:0 "$SHIP_GRAPHICS_IM_ANGELIC_STARFIRE_DESC$"
+    tech_im_grand_arkweapon:0 "$im_arkweapon$"
+    tech_im_grand_arkweapon_desc:0 "$SHIP_GRAPHICS_IM_ARKWEAPON_DESC$"

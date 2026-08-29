@@ -222,7 +222,7 @@ im_arkweapon = {
 			has_country_flag = im_unlock_arkweapon
 		}
 	}
-	#prerequisites = { tech_im_story_arkweapon }
+	prerequisites = { tech_im_grand_arkweapon }
 	
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
@@ -264,6 +264,7 @@ im_angelic_starfire = {
 		ship_armor_add = @starhold_armor
 		ship_shield_add = @starhold_armor
 		ship_shield_regen_add_static = 35		# Roughly the same shield regen as T3 Shields
+		ship_reactor_power_add = 120000
 	}
 	max_hitpoints = 2147480
 	base_buildtime = 720
@@ -277,8 +278,8 @@ im_angelic_starfire = {
 	fleet_slot_size = 2
 	section_slots = {
 		"helm" = { locator = "root" }
+		"wings" = { locator = "root" }
 		"core" = { locator = "root" }
-		"stem" = { locator = "root" }
 	}
 	is_designable = yes
 	num_target_locators = 0
@@ -298,7 +299,7 @@ im_angelic_starfire = {
 	}
 
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	#prerequisites = { "tech_im_starfire" }
+	prerequisites = { "tech_im_starfire" }
 	class = shipclass_starbase
 	use_shipnames_from = starbase_citadel
 

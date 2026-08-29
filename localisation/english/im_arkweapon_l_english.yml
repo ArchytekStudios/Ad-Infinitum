@@ -10,7 +10,7 @@
  im_arkweapon: "Grand Arkweapon"
  im_arkweapon_cap: "$im_arkweapon$"
  im_arkweapon_plural: "$im_arkweapon$s"
- SHIP_GRAPHICS_IM_ARKWEAPON_DESC: "A ship defying all reason. Its' mere existence is a threat to sanity."
+ SHIP_GRAPHICS_IM_ARKWEAPON_DESC: "A ship defying all reason. Its' mere existence is a threat to sanity. Unmatched by anything before, its' indomitable hull can perhaps singlehandedly survive entire crises."
  im_arkweapon_nomad: "$im_arkweapon$"
  im_arkweapon_nomad_cap: "$im_arkweapon$"
  im_arkweapon_nomad_plural: "$im_arkweapon$s"
