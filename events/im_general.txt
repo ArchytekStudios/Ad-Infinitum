@@ -227,7 +227,7 @@ country_event = {
 	}
 }
 
-planet_event = { # LATH, molten or barren
+planet_event = { # LATH, barren
 	id = im_general.2017
 	is_triggered_only = yes
 	hide_window = yes
